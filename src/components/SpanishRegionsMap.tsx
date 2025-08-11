@@ -1756,10 +1756,10 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         // Fondo blanco translúcido para el recuadro - ajustar posición y tamaño
         canariasGroup.append('rect')
           .attr('x', containerWidth * 0.02) // Más a la izquierda
-          .attr('y', containerHeight * 0.68) // Ajuste para alinear con el mapa de investigadores
+          .attr('y', containerHeight * 0.58) // Subir el recuadro para mantenerlo visible
           .attr('width', containerWidth * 0.24) // Mantener ancho
           .attr('height', containerHeight * 0.20) // Altura extendida para cerrar el recuadro
-          .attr('rx', 4) 
+          .attr('rx', 4)
           .attr('ry', 4)
           .attr('fill', 'rgba(255, 255, 255, 0.8)')
           .attr('stroke', '#0077b6')
@@ -1770,7 +1770,7 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         // Etiqueta para Canarias - ajustar posición
         canariasGroup.append('text')
           .attr('x', containerWidth * 0.04)
-          .attr('y', containerHeight * 0.71) // Alineado con nuevo recuadro
+          .attr('y', containerHeight * 0.61) // Ajustar posición acorde al nuevo recuadro
           .attr('font-size', '10px')
           .attr('font-weight', 'bold')
           .attr('fill', '#0077b6')
