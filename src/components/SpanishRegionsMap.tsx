@@ -985,7 +985,10 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       const projectionCanarias = d3.geoMercator()
         .center([-15.5, 28.2])
         .scale(canariasScale) // Aumentado para que las islas se vean más grandes
-        .translate([containerWidth * 0.14, containerHeight * 0.80]); // Alinear posición con el mapa de investigadores
+        .translate([
+          containerWidth * 0.14,
+          containerHeight * 0.68,
+        ]); // Centrar las islas dentro del nuevo recuadro
       
       // Crear proyección específica para Ceuta y Melilla (compartirán recuadro)
       const projectionCeuta = d3.geoMercator()
