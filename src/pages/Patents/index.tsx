@@ -408,7 +408,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
               {/* Primera fila: Mapa y Gráfica - Mejorado para móvil */}
               <div className="flex flex-col lg:flex-row gap-6 mb-8">
                 {/* Mapa de Europa */}
-                <div className="w-full lg:w-1/2 min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-4 order-2 lg:order-1">
+                <div className="w-full lg:w-1/2 bg-white border border-gray-200 rounded-lg shadow-sm p-4 order-2 lg:order-1">
                   <PatentsEuropeanMap
                     data={patentsData}
                     selectedYear={selectedYear}
@@ -419,7 +419,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
                 </div>
 
                 {/* Ranking de países */}
-                <div className="w-full lg:w-1/2 min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-4 order-1 lg:order-2">
+                <div className="w-full lg:w-1/2 bg-white border border-gray-200 rounded-lg shadow-sm p-4 order-1 lg:order-2">
                   {patentsData.length > 0 ? (
                     <div className="h-full overflow-hidden">
                       <PatentsRankingChart

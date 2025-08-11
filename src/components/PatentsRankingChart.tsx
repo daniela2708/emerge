@@ -1027,7 +1027,7 @@ function getCountryFlagUrl(countryCode: string): string {
   const chartData: ChartDataResult = prepareChartData();
   
   // Altura dinámica para el gráfico en función del número de países
-  const chartHeight = Math.max(400, chartData.labels.length * 35);
+  const chartHeight = Math.max(50, chartData.labels.length * 35);
 
   // Determinar si hay datos para mostrar (con filtro de coop_ptn = 'APPL')
   const hasData = data.filter(item => 
@@ -1037,7 +1037,7 @@ function getCountryFlagUrl(countryCode: string): string {
   
   // Estilos para el contenedor con scroll
   const scrollContainerStyle: React.CSSProperties = {
-    height: '360px',
+    maxHeight: '360px',
     overflowY: 'auto',
     border: '1px solid #f0f0f0',
     borderRadius: '8px',
@@ -1082,8 +1082,8 @@ function getCountryFlagUrl(countryCode: string): string {
   }, []);
 
   if (!hasData) {
-  return (
-      <div className="flex justify-center items-center bg-gray-50 rounded-lg border border-gray-200" style={{ height: '450px' }}>
+    return (
+      <div className="flex justify-center items-center bg-gray-50 rounded-lg border border-gray-200 py-10">
         <div className="text-center text-gray-500">
           <svg className="w-12 h-12 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -1095,7 +1095,7 @@ function getCountryFlagUrl(countryCode: string): string {
   }
 
   return (
-    <div className="relative" style={{ height: '450px' }} ref={containerRef}>
+    <div className="relative" ref={containerRef}>
       <div className="mb-2 text-center">
         <h3 className="text-sm font-semibold text-gray-800">
           {t.title} · {selectedYear}
