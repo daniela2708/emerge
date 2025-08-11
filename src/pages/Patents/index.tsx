@@ -605,7 +605,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
               
               {/* Gráfico regional */}
               <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100">
-                <div className="h-[400px] sm:h-[500px] lg:h-[660px]">
+                <div className="h-[360px] sm:h-[420px] lg:h-[520px]">
                   <PatentsRegionalChart
                     data={regionalData}
                     selectedYear={regionalYear}
@@ -619,7 +619,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
                 <SubsectionTitle title={language === 'es' ? "Evolución temporal por comunidades autónomas" : "Timeline Evolution by Autonomous Communities"} />
                 
                 <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100">
-                  <div className="h-[400px] sm:h-[500px] lg:h-[550px]">
+                  <div className="h-[320px] sm:h-[400px] lg:h-[450px]">
                     <PatentsRegionalTimelineChart
                       data={regionalData}
                       language={language}
