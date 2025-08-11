@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- Fondo con degradado -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo redondeado -->
+  <rect width="192" height="192" rx="36" fill="url(#bgGrad)"/>
+  
+  <!-- Círculo de fondo para el contenido -->
+  <circle cx="96" cy="96" r="70" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Microscopio (más grande y detallado) -->
+  <!-- Base del microscopio -->
+  <rect x="40" y="150" width="32" height="12" rx="2" fill="#e5e7eb"/>
+  <rect x="44" y="138" width="24" height="12" rx="2" fill="#f3f4f6"/>
+  
+  <!-- Brazo del microscopio -->
+  <rect x="54" y="110" width="8" height="28" rx="2" fill="#f9fafb"/>
+  <path d="M58 110 L70 90 L78 94 L66 114 Z" fill="#f9fafb"/>
+  
+  <!-- Lente principal -->
+  <circle cx="74" cy="92" r="12" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="74" cy="92" r="6" fill="#fef3c7"/>
+  
+  <!-- Tubo del microscopio -->
+  <rect x="66" y="45" width="16" height="50" rx="3" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  
+  <!-- Ocular -->
+  <circle cx="74" cy="45" r="10" fill="#374151"/>
+  <circle cx="74" cy="45" r="6" fill="#4b5563"/>
+  
+  <!-- Gráfico de datos (lado derecho) -->
+  <!-- Barras de datos -->
+  <rect x="110" y="130" width="12" height="30" rx="2" fill="#10b981"/>
+  <rect x="128" y="120" width="12" height="40" rx="2" fill="#059669"/>
+  <rect x="146" y="110" width="12" height="50" rx="2" fill="#047857"/>
+  
+  <!-- Etiquetas de datos -->
+  <circle cx="116" cy="105" r="3" fill="#fbbf24"/>
+  <circle cx="134" cy="95" r="3" fill="#f59e0b"/>
+  <circle cx="152" cy="85" r="3" fill="#d97706"/>
+  
+  <!-- Texto I+D estilizado -->
+  <text x="96" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">I+D</text>
+  
+  <!-- Estrella de innovación -->
+  <path d="M96 55 L100 65 L110 65 L102 72 L106 82 L96 75 L86 82 L90 72 L82 65 L92 65 Z" fill="#fbbf24" stroke="#f59e0b" stroke-width="1"/>
+  
+  <!-- Elementos decorativos -->
+  <circle cx="30" cy="40" r="4" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="162" cy="50" r="3" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="40" cy="70" r="2" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="152" cy="30" r="2" fill="rgba(255,255,255,0.3)"/>
+</svg> 

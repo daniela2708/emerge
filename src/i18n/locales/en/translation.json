@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "R&D Observatory in Canary Islands",
+    "subtitle": "Comparative and historical analysis of innovation indicators",
+    "developedFor": "Developed for the Canary Islands Startup Association (EMERGE)",
+    "developedBy": "Developed by",
+    "lastUpdate": "Last update",
+    "language": "Language"
+  },
+  "nav": {
+    "overview": "General View",
+    "gdp": "R&D Investment",
+    "researchers": "Researchers",
+    "patents": "Patents"
+  },
+  "overview": {
+    "title": "General View",
+    "description": "Economic data visualization for the Canary Islands, comparing with other Spanish regions and European countries",
+    "introduction": "This dashboard presents R&D data for the Canary Islands over time, with comparisons to other Spanish autonomous communities and European Union countries.",
+    "gdpSection": "R&D Investment",
+    "researchersSection": "Researchers",
+    "patentsSection": "Patents",
+    "aboutSection": "About this observatory"
+  },
+  "gdp": {
+    "title": "Percentage of GDP Invested in R&D",
+    "public": "Public Investment",
+    "private": "Private Investment",
+    "total": "Total Investment",
+    "year": "Year",
+    "percentage": "Percentage",
+    "overview": "R&D Investment Overview"
+  },
+  "researchers": {
+    "title": "Number of Researchers",
+    "public": "Public Sector",
+    "private": "Private Sector",
+    "total": "Total Researchers",
+    "year": "Year"
+  },
+  "patents": {
+    "title": "Number of Patents",
+    "public": "Public Sector",
+    "private": "Private Sector",
+    "total": "Total Patents",
+    "year": "Year"
+  },
+  "common": {
+    "canaryIslands": "Canary Islands",
+    "spain": "Spain",
+    "eu": "European Union",
+    "compare": "Compare with",
+    "comparison": "Comparison",
+    "selectRegion": "Select Region",
+    "selectCountry": "Select Country",
+    "timeline": "Timeline",
+    "downloadData": "Download Data",
+    "loading": "Loading...",
+    "spanishRegions": "Spanish Regions",
+    "euCountries": "EU Countries",
+    "filters": "Filters",
+    "byType": "By Type",
+    "evolution": "Evolution",
+    "latest": "Latest Data",
+    "basqueCountry": "Basque Country",
+    "maxSelectionsReached": "Maximum of {{count}} selections"
+  }
+} 

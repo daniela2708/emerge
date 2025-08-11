@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "Observatorio de I+D en Canarias",
+    "subtitle": "Análisis comparativo e histórico de indicadores de innovación",
+    "developedFor": "Desarrollado para la Asociación Canaria de Startups (EMERGE)",
+    "developedBy": "Desarrollado por",
+    "lastUpdate": "Última actualización",
+    "language": "Idioma"
+  },
+  "nav": {
+    "overview": "Visión General",
+    "gdp": "Inversión en I+D",
+    "researchers": "Investigadores",
+    "patents": "Patentes"
+  },
+  "overview": {
+    "title": "Visión General",
+    "description": "Visualización de datos económicos de Canarias, en comparación con otras regiones españolas y países europeos",
+    "introduction": "Este dashboard presenta datos de I+D de Canarias a lo largo del tiempo, con comparaciones con otras comunidades autónomas españolas y países de la Unión Europea.",
+    "gdpSection": "Inversión en I+D",
+    "researchersSection": "Investigadores",
+    "patentsSection": "Patentes",
+    "aboutSection": "Sobre este observatorio"
+  },
+  "gdp": {
+    "title": "Porcentaje del PIB invertido en I+D",
+    "public": "Inversión Pública",
+    "private": "Inversión Privada",
+    "total": "Inversión Total",
+    "year": "Año",
+    "percentage": "Porcentaje",
+    "overview": "Resumen de Inversión en I+D"
+  },
+  "researchers": {
+    "title": "Número de Investigadores",
+    "public": "Sector Público",
+    "private": "Sector Privado",
+    "total": "Total Investigadores",
+    "year": "Año"
+  },
+  "patents": {
+    "title": "Número de Patentes",
+    "public": "Sector Público",
+    "private": "Sector Privado",
+    "total": "Total Patentes",
+    "year": "Año"
+  },
+  "common": {
+    "canaryIslands": "Islas Canarias",
+    "spain": "España",
+    "eu": "Unión Europea",
+    "compare": "Comparar con",
+    "comparison": "Comparativa",
+    "selectRegion": "Seleccionar Región",
+    "selectCountry": "Seleccionar País",
+    "timeline": "Línea de Tiempo",
+    "downloadData": "Descargar Datos",
+    "loading": "Cargando...",
+    "spanishRegions": "Regiones de España",
+    "euCountries": "Países de la UE",
+    "filters": "Filtros",
+    "byType": "Por Tipo",
+    "evolution": "Evolución",
+    "latest": "Últimos Datos",
+    "basqueCountry": "País Vasco",
+    "maxSelectionsReached": "Máximo de {{count}} selecciones"
+  }
+} 

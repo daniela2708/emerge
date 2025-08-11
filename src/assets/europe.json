@@ -1,0 +1,264 @@
+{
+  "type": "Topology",
+  "objects": {
+    "europe": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Spain"
+          },
+          "arcs": [[0]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "France"
+          },
+          "arcs": [[1]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Germany"
+          },
+          "arcs": [[2]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Italy"
+          },
+          "arcs": [[3]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "United Kingdom"
+          },
+          "arcs": [[4]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Portugal"
+          },
+          "arcs": [[5]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Ireland"
+          },
+          "arcs": [[6]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Belgium"
+          },
+          "arcs": [[7]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Netherlands"
+          },
+          "arcs": [[8]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Switzerland"
+          },
+          "arcs": [[9]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Austria"
+          },
+          "arcs": [[10]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Czech Republic"
+          },
+          "arcs": [[11]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Poland"
+          },
+          "arcs": [[12]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Sweden"
+          },
+          "arcs": [[13]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Finland"
+          },
+          "arcs": [[14]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Norway"
+          },
+          "arcs": [[15]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Denmark"
+          },
+          "arcs": [[16]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Greece"
+          },
+          "arcs": [[17]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Hungary"
+          },
+          "arcs": [[18]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Romania"
+          },
+          "arcs": [[19]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Bulgaria"
+          },
+          "arcs": [[20]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Croatia"
+          },
+          "arcs": [[21]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Slovenia"
+          },
+          "arcs": [[22]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Slovakia"
+          },
+          "arcs": [[23]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Estonia"
+          },
+          "arcs": [[24]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Latvia"
+          },
+          "arcs": [[25]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Lithuania"
+          },
+          "arcs": [[26]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Luxembourg"
+          },
+          "arcs": [[27]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Cyprus"
+          },
+          "arcs": [[28]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Malta"
+          },
+          "arcs": [[29]]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "Iceland"
+          },
+          "arcs": [[30]]
+        }
+      ]
+    }
+  },
+  "arcs": [
+    [[10, 10], [30, 10], [30, 30], [10, 30], [10, 10]],
+    [[40, 20], [60, 20], [60, 40], [40, 40], [40, 20]],
+    [[70, 30], [90, 30], [90, 50], [70, 50], [70, 30]],
+    [[60, 50], [80, 50], [80, 80], [60, 80], [60, 50]],
+    [[30, 50], [45, 50], [45, 65], [30, 65], [30, 50]],
+    [[5, 20], [15, 20], [15, 30], [5, 30], [5, 20]],
+    [[20, 55], [28, 55], [28, 62], [20, 62], [20, 55]],
+    [[50, 28], [55, 28], [55, 33], [50, 33], [50, 28]],
+    [[55, 20], [62, 20], [62, 28], [55, 28], [55, 20]],
+    [[57, 37], [63, 37], [63, 43], [57, 43], [57, 37]],
+    [[70, 40], [80, 40], [80, 48], [70, 48], [70, 40]],
+    [[75, 32], [85, 32], [85, 38], [75, 38], [75, 32]],
+    [[85, 25], [100, 25], [100, 40], [85, 40], [85, 25]],
+    [[70, 10], [85, 10], [85, 25], [70, 25], [70, 10]],
+    [[90, 5], [100, 5], [100, 20], [90, 20], [90, 5]],
+    [[60, 5], [75, 5], [75, 20], [60, 20], [60, 5]],
+    [[65, 25], [70, 25], [70, 30], [65, 30], [65, 25]],
+    [[75, 65], [90, 65], [90, 75], [75, 75], [75, 65]],
+    [[75, 45], [85, 45], [85, 55], [75, 55], [75, 45]],
+    [[90, 45], [105, 45], [105, 60], [90, 60], [90, 45]],
+    [[95, 55], [105, 55], [105, 65], [95, 65], [95, 55]],
+    [[70, 50], [77, 50], [77, 55], [70, 55], [70, 50]],
+    [[68, 45], [73, 45], [73, 48], [68, 48], [68, 45]],
+    [[82, 38], [90, 38], [90, 45], [82, 45], [82, 38]],
+    [[95, 20], [100, 20], [100, 23], [95, 23], [95, 20]],
+    [[95, 23], [100, 23], [100, 27], [95, 27], [95, 23]],
+    [[92, 27], [97, 27], [97, 32], [92, 32], [92, 27]],
+    [[52, 31], [54, 31], [54, 33], [52, 33], [52, 31]],
+    [[100, 75], [105, 75], [105, 78], [100, 78], [100, 75]],
+    [[70, 80], [72, 80], [72, 81], [70, 81], [70, 80]],
+    [[40, 5], [48, 5], [48, 10], [40, 10], [40, 5]]
+  ],
+  "transform": {
+    "scale": [0.1, 0.1],
+    "translate": [0, 0]
+  }
+} 

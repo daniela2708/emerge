@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  
+  <!-- SEO and Social Media Meta Tags -->
+  <title>Observatorio de I+D de Canarias</title>
+  <meta name="description" content="Análisis comparativo e histórico de indicadores de investigación, desarrollo e innovación en las Islas Canarias">
+  <meta name="keywords" content="I+D, investigación, desarrollo, innovación, Canarias, dashboard, observatorio">
+  <meta name="author" content="EMERGE - Asociación Canaria de Startups">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Observatorio de I+D de Canarias">
+  <meta property="og:description" content="Análisis comparativo e histórico de indicadores de investigación, desarrollo e innovación en las Islas Canarias">
+  <meta property="og:site_name" content="Observatorio I+D Canarias">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Observatorio de I+D de Canarias">
+  <meta name="twitter:description" content="Análisis comparativo e histórico de indicadores de investigación, desarrollo e innovación en las Islas Canarias">
+  
+  <!-- Mobile Optimization -->
+  <meta name="theme-color" content="#006480">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="I+D Canarias">
+  <meta name="msapplication-TileColor" content="#006480">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-TileImage" content="/pwa-icon-192.svg">
+  <meta name="application-name" content="Observatorio I+D Canarias">
+  
+  <!-- Performance and Security -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  <!-- Preconnect to external domains for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/svg+xml" href="/research-icon.svg">
+  <link rel="icon" type="image/svg+xml" href="/research-icon.svg" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/pwa-icon-192.svg" sizes="192x192">
+  <link rel="apple-touch-icon" href="/pwa-icon-192.svg" sizes="192x192">
+  <link rel="apple-touch-icon" href="/pwa-icon-512.svg" sizes="512x512">
+  <link rel="shortcut icon" href="/research-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- Critical CSS for faster loading -->
+  <style>
+    /* Critical loading styles */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    
+    #root {
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+    
+    /* Loading spinner */
+    .loading-spinner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #006480;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    
+    /* Reduce motion for accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .loading-spinner {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <!-- Loading indicator -->
+    <div class="loading-spinner"></div>
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,1470 @@
+Comunidad (Original);Comunidad Limpio;Comunidad en Inglés;Año;Sector Id;Sector;Gasto en I+D (Miles €);PIB (Miles €);% PIB I+D;Sector Nombre
+(ES70) Canarias;Canarias;Canary Islands;2007;(ADMINISTRACION_PUBLICA);Government sector;78939;39902031;0.2;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2007;(ADMINISTRACION_PUBLICA);Government sector;72879;56005680;0.13;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2007;(ADMINISTRACION_PUBLICA);Government sector;41511;22873639;0.18;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2007;(ADMINISTRACION_PUBLICA);Government sector;21626;12838674;0.17;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2007;(ADMINISTRACION_PUBLICA);Government sector;50506;63889516;0.08;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2007;(ADMINISTRACION_PUBLICA);Government sector;36192;17870475;0.2;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2007;(ADMINISTRACION_PUBLICA);Government sector;16518;7961817;0.21;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2007;(ADMINISTRACION_PUBLICA);Government sector;65421;34148523;0.19;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2007;(ADMINISTRACION_PUBLICA);Government sector;890326;194151492;0.46;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2007;(ADMINISTRACION_PUBLICA);Government sector;56368;55130537;0.1;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2007;(ADMINISTRACION_PUBLICA);Government sector;37707;39219857;0.1;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2007;(ADMINISTRACION_PUBLICA);Government sector;43932;18136908;0.24;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2007;(ADMINISTRACION_PUBLICA);Government sector;398336;202742146;0.2;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2007;(ADMINISTRACION_PUBLICA);Government sector;135412;104836698;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2007;(ADMINISTRACION_PUBLICA);Government sector;26090;26749452;0.1;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2007;(ADMINISTRACION_PUBLICA);Government sector;336946;149010277;0.23;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2007;(ADMINISTRACION_PUBLICA);Government sector;40031;28418142;0.14;Administración Pública
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2007;(ADMINISTRACION_PUBLICA);Government sector;51;1420486;0.0;Administración Pública
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2007;(ADMINISTRACION_PUBLICA);Government sector;51;1296125;0.0;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2007;(ENSENIANZA_SUPERIOR);Higher education sector;127328;39902031;0.32;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2007;(ENSENIANZA_SUPERIOR);Higher education sector;175078;56005680;0.31;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2007;(ENSENIANZA_SUPERIOR);Higher education sector;73354;22873639;0.32;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2007;(ENSENIANZA_SUPERIOR);Higher education sector;52008;12838674;0.41;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2007;(ENSENIANZA_SUPERIOR);Higher education sector;174602;63889516;0.27;Enseñanza Superior
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2007;(ENSENIANZA_SUPERIOR);Higher education sector;78479;17870475;0.44;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2007;(ENSENIANZA_SUPERIOR);Higher education sector;16198;7961817;0.2;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2007;(ENSENIANZA_SUPERIOR);Higher education sector;67424;34148523;0.2;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2007;(ENSENIANZA_SUPERIOR);Higher education sector;572368;194151492;0.29;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2007;(ENSENIANZA_SUPERIOR);Higher education sector;198282;55130537;0.36;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2007;(ENSENIANZA_SUPERIOR);Higher education sector;69971;39219857;0.18;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2007;(ENSENIANZA_SUPERIOR);Higher education sector;63746;18136908;0.35;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2007;(ENSENIANZA_SUPERIOR);Higher education sector;677379;202742146;0.33;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2007;(ENSENIANZA_SUPERIOR);Higher education sector;453255;104836698;0.43;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2007;(ENSENIANZA_SUPERIOR);Higher education sector;39828;26749452;0.15;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2007;(ENSENIANZA_SUPERIOR);Higher education sector;592828;149010277;0.4;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2007;(ENSENIANZA_SUPERIOR);Higher education sector;81305;28418142;0.29;Enseñanza Superior
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2007;(ENSENIANZA_SUPERIOR);Higher education sector;2058;1420486;0.14;Enseñanza Superior
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2007;(ENSENIANZA_SUPERIOR);Higher education sector;3102;1296125;0.24;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2007;(_T);All Sectors;266803;39902031;0.67;Total
+(ES11) Galicia;Galicia;Galicia;2007;(_T);All Sectors;555626;56005680;0.99;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2007;(_T);All Sectors;211704;22873639;0.93;Total
+(ES13) Cantabria;Cantabria;Cantabria;2007;(_T);All Sectors;117464;12838674;0.91;Total
+(ES21) País Vasco;País Vasco;Basque Country;2007;(_T);All Sectors;1216726;63889516;1.9;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2007;(_T);All Sectors;333872;17870475;1.87;Total
+(ES23) La Rioja;La Rioja;La Rioja;2007;(_T);All Sectors;90205;7961817;1.13;Total
+(ES24) Aragón;Aragón;Aragon;2007;(_T);All Sectors;296894;34148523;0.87;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2007;(_T);All Sectors;3584130;194151492;1.85;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2007;(_T);All Sectors;620717;55130537;1.13;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2007;(_T);All Sectors;213959;39219857;0.55;Total
+(ES43) Extremadura;Extremadura;Extremadura;2007;(_T);All Sectors;128964;18136908;0.71;Total
+(ES51) Cataluña;Cataluña;Catalonia;2007;(_T);All Sectors;2908727;202742146;1.43;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2007;(_T);All Sectors;977590;104836698;0.93;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2007;(_T);All Sectors;86793;26749452;0.32;Total
+(ES61) Andalucía;Andalucía;Andalusia;2007;(_T);All Sectors;1478545;149010277;0.99;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2007;(_T);All Sectors;247556;28418142;0.87;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2007;(_T);All Sectors;2141;1420486;0.15;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2007;(_T);All Sectors;3957;1296125;0.31;Total
+(ES70) Canarias;Canarias;Canary Islands;2007;(IPSFL);Private non-profit sector;89;39902031;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2007;(EMPRESAS_IPSFL);Private non-profit sector;60535;39902031;0.15;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2007;(EMPRESAS_IPSFL);Private non-profit sector;307668;56005680;0.55;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2007;(EMPRESAS_IPSFL);Private non-profit sector;96838;22873639;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2007;(EMPRESAS_IPSFL);Private non-profit sector;43830;12838674;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2007;(EMPRESAS_IPSFL);Private non-profit sector;991617;63889516;1.55;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2007;(EMPRESAS_IPSFL);Private non-profit sector;219201;17870475;1.23;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2007;(EMPRESAS_IPSFL);Private non-profit sector;57488;7961817;0.72;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2007;(EMPRESAS_IPSFL);Private non-profit sector;164049;34148523;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2007;(EMPRESAS_IPSFL);Private non-profit sector;2121436;194151492;1.09;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2007;(EMPRESAS_IPSFL);Private non-profit sector;366067;55130537;0.66;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2007;(EMPRESAS_IPSFL);Private non-profit sector;106281;39219857;0.27;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2007;(EMPRESAS_IPSFL);Private non-profit sector;21286;18136908;0.12;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2007;(EMPRESAS_IPSFL);Private non-profit sector;1833011;202742146;0.9;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2007;(EMPRESAS_IPSFL);Private non-profit sector;388922;104836698;0.37;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2007;(EMPRESAS_IPSFL);Private non-profit sector;20876;26749452;0.08;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2007;(EMPRESAS_IPSFL);Private non-profit sector;548771;149010277;0.37;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2007;(EMPRESAS_IPSFL);Private non-profit sector;126220;28418142;0.44;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2007;(EMPRESAS_IPSFL);Private non-profit sector;32;1420486;0.0;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2007;(EMPRESAS_IPSFL);Private non-profit sector;804;1296125;0.06;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2007;(EMPRESAS);Business enterprise sector;60446;39902031;0.15;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2008;(ADMINISTRACION_PUBLICA);Government sector;81374;41156055;0.2;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2008;(ADMINISTRACION_PUBLICA);Government sector;77511;58253982;0.13;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2008;(ADMINISTRACION_PUBLICA);Government sector;36433;23614274;0.15;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2008;(ADMINISTRACION_PUBLICA);Government sector;23802;13280853;0.18;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2008;(ADMINISTRACION_PUBLICA);Government sector;63984;66382420;0.1;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2008;(ADMINISTRACION_PUBLICA);Government sector;27985;18620264;0.15;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2008;(ADMINISTRACION_PUBLICA);Government sector;16011;8264894;0.19;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2008;(ADMINISTRACION_PUBLICA);Government sector;71414;35439689;0.2;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2008;(ADMINISTRACION_PUBLICA);Government sector;996775;201865569;0.49;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2008;(ADMINISTRACION_PUBLICA);Government sector;73951;56295496;0.13;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2008;(ADMINISTRACION_PUBLICA);Government sector;34815;40786424;0.09;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2008;(ADMINISTRACION_PUBLICA);Government sector;39918;18842360;0.21;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2008;(ADMINISTRACION_PUBLICA);Government sector;554638;208161832;0.27;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2008;(ADMINISTRACION_PUBLICA);Government sector;134116;107950942;0.12;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2008;(ADMINISTRACION_PUBLICA);Government sector;30302;27892127;0.11;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2008;(ADMINISTRACION_PUBLICA);Government sector;361330;152247439;0.24;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2008;(ADMINISTRACION_PUBLICA);Government sector;47721;29541076;0.16;Administración Pública
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2008;(ADMINISTRACION_PUBLICA);Government sector;62;1483989;0.0;Administración Pública
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2008;(ADMINISTRACION_PUBLICA);Government sector;144;1357572;0.01;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2008;(ENSENIANZA_SUPERIOR);Higher education sector;126835;41156055;0.31;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2008;(ENSENIANZA_SUPERIOR);Higher education sector;225669;58253982;0.39;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2008;(ENSENIANZA_SUPERIOR);Higher education sector;93306;23614274;0.4;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2008;(ENSENIANZA_SUPERIOR);Higher education sector;59914;13280853;0.45;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2008;(ENSENIANZA_SUPERIOR);Higher education sector;192771;66382420;0.29;Enseñanza Superior
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2008;(ENSENIANZA_SUPERIOR);Higher education sector;83260;18620264;0.45;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2008;(ENSENIANZA_SUPERIOR);Higher education sector;18413;8264894;0.22;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2008;(ENSENIANZA_SUPERIOR);Higher education sector;74418;35439689;0.21;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2008;(ENSENIANZA_SUPERIOR);Higher education sector;649875;201865569;0.32;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2008;(ENSENIANZA_SUPERIOR);Higher education sector;207447;56295496;0.37;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2008;(ENSENIANZA_SUPERIOR);Higher education sector;81564;40786424;0.2;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2008;(ENSENIANZA_SUPERIOR);Higher education sector;86223;18842360;0.46;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2008;(ENSENIANZA_SUPERIOR);Higher education sector;724400;208161832;0.35;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2008;(ENSENIANZA_SUPERIOR);Higher education sector;494743;107950942;0.46;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2008;(ENSENIANZA_SUPERIOR);Higher education sector;46250;27892127;0.17;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2008;(ENSENIANZA_SUPERIOR);Higher education sector;661049;152247439;0.43;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2008;(ENSENIANZA_SUPERIOR);Higher education sector;100426;29541076;0.34;Enseñanza Superior
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2008;(ENSENIANZA_SUPERIOR);Higher education sector;2333;1483989;0.16;Enseñanza Superior
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2008;(ENSENIANZA_SUPERIOR);Higher education sector;3517;1357572;0.26;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2008;(_T);All Sectors;268834;41156055;0.65;Total
+(ES11) Galicia;Galicia;Galicia;2008;(_T);All Sectors;584213;58253982;1.0;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2008;(_T);All Sectors;229678;23614274;0.97;Total
+(ES13) Cantabria;Cantabria;Cantabria;2008;(_T);All Sectors;140791;13280853;1.06;Total
+(ES21) País Vasco;País Vasco;Basque Country;2008;(_T);All Sectors;1345572;66382420;2.03;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2008;(_T);All Sectors;358666;18620264;1.93;Total
+(ES23) La Rioja;La Rioja;La Rioja;2008;(_T);All Sectors;81001;8264894;0.98;Total
+(ES24) Aragón;Aragón;Aragon;2008;(_T);All Sectors;352376;35439689;0.99;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2008;(_T);All Sectors;3892148;201865569;1.93;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2008;(_T);All Sectors;739943;56295496;1.31;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2008;(_T);All Sectors;265741;40786424;0.65;Total
+(ES43) Extremadura;Extremadura;Extremadura;2008;(_T);All Sectors;156401;18842360;0.83;Total
+(ES51) Cataluña;Cataluña;Catalonia;2008;(_T);All Sectors;3286376;208161832;1.58;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2008;(_T);All Sectors;1113507;107950942;1.03;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2008;(_T);All Sectors;97385;27892127;0.35;Total
+(ES61) Andalucía;Andalucía;Andalusia;2008;(_T);All Sectors;1538946;152247439;1.01;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2008;(_T);All Sectors;243522;29541076;0.82;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2008;(_T);All Sectors;2395;1483989;0.16;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2008;(_T);All Sectors;3896;1357572;0.29;Total
+(ES70) Canarias;Canarias;Canary Islands;2008;(IPSFL);Private non-profit sector;34;41156055;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2008;(EMPRESAS_IPSFL);Private non-profit sector;60624;41156055;0.15;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2008;(EMPRESAS_IPSFL);Private non-profit sector;281033;58253982;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2008;(EMPRESAS_IPSFL);Private non-profit sector;99939;23614274;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2008;(EMPRESAS_IPSFL);Private non-profit sector;57075;13280853;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2008;(EMPRESAS_IPSFL);Private non-profit sector;1088817;66382420;1.64;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2008;(EMPRESAS_IPSFL);Private non-profit sector;247421;18620264;1.33;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2008;(EMPRESAS_IPSFL);Private non-profit sector;46577;8264894;0.56;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2008;(EMPRESAS_IPSFL);Private non-profit sector;206544;35439689;0.58;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2008;(EMPRESAS_IPSFL);Private non-profit sector;2245498;201865569;1.11;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2008;(EMPRESAS_IPSFL);Private non-profit sector;458545;56295496;0.81;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2008;(EMPRESAS_IPSFL);Private non-profit sector;149362;40786424;0.37;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2008;(EMPRESAS_IPSFL);Private non-profit sector;30260;18842360;0.16;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2008;(EMPRESAS_IPSFL);Private non-profit sector;2007338;208161832;0.96;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2008;(EMPRESAS_IPSFL);Private non-profit sector;484648;107950942;0.45;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2008;(EMPRESAS_IPSFL);Private non-profit sector;20833;27892127;0.07;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2008;(EMPRESAS_IPSFL);Private non-profit sector;516567;152247439;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2008;(EMPRESAS_IPSFL);Private non-profit sector;95375;29541076;0.32;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2008;(EMPRESAS_IPSFL);Private non-profit sector;0;1483989;0.0;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2008;(EMPRESAS_IPSFL);Private non-profit sector;235;1357572;0.02;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2008;(EMPRESAS);Business enterprise sector;60590;41156055;0.15;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2009;(ADMINISTRACION_PUBLICA);Government sector;80787;39505370;0.2;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2009;(ADMINISTRACION_PUBLICA);Government sector;84926;56253055;0.15;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2009;(ADMINISTRACION_PUBLICA);Government sector;38360;22366414;0.17;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2009;(ADMINISTRACION_PUBLICA);Government sector;30248;12811684;0.24;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2009;(ADMINISTRACION_PUBLICA);Government sector;76604;63601702;0.12;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2009;(ADMINISTRACION_PUBLICA);Government sector;36500;18001876;0.2;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2009;(ADMINISTRACION_PUBLICA);Government sector;20914;7911873;0.26;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2009;(ADMINISTRACION_PUBLICA);Government sector;84018;33814117;0.25;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2009;(ADMINISTRACION_PUBLICA);Government sector;1066891;199290149;0.54;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2009;(ADMINISTRACION_PUBLICA);Government sector;74837;54452146;0.14;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2009;(ADMINISTRACION_PUBLICA);Government sector;33596;39355657;0.09;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2009;(ADMINISTRACION_PUBLICA);Government sector;59295;18370208;0.32;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2009;(ADMINISTRACION_PUBLICA);Government sector;613939;200745296;0.31;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2009;(ADMINISTRACION_PUBLICA);Government sector;149574;101989994;0.15;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2009;(ADMINISTRACION_PUBLICA);Government sector;37541;26770420;0.14;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2009;(ADMINISTRACION_PUBLICA);Government sector;390855;145802256;0.27;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2009;(ADMINISTRACION_PUBLICA);Government sector;47692;28076274;0.17;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2009;(ENSENIANZA_SUPERIOR);Higher education sector;110905;39505370;0.28;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2009;(ENSENIANZA_SUPERIOR);Higher education sector;206407;56253055;0.37;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2009;(ENSENIANZA_SUPERIOR);Higher education sector;93600;22366414;0.42;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2009;(ENSENIANZA_SUPERIOR);Higher education sector;62801;12811684;0.49;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2009;(ENSENIANZA_SUPERIOR);Higher education sector;233472;63601702;0.37;Enseñanza Superior
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2009;(ENSENIANZA_SUPERIOR);Higher education sector;84149;18001876;0.47;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2009;(ENSENIANZA_SUPERIOR);Higher education sector;16708;7911873;0.21;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2009;(ENSENIANZA_SUPERIOR);Higher education sector;76114;33814117;0.23;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2009;(ENSENIANZA_SUPERIOR);Higher education sector;688011;199290149;0.35;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2009;(ENSENIANZA_SUPERIOR);Higher education sector;221144;54452146;0.41;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2009;(ENSENIANZA_SUPERIOR);Higher education sector;82698;39355657;0.21;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2009;(ENSENIANZA_SUPERIOR);Higher education sector;75035;18370208;0.41;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2009;(ENSENIANZA_SUPERIOR);Higher education sector;752810;200745296;0.38;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2009;(ENSENIANZA_SUPERIOR);Higher education sector;517817;101989994;0.51;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2009;(ENSENIANZA_SUPERIOR);Higher education sector;46816;26770420;0.17;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2009;(ENSENIANZA_SUPERIOR);Higher education sector;683680;145802256;0.47;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2009;(ENSENIANZA_SUPERIOR);Higher education sector;100068;28076274;0.36;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2009;(_T);All Sectors;238829;39505370;0.6;Total
+(ES11) Galicia;Galicia;Galicia;2009;(_T);All Sectors;524125;56253055;0.93;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2009;(_T);All Sectors;226156;22366414;1.01;Total
+(ES13) Cantabria;Cantabria;Cantabria;2009;(_T);All Sectors;149062;12811684;1.16;Total
+(ES21) País Vasco;País Vasco;Basque Country;2009;(_T);All Sectors;1346984;63601702;2.12;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2009;(_T);All Sectors;388243;18001876;2.16;Total
+(ES23) La Rioja;La Rioja;La Rioja;2009;(_T);All Sectors;85203;7911873;1.08;Total
+(ES24) Aragón;Aragón;Aragon;2009;(_T);All Sectors;370945;33814117;1.1;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2009;(_T);All Sectors;3899396;199290149;1.96;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2009;(_T);All Sectors;629490;54452146;1.16;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2009;(_T);All Sectors;237912;39355657;0.6;Total
+(ES43) Extremadura;Extremadura;Extremadura;2009;(_T);All Sectors;154708;18370208;0.84;Total
+(ES51) Cataluña;Cataluña;Catalonia;2009;(_T);All Sectors;3284487;200745296;1.64;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2009;(_T);All Sectors;1120308;101989994;1.1;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2009;(_T);All Sectors;99854;26770420;0.37;Total
+(ES61) Andalucía;Andalucía;Andalusia;2009;(_T);All Sectors;1578085;145802256;1.08;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2009;(_T);All Sectors;241481;28076274;0.86;Total
+(ES70) Canarias;Canarias;Canary Islands;2009;(IPSFL);Private non-profit sector;411;39505370;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2009;(EMPRESAS_IPSFL);Private non-profit sector;47137;39505370;0.12;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2009;(EMPRESAS_IPSFL);Private non-profit sector;232792;56253055;0.41;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2009;(EMPRESAS_IPSFL);Private non-profit sector;94196;22366414;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2009;(EMPRESAS_IPSFL);Private non-profit sector;56013;12811684;0.44;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2009;(EMPRESAS_IPSFL);Private non-profit sector;1036909;63601702;1.63;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2009;(EMPRESAS_IPSFL);Private non-profit sector;267595;18001876;1.49;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2009;(EMPRESAS_IPSFL);Private non-profit sector;47582;7911873;0.6;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2009;(EMPRESAS_IPSFL);Private non-profit sector;210814;33814117;0.62;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2009;(EMPRESAS_IPSFL);Private non-profit sector;2144494;199290149;1.08;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2009;(EMPRESAS_IPSFL);Private non-profit sector;333509;54452146;0.61;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2009;(EMPRESAS_IPSFL);Private non-profit sector;121617;39355657;0.31;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2009;(EMPRESAS_IPSFL);Private non-profit sector;20378;18370208;0.11;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2009;(EMPRESAS_IPSFL);Private non-profit sector;1917737;200745296;0.96;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2009;(EMPRESAS_IPSFL);Private non-profit sector;452917;101989994;0.44;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2009;(EMPRESAS_IPSFL);Private non-profit sector;15497;26770420;0.06;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2009;(EMPRESAS_IPSFL);Private non-profit sector;503550;145802256;0.35;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2009;(EMPRESAS_IPSFL);Private non-profit sector;93720;28076274;0.33;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2009;(EMPRESAS);Business enterprise sector;46726;39505370;0.12;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2010;(ADMINISTRACION_PUBLICA);Government sector;82745;39738165;0.21;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2010;(ADMINISTRACION_PUBLICA);Government sector;84742;56787248;0.15;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2010;(ADMINISTRACION_PUBLICA);Government sector;36940;22590616;0.16;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2010;(ADMINISTRACION_PUBLICA);Government sector;29473;12882755;0.23;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2010;(ADMINISTRACION_PUBLICA);Government sector;78632;64424609;0.12;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2010;(ADMINISTRACION_PUBLICA);Government sector;29610;18089072;0.16;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2010;(ADMINISTRACION_PUBLICA);Government sector;25585;8008552;0.32;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2010;(ADMINISTRACION_PUBLICA);Government sector;78643;34100336;0.23;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2010;(ADMINISTRACION_PUBLICA);Government sector;1063352;198289849;0.54;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2010;(ADMINISTRACION_PUBLICA);Government sector;66651;54692531;0.12;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2010;(ADMINISTRACION_PUBLICA);Government sector;36397;39436268;0.09;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2010;(ADMINISTRACION_PUBLICA);Government sector;48733;18652452;0.26;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2010;(ADMINISTRACION_PUBLICA);Government sector;638228;202602183;0.32;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2010;(ADMINISTRACION_PUBLICA);Government sector;151973;101870024;0.15;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2010;(ADMINISTRACION_PUBLICA);Government sector;47158;26797013;0.18;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2010;(ADMINISTRACION_PUBLICA);Government sector;382958;145853901;0.26;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2010;(ADMINISTRACION_PUBLICA);Government sector;48744;28372216;0.17;Administración Pública
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2010;(ADMINISTRACION_PUBLICA);Government sector;0;1494058;0.0;Administración Pública
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2010;(ADMINISTRACION_PUBLICA);Government sector;0;1367400;0.0;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2010;(ENSENIANZA_SUPERIOR);Higher education sector;121390;39738165;0.31;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2010;(ENSENIANZA_SUPERIOR);Higher education sector;207271;56787248;0.36;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2010;(ENSENIANZA_SUPERIOR);Higher education sector;102976;22590616;0.46;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2010;(ENSENIANZA_SUPERIOR);Higher education sector;75062;12882755;0.58;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2010;(ENSENIANZA_SUPERIOR);Higher education sector;241379;64424609;0.37;Enseñanza Superior
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2010;(ENSENIANZA_SUPERIOR);Higher education sector;82435;18089072;0.46;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2010;(ENSENIANZA_SUPERIOR);Higher education sector;16354;8008552;0.2;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2010;(ENSENIANZA_SUPERIOR);Higher education sector;84055;34100336;0.25;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2010;(ENSENIANZA_SUPERIOR);Higher education sector;686095;198289849;0.35;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2010;(ENSENIANZA_SUPERIOR);Higher education sector;215160;54692531;0.39;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2010;(ENSENIANZA_SUPERIOR);Higher education sector;84446;39436268;0.21;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2010;(ENSENIANZA_SUPERIOR);Higher education sector;74034;18652452;0.4;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2010;(ENSENIANZA_SUPERIOR);Higher education sector;755541;202602183;0.37;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2010;(ENSENIANZA_SUPERIOR);Higher education sector;495044;101870024;0.49;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2010;(ENSENIANZA_SUPERIOR);Higher education sector;47260;26797013;0.18;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2010;(ENSENIANZA_SUPERIOR);Higher education sector;723401;145853901;0.5;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2010;(ENSENIANZA_SUPERIOR);Higher education sector;107860;28372216;0.38;Enseñanza Superior
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2010;(ENSENIANZA_SUPERIOR);Higher education sector;1433;1494058;0.1;Enseñanza Superior
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2010;(ENSENIANZA_SUPERIOR);Higher education sector;1954;1367400;0.14;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2010;(_T);All Sectors;255402;39738165;0.64;Total
+(ES11) Galicia;Galicia;Galicia;2010;(_T);All Sectors;531601;56787248;0.94;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2010;(_T);All Sectors;238127;22590616;1.05;Total
+(ES13) Cantabria;Cantabria;Cantabria;2010;(_T);All Sectors;157850;12882755;1.23;Total
+(ES21) País Vasco;País Vasco;Basque Country;2010;(_T);All Sectors;1305630;64424609;2.03;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2010;(_T);All Sectors;365719;18089072;2.02;Total
+(ES23) La Rioja;La Rioja;La Rioja;2010;(_T);All Sectors;84885;8008552;1.06;Total
+(ES24) Aragón;Aragón;Aragon;2010;(_T);All Sectors;374240;34100336;1.1;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2010;(_T);All Sectors;3854768;198289849;1.94;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2010;(_T);All Sectors;608202;54692531;1.11;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2010;(_T);All Sectors;255179;39436268;0.65;Total
+(ES43) Extremadura;Extremadura;Extremadura;2010;(_T);All Sectors;151779;18652452;0.81;Total
+(ES51) Cataluña;Cataluña;Catalonia;2010;(_T);All Sectors;3227218;202602183;1.59;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2010;(_T);All Sectors;1080986;101870024;1.06;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2010;(_T);All Sectors;110385;26797013;0.41;Total
+(ES61) Andalucía;Andalucía;Andalusia;2010;(_T);All Sectors;1726765;145853901;1.18;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2010;(_T);All Sectors;256149;28372216;0.9;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2010;(_T);All Sectors;1433;1494058;0.1;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2010;(_T);All Sectors;2138;1367400;0.16;Total
+(ES70) Canarias;Canarias;Canary Islands;2010;(IPSFL);Private non-profit sector;345;39738165;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2010;(EMPRESAS_IPSFL);Private non-profit sector;51267;39738165;0.13;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2010;(EMPRESAS_IPSFL);Private non-profit sector;239588;56787248;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2010;(EMPRESAS_IPSFL);Private non-profit sector;98211;22590616;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2010;(EMPRESAS_IPSFL);Private non-profit sector;53315;12882755;0.41;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2010;(EMPRESAS_IPSFL);Private non-profit sector;985619;64424609;1.53;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2010;(EMPRESAS_IPSFL);Private non-profit sector;253674;18089072;1.4;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2010;(EMPRESAS_IPSFL);Private non-profit sector;42946;8008552;0.54;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2010;(EMPRESAS_IPSFL);Private non-profit sector;211542;34100336;0.62;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2010;(EMPRESAS_IPSFL);Private non-profit sector;2105321;198289849;1.06;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2010;(EMPRESAS_IPSFL);Private non-profit sector;326391;54692531;0.6;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2010;(EMPRESAS_IPSFL);Private non-profit sector;134336;39436268;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2010;(EMPRESAS_IPSFL);Private non-profit sector;29012;18652452;0.16;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2010;(EMPRESAS_IPSFL);Private non-profit sector;1833449;202602183;0.9;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2010;(EMPRESAS_IPSFL);Private non-profit sector;433969;101870024;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2010;(EMPRESAS_IPSFL);Private non-profit sector;15967;26797013;0.06;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2010;(EMPRESAS_IPSFL);Private non-profit sector;620406;145853901;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2010;(EMPRESAS_IPSFL);Private non-profit sector;99545;28372216;0.35;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2010;(EMPRESAS_IPSFL);Private non-profit sector;0;1494058;0.0;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2010;(EMPRESAS_IPSFL);Private non-profit sector;184;1367400;0.01;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2010;(EMPRESAS);Business enterprise sector;50922;39738165;0.13;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2011;(ADMINISTRACION_PUBLICA);Government sector;79772;39611706;0.2;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2011;(ADMINISTRACION_PUBLICA);Government sector;32594;22261796;0.15;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2011;(ADMINISTRACION_PUBLICA);Government sector;28662;12680314;0.23;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2011;(ADMINISTRACION_PUBLICA);Government sector;84814;63907269;0.13;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2011;(ADMINISTRACION_PUBLICA);Government sector;37068;18058363;0.21;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2011;(ADMINISTRACION_PUBLICA);Government sector;22319;7945371;0.28;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2011;(ADMINISTRACION_PUBLICA);Government sector;71253;33631537;0.21;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2011;(ADMINISTRACION_PUBLICA);Government sector;1020231;199623724;0.51;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2011;(ADMINISTRACION_PUBLICA);Government sector;56708;54328993;0.1;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2011;(ADMINISTRACION_PUBLICA);Government sector;42275;18273867;0.23;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2011;(ADMINISTRACION_PUBLICA);Government sector;625173;199939125;0.31;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2011;(ADMINISTRACION_PUBLICA);Government sector;128899;100387555;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2011;(ADMINISTRACION_PUBLICA);Government sector;36412;26646250;0.14;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2011;(ADMINISTRACION_PUBLICA);Government sector;340204;144494494;0.24;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2011;(ENSENIANZA_SUPERIOR);Higher education sector;113769;39611706;0.29;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2011;(ENSENIANZA_SUPERIOR);Higher education sector;195454;55816965;0.35;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2011;(ENSENIANZA_SUPERIOR);Higher education sector;86916;22261796;0.39;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2011;(ENSENIANZA_SUPERIOR);Higher education sector;63685;12680314;0.5;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2011;(ENSENIANZA_SUPERIOR);Higher education sector;244804;63907269;0.38;Enseñanza Superior
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2011;(ENSENIANZA_SUPERIOR);Higher education sector;80929;18058363;0.45;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2011;(ENSENIANZA_SUPERIOR);Higher education sector;15770;7945371;0.2;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2011;(ENSENIANZA_SUPERIOR);Higher education sector;81495;33631537;0.24;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2011;(ENSENIANZA_SUPERIOR);Higher education sector;670509;199623724;0.34;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2011;(ENSENIANZA_SUPERIOR);Higher education sector;204716;54328993;0.38;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2011;(ENSENIANZA_SUPERIOR);Higher education sector;76751;39056838;0.2;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2011;(ENSENIANZA_SUPERIOR);Higher education sector;73309;18273867;0.4;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2011;(ENSENIANZA_SUPERIOR);Higher education sector;736763;199939125;0.37;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2011;(ENSENIANZA_SUPERIOR);Higher education sector;492518;100387555;0.49;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2011;(ENSENIANZA_SUPERIOR);Higher education sector;45313;26646250;0.17;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2011;(ENSENIANZA_SUPERIOR);Higher education sector;708973;144494494;0.49;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2011;(ENSENIANZA_SUPERIOR);Higher education sector;107843;27698320;0.39;Enseñanza Superior
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2011;(ENSENIANZA_SUPERIOR);Higher education sector;989;1491191;0.07;Enseñanza Superior
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2011;(ENSENIANZA_SUPERIOR);Higher education sector;1519;1374489;0.11;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2011;(_T);All Sectors;242968;39611706;0.61;Total
+(ES11) Galicia;Galicia;Galicia;2011;(_T);All Sectors;526471;55816965;0.94;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2011;(_T);All Sectors;218119;22261796;0.98;Total
+(ES13) Cantabria;Cantabria;Cantabria;2011;(_T);All Sectors;141817;12680314;1.12;Total
+(ES21) País Vasco;País Vasco;Basque Country;2011;(_T);All Sectors;1397209;63907269;2.19;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2011;(_T);All Sectors;383854;18058363;2.13;Total
+(ES23) La Rioja;La Rioja;La Rioja;2011;(_T);All Sectors;81817;7945371;1.03;Total
+(ES24) Aragón;Aragón;Aragon;2011;(_T);All Sectors;322113;33631537;0.96;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2011;(_T);All Sectors;3762811;199623724;1.88;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2011;(_T);All Sectors;574357;54328993;1.06;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2011;(_T);All Sectors;259383;39056838;0.66;Total
+(ES43) Extremadura;Extremadura;Extremadura;2011;(_T);All Sectors;143837;18273867;0.79;Total
+(ES51) Cataluña;Cataluña;Catalonia;2011;(_T);All Sectors;3103712;199939125;1.55;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2011;(_T);All Sectors;1044364;100387555;1.04;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2011;(_T);All Sectors;95818;26646250;0.36;Total
+(ES61) Andalucía;Andalucía;Andalusia;2011;(_T);All Sectors;1648471;144494494;1.14;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2011;(_T);All Sectors;234082;27698320;0.85;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2011;(_T);All Sectors;1252;1491191;0.08;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2011;(_T);All Sectors;1840;1374489;0.13;Total
+(ES70) Canarias;Canarias;Canary Islands;2011;(IPSFL);Private non-profit sector;514;39611706;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2011;(IPSFL);Private non-profit sector;232;22261796;0.0;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2011;(IPSFL);Private non-profit sector;1802;63907269;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2011;(IPSFL);Private non-profit sector;163;7945371;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2011;(IPSFL);Private non-profit sector;270;33631537;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2011;(IPSFL);Private non-profit sector;6146;199623724;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2011;(IPSFL);Private non-profit sector;604;54328993;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2011;(IPSFL);Private non-profit sector;8404;199939125;0.0;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2011;(IPSFL);Private non-profit sector;769;100387555;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2011;(IPSFL);Private non-profit sector;263;26646250;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2011;(IPSFL);Private non-profit sector;1066;144494494;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2011;(EMPRESAS_IPSFL);Private non-profit sector;49427;39611706;0.12;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2011;(EMPRESAS_IPSFL);Private non-profit sector;98609;22261796;0.44;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2011;(EMPRESAS_IPSFL);Private non-profit sector;1067591;63907269;1.67;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2011;(EMPRESAS_IPSFL);Private non-profit sector;43728;7945371;0.55;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2011;(EMPRESAS_IPSFL);Private non-profit sector;169364;33631537;0.5;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2011;(EMPRESAS_IPSFL);Private non-profit sector;2072071;199623724;1.04;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2011;(EMPRESAS_IPSFL);Private non-profit sector;312933;54328993;0.58;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2011;(EMPRESAS_IPSFL);Private non-profit sector;1741777;199939125;0.87;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2011;(EMPRESAS_IPSFL);Private non-profit sector;422947;100387555;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2011;(EMPRESAS_IPSFL);Private non-profit sector;14094;26646250;0.05;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2011;(EMPRESAS_IPSFL);Private non-profit sector;599294;144494494;0.41;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2011;(EMPRESAS);Business enterprise sector;48913;39611706;0.12;Empresas
+(ES11) Galicia;Galicia;Galicia;2011;(EMPRESAS);Business enterprise sector;254781;55816965;0.46;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2011;(EMPRESAS);Business enterprise sector;98377;22261796;0.44;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2011;(EMPRESAS);Business enterprise sector;46878;12680314;0.37;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2011;(EMPRESAS);Business enterprise sector;1065789;63907269;1.67;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2011;(EMPRESAS);Business enterprise sector;265726;18058363;1.47;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2011;(EMPRESAS);Business enterprise sector;43565;7945371;0.55;Empresas
+(ES24) Aragón;Aragón;Aragon;2011;(EMPRESAS);Business enterprise sector;169094;33631537;0.5;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2011;(EMPRESAS);Business enterprise sector;2065925;199623724;1.03;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2011;(EMPRESAS);Business enterprise sector;312329;54328993;0.57;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2011;(EMPRESAS);Business enterprise sector;147524;39056838;0.38;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2011;(EMPRESAS);Business enterprise sector;28168;18273867;0.15;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2011;(EMPRESAS);Business enterprise sector;1733373;199939125;0.87;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2011;(EMPRESAS);Business enterprise sector;422178;100387555;0.42;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2011;(EMPRESAS);Business enterprise sector;13831;26646250;0.05;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2011;(EMPRESAS);Business enterprise sector;598228;144494494;0.41;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2011;(EMPRESAS);Business enterprise sector;81268;27698320;0.29;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2012;(ADMINISTRACION_PUBLICA);Government sector;61564;38239602;0.16;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2012;(ADMINISTRACION_PUBLICA);Government sector;28566;21265200;0.13;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2012;(ADMINISTRACION_PUBLICA);Government sector;24010;12224935;0.2;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2012;(ADMINISTRACION_PUBLICA);Government sector;97298;62342907;0.16;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2012;(ADMINISTRACION_PUBLICA);Government sector;28510;17377685;0.16;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2012;(ADMINISTRACION_PUBLICA);Government sector;16767;7669045;0.22;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2012;(ADMINISTRACION_PUBLICA);Government sector;72941;32169749;0.23;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2012;(ADMINISTRACION_PUBLICA);Government sector;908312;196359670;0.46;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2012;(ADMINISTRACION_PUBLICA);Government sector;53971;52589720;0.1;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2012;(ADMINISTRACION_PUBLICA);Government sector;34900;17579526;0.2;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2012;(ADMINISTRACION_PUBLICA);Government sector;614318;194512765;0.32;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2012;(ADMINISTRACION_PUBLICA);Government sector;128920;95835883;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2012;(ADMINISTRACION_PUBLICA);Government sector;33250;26224305;0.13;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2012;(ADMINISTRACION_PUBLICA);Government sector;316838;139052618;0.23;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2012;(ADMINISTRACION_PUBLICA);Government sector;37975;26950848;0.14;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2012;(ENSENIANZA_SUPERIOR);Higher education sector;106032;38239602;0.28;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2012;(ENSENIANZA_SUPERIOR);Higher education sector;193012;54021344;0.36;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2012;(ENSENIANZA_SUPERIOR);Higher education sector;65483;21265200;0.31;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2012;(ENSENIANZA_SUPERIOR);Higher education sector;246314;62342907;0.4;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2012;(ENSENIANZA_SUPERIOR);Higher education sector;16144;7669045;0.21;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2012;(ENSENIANZA_SUPERIOR);Higher education sector;75037;32169749;0.23;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2012;(ENSENIANZA_SUPERIOR);Higher education sector;633048;196359670;0.32;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2012;(ENSENIANZA_SUPERIOR);Higher education sector;181731;52589720;0.35;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2012;(ENSENIANZA_SUPERIOR);Higher education sector;57529;37644363;0.15;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2012;(ENSENIANZA_SUPERIOR);Higher education sector;694638;194512765;0.36;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2012;(ENSENIANZA_SUPERIOR);Higher education sector;471834;95835883;0.49;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2012;(ENSENIANZA_SUPERIOR);Higher education sector;41827;26224305;0.16;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2012;(ENSENIANZA_SUPERIOR);Higher education sector;626914;139052618;0.45;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2012;(ENSENIANZA_SUPERIOR);Higher education sector;101574;26950848;0.38;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2012;(_T);All Sectors;211495;38239602;0.55;Total
+(ES11) Galicia;Galicia;Galicia;2012;(_T);All Sectors;487840;54021344;0.9;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2012;(_T);All Sectors;195892;21265200;0.92;Total
+(ES13) Cantabria;Cantabria;Cantabria;2012;(_T);All Sectors;126166;12224935;1.03;Total
+(ES21) País Vasco;País Vasco;Basque Country;2012;(_T);All Sectors;1431108;62342907;2.3;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2012;(_T);All Sectors;346690;17377685;2.0;Total
+(ES23) La Rioja;La Rioja;La Rioja;2012;(_T);All Sectors;69297;7669045;0.9;Total
+(ES24) Aragón;Aragón;Aragon;2012;(_T);All Sectors;312795;32169749;0.97;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2012;(_T);All Sectors;3433677;196359670;1.75;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2012;(_T);All Sectors;617467;52589720;1.17;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2012;(_T);All Sectors;230547;37644363;0.61;Total
+(ES43) Extremadura;Extremadura;Extremadura;2012;(_T);All Sectors;128432;17579526;0.73;Total
+(ES51) Cataluña;Cataluña;Catalonia;2012;(_T);All Sectors;2991010;194512765;1.54;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2012;(_T);All Sectors;1008041;95835883;1.05;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2012;(_T);All Sectors;89921;26224305;0.34;Total
+(ES61) Andalucía;Andalucía;Andalusia;2012;(_T);All Sectors;1480460;139052618;1.06;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2012;(_T);All Sectors;227759;26950848;0.85;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2012;(_T);All Sectors;1132;1438908;0.08;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2012;(_T);All Sectors;1876;1325903;0.14;Total
+(ES70) Canarias;Canarias;Canary Islands;2012;(IPSFL);Private non-profit sector;361;38239602;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2012;(IPSFL);Private non-profit sector;256;21265200;0.0;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2012;(IPSFL);Private non-profit sector;1896;62342907;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2012;(IPSFL);Private non-profit sector;206;7669045;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2012;(IPSFL);Private non-profit sector;347;32169749;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2012;(IPSFL);Private non-profit sector;5865;196359670;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2012;(IPSFL);Private non-profit sector;314;52589720;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2012;(IPSFL);Private non-profit sector;9199;194512765;0.0;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2012;(IPSFL);Private non-profit sector;647;95835883;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2012;(IPSFL);Private non-profit sector;231;26224305;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2012;(IPSFL);Private non-profit sector;1943;139052618;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2012;(IPSFL);Private non-profit sector;275;26950848;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2012;(EMPRESAS_IPSFL);Private non-profit sector;43899;38239602;0.11;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2012;(EMPRESAS_IPSFL);Private non-profit sector;101843;21265200;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2012;(EMPRESAS_IPSFL);Private non-profit sector;1087496;62342907;1.74;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2012;(EMPRESAS_IPSFL);Private non-profit sector;36386;7669045;0.47;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2012;(EMPRESAS_IPSFL);Private non-profit sector;164818;32169749;0.51;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2012;(EMPRESAS_IPSFL);Private non-profit sector;1892317;196359670;0.96;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2012;(EMPRESAS_IPSFL);Private non-profit sector;381765;52589720;0.73;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2012;(EMPRESAS_IPSFL);Private non-profit sector;1682055;194512765;0.86;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2012;(EMPRESAS_IPSFL);Private non-profit sector;407287;95835883;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2012;(EMPRESAS_IPSFL);Private non-profit sector;14843;26224305;0.06;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2012;(EMPRESAS_IPSFL);Private non-profit sector;536708;139052618;0.39;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2012;(EMPRESAS_IPSFL);Private non-profit sector;88210;26950848;0.33;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2012;(EMPRESAS);Business enterprise sector;43538;38239602;0.11;Empresas
+(ES11) Galicia;Galicia;Galicia;2012;(EMPRESAS);Business enterprise sector;224415;54021344;0.42;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2012;(EMPRESAS);Business enterprise sector;101587;21265200;0.48;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2012;(EMPRESAS);Business enterprise sector;45338;12224935;0.37;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2012;(EMPRESAS);Business enterprise sector;1085600;62342907;1.74;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2012;(EMPRESAS);Business enterprise sector;237298;17377685;1.37;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2012;(EMPRESAS);Business enterprise sector;36180;7669045;0.47;Empresas
+(ES24) Aragón;Aragón;Aragon;2012;(EMPRESAS);Business enterprise sector;164471;32169749;0.51;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2012;(EMPRESAS);Business enterprise sector;1886452;196359670;0.96;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2012;(EMPRESAS);Business enterprise sector;381451;52589720;0.73;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2012;(EMPRESAS);Business enterprise sector;144902;37644363;0.38;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2012;(EMPRESAS);Business enterprise sector;25757;17579526;0.15;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2012;(EMPRESAS);Business enterprise sector;1672856;194512765;0.86;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2012;(EMPRESAS);Business enterprise sector;406640;95835883;0.42;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2012;(EMPRESAS);Business enterprise sector;14612;26224305;0.06;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2012;(EMPRESAS);Business enterprise sector;534765;139052618;0.38;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2012;(EMPRESAS);Business enterprise sector;87935;26950848;0.33;Empresas
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2012;(EMPRESAS);Business enterprise sector;118;1438908;0.01;Empresas
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2012;(EMPRESAS);Business enterprise sector;365;1325903;0.03;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2013;(ADMINISTRACION_PUBLICA);Government sector;62369;38066975;0.16;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2013;(ADMINISTRACION_PUBLICA);Government sector;69672;54038718;0.13;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2013;(ADMINISTRACION_PUBLICA);Government sector;27810;20693890;0.13;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2013;(ADMINISTRACION_PUBLICA);Government sector;20481;11944124;0.17;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2013;(ADMINISTRACION_PUBLICA);Government sector;92379;61496663;0.15;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2013;(ADMINISTRACION_PUBLICA);Government sector;25065;17346722;0.14;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2013;(ADMINISTRACION_PUBLICA);Government sector;14993;7581142;0.2;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2013;(ADMINISTRACION_PUBLICA);Government sector;67679;32323922;0.21;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2013;(ADMINISTRACION_PUBLICA);Government sector;860871;193344523;0.45;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2013;(ADMINISTRACION_PUBLICA);Government sector;48868;51280425;0.1;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2013;(ADMINISTRACION_PUBLICA);Government sector;25416;36910747;0.07;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2013;(ADMINISTRACION_PUBLICA);Government sector;29239;17606422;0.17;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2013;(ADMINISTRACION_PUBLICA);Government sector;596591;193328965;0.31;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2013;(ADMINISTRACION_PUBLICA);Government sector;122972;95110090;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2013;(ADMINISTRACION_PUBLICA);Government sector;32898;26227926;0.13;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2013;(ADMINISTRACION_PUBLICA);Government sector;304689;137294091;0.22;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2013;(ADMINISTRACION_PUBLICA);Government sector;34397;27046880;0.13;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2013;(ENSENIANZA_SUPERIOR);Higher education sector;97312;38066975;0.26;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2013;(ENSENIANZA_SUPERIOR);Higher education sector;59108;20693890;0.29;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2013;(ENSENIANZA_SUPERIOR);Higher education sector;238757;61496663;0.39;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2013;(ENSENIANZA_SUPERIOR);Higher education sector;68140;32323922;0.21;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2013;(ENSENIANZA_SUPERIOR);Higher education sector;622495;193344523;0.32;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2013;(ENSENIANZA_SUPERIOR);Higher education sector;183680;51280425;0.36;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2013;(ENSENIANZA_SUPERIOR);Higher education sector;58323;36910747;0.16;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2013;(ENSENIANZA_SUPERIOR);Higher education sector;73415;17606422;0.42;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2013;(ENSENIANZA_SUPERIOR);Higher education sector;681289;193328965;0.35;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2013;(ENSENIANZA_SUPERIOR);Higher education sector;469387;95110090;0.49;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2013;(ENSENIANZA_SUPERIOR);Higher education sector;42738;26227926;0.16;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2013;(ENSENIANZA_SUPERIOR);Higher education sector;626118;137294091;0.46;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2013;(ENSENIANZA_SUPERIOR);Higher education sector;102968;27046880;0.38;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2013;(_T);All Sectors;203078;38066975;0.53;Total
+(ES11) Galicia;Galicia;Galicia;2013;(_T);All Sectors;468701;54038718;0.87;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2013;(_T);All Sectors;183717;20693890;0.89;Total
+(ES13) Cantabria;Cantabria;Cantabria;2013;(_T);All Sectors;110047;11944124;0.92;Total
+(ES21) País Vasco;País Vasco;Basque Country;2013;(_T);All Sectors;1328297;61496663;2.16;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2013;(_T);All Sectors;317158;17346722;1.83;Total
+(ES23) La Rioja;La Rioja;La Rioja;2013;(_T);All Sectors;61270;7581142;0.81;Total
+(ES24) Aragón;Aragón;Aragon;2013;(_T);All Sectors;298081;32323922;0.92;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2013;(_T);All Sectors;3434613;193344523;1.78;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2013;(_T);All Sectors;531000;51280425;1.04;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2013;(_T);All Sectors;201453;36910747;0.55;Total
+(ES43) Extremadura;Extremadura;Extremadura;2013;(_T);All Sectors;129629;17606422;0.74;Total
+(ES51) Cataluña;Cataluña;Catalonia;2013;(_T);All Sectors;2960612;193328965;1.53;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2013;(_T);All Sectors;998399;95110090;1.05;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2013;(_T);All Sectors;86982;26227926;0.33;Total
+(ES61) Andalucía;Andalucía;Andalusia;2013;(_T);All Sectors;1471261;137294091;1.07;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2013;(_T);All Sectors;224761;27046880;0.83;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2013;(_T);All Sectors;991;1454750;0.07;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2013;(_T);All Sectors;1749;1339497;0.13;Total
+(ES70) Canarias;Canarias;Canary Islands;2013;(IPSFL);Private non-profit sector;195;38066975;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2013;(IPSFL);Private non-profit sector;137;20693890;0.0;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2013;(IPSFL);Private non-profit sector;1432;61496663;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2013;(IPSFL);Private non-profit sector;211;32323922;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2013;(IPSFL);Private non-profit sector;5247;193344523;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2013;(IPSFL);Private non-profit sector;228;51280425;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2013;(IPSFL);Private non-profit sector;42;36910747;0.0;Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2013;(IPSFL);Private non-profit sector;89;17606422;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2013;(IPSFL);Private non-profit sector;6990;193328965;0.0;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2013;(IPSFL);Private non-profit sector;745;95110090;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2013;(IPSFL);Private non-profit sector;226;26227926;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2013;(IPSFL);Private non-profit sector;2029;137294091;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2013;(IPSFL);Private non-profit sector;105;27046880;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2013;(EMPRESAS_IPSFL);Private non-profit sector;43396;38066975;0.11;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2013;(EMPRESAS_IPSFL);Private non-profit sector;96799;20693890;0.47;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2013;(EMPRESAS_IPSFL);Private non-profit sector;997162;61496663;1.62;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2013;(EMPRESAS_IPSFL);Private non-profit sector;162262;32323922;0.5;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2013;(EMPRESAS_IPSFL);Private non-profit sector;1951247;193344523;1.01;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2013;(EMPRESAS_IPSFL);Private non-profit sector;298452;51280425;0.58;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2013;(EMPRESAS_IPSFL);Private non-profit sector;117712;36910747;0.32;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2013;(EMPRESAS_IPSFL);Private non-profit sector;26975;17606422;0.15;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2013;(EMPRESAS_IPSFL);Private non-profit sector;1682732;193328965;0.87;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2013;(EMPRESAS_IPSFL);Private non-profit sector;406040;95110090;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2013;(EMPRESAS_IPSFL);Private non-profit sector;11346;26227926;0.04;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2013;(EMPRESAS_IPSFL);Private non-profit sector;540454;137294091;0.39;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2013;(EMPRESAS_IPSFL);Private non-profit sector;87396;27046880;0.32;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2013;(EMPRESAS);Business enterprise sector;43201;38066975;0.11;Empresas
+(ES11) Galicia;Galicia;Galicia;2013;(EMPRESAS);Business enterprise sector;214937;54038718;0.4;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2013;(EMPRESAS);Business enterprise sector;96662;20693890;0.47;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2013;(EMPRESAS);Business enterprise sector;38701;11944124;0.32;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2013;(EMPRESAS);Business enterprise sector;995730;61496663;1.62;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2013;(EMPRESAS);Business enterprise sector;217831;17346722;1.26;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2013;(EMPRESAS);Business enterprise sector;30283;7581142;0.4;Empresas
+(ES24) Aragón;Aragón;Aragon;2013;(EMPRESAS);Business enterprise sector;162051;32323922;0.5;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2013;(EMPRESAS);Business enterprise sector;1946000;193344523;1.01;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2013;(EMPRESAS);Business enterprise sector;298224;51280425;0.58;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2013;(EMPRESAS);Business enterprise sector;117670;36910747;0.32;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2013;(EMPRESAS);Business enterprise sector;26886;17606422;0.15;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2013;(EMPRESAS);Business enterprise sector;1675742;193328965;0.87;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2013;(EMPRESAS);Business enterprise sector;405295;95110090;0.43;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2013;(EMPRESAS);Business enterprise sector;11120;26227926;0.04;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2013;(EMPRESAS);Business enterprise sector;538425;137294091;0.39;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2013;(EMPRESAS);Business enterprise sector;87291;27046880;0.32;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2014;(ADMINISTRACION_PUBLICA);Government sector;62041;38312937;0.16;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2014;(ADMINISTRACION_PUBLICA);Government sector;69720;54411393;0.13;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2014;(ADMINISTRACION_PUBLICA);Government sector;26808;20636251;0.13;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2014;(ADMINISTRACION_PUBLICA);Government sector;18974;12158496;0.16;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2014;(ADMINISTRACION_PUBLICA);Government sector;91750;62636949;0.15;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2014;(ADMINISTRACION_PUBLICA);Government sector;25375;17642027;0.14;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2014;(ADMINISTRACION_PUBLICA);Government sector;14407;7738447;0.19;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2014;(ADMINISTRACION_PUBLICA);Government sector;65149;32602458;0.2;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2014;(ADMINISTRACION_PUBLICA);Government sector;857166;196018105;0.44;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2014;(ADMINISTRACION_PUBLICA);Government sector;49066;51383670;0.1;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2014;(ADMINISTRACION_PUBLICA);Government sector;24309;36136765;0.07;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2014;(ADMINISTRACION_PUBLICA);Government sector;24509;17564650;0.14;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2014;(ADMINISTRACION_PUBLICA);Government sector;591281;196999531;0.3;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2014;(ADMINISTRACION_PUBLICA);Government sector;123167;97256083;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2014;(ADMINISTRACION_PUBLICA);Government sector;30029;27108615;0.11;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2014;(ADMINISTRACION_PUBLICA);Government sector;302498;139135225;0.22;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2014;(ADMINISTRACION_PUBLICA);Government sector;32386;27239109;0.12;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2014;(ENSENIANZA_SUPERIOR);Higher education sector;95132;38312937;0.25;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2014;(ENSENIANZA_SUPERIOR);Higher education sector;180197;54411393;0.33;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2014;(ENSENIANZA_SUPERIOR);Higher education sector;55764;20636251;0.27;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2014;(ENSENIANZA_SUPERIOR);Higher education sector;237857;62636949;0.38;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2014;(ENSENIANZA_SUPERIOR);Higher education sector;17550;7738447;0.23;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2014;(ENSENIANZA_SUPERIOR);Higher education sector;64702;32602458;0.2;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2014;(ENSENIANZA_SUPERIOR);Higher education sector;610103;196018105;0.31;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2014;(ENSENIANZA_SUPERIOR);Higher education sector;194223;51383670;0.38;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2014;(ENSENIANZA_SUPERIOR);Higher education sector;50518;36136765;0.14;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2014;(ENSENIANZA_SUPERIOR);Higher education sector;65567;17564650;0.37;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2014;(ENSENIANZA_SUPERIOR);Higher education sector;666337;196999531;0.34;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2014;(ENSENIANZA_SUPERIOR);Higher education sector;474409;97256083;0.49;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2014;(ENSENIANZA_SUPERIOR);Higher education sector;43304;27108615;0.16;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2014;(ENSENIANZA_SUPERIOR);Higher education sector;631154;139135225;0.45;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2014;(ENSENIANZA_SUPERIOR);Higher education sector;101421;27239109;0.37;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2014;(_T);All Sectors;192994;38312937;0.5;Total
+(ES11) Galicia;Galicia;Galicia;2014;(_T);All Sectors;477279;54411393;0.88;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2014;(_T);All Sectors;171612;20636251;0.83;Total
+(ES13) Cantabria;Cantabria;Cantabria;2014;(_T);All Sectors;101828;12158496;0.84;Total
+(ES21) País Vasco;País Vasco;Basque Country;2014;(_T);All Sectors;1306278;62636949;2.09;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2014;(_T);All Sectors;313655;17642027;1.78;Total
+(ES23) La Rioja;La Rioja;La Rioja;2014;(_T);All Sectors;71369;7738447;0.92;Total
+(ES24) Aragón;Aragón;Aragon;2014;(_T);All Sectors;300795;32602458;0.92;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2014;(_T);All Sectors;3312342;196018105;1.69;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2014;(_T);All Sectors;526820;51383670;1.03;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2014;(_T);All Sectors;193038;36136765;0.53;Total
+(ES43) Extremadura;Extremadura;Extremadura;2014;(_T);All Sectors;116010;17564650;0.66;Total
+(ES51) Cataluña;Cataluña;Catalonia;2014;(_T);All Sectors;2937731;196999531;1.49;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2014;(_T);All Sectors;1011352;97256083;1.04;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2014;(_T);All Sectors;85335;27108615;0.31;Total
+(ES61) Andalucía;Andalucía;Andalusia;2014;(_T);All Sectors;1465740;139135225;1.05;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2014;(_T);All Sectors;233692;27239109;0.86;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2014;(_T);All Sectors;1013;1446625;0.07;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2014;(_T);All Sectors;1874;1350573;0.14;Total
+(ES70) Canarias;Canarias;Canary Islands;2014;(IPSFL);Private non-profit sector;209;38312937;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2014;(IPSFL);Private non-profit sector;118;54411393;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2014;(IPSFL);Private non-profit sector;138;20636251;0.0;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2014;(IPSFL);Private non-profit sector;1375;62636949;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2014;(IPSFL);Private non-profit sector;73;7738447;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2014;(IPSFL);Private non-profit sector;53;32602458;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2014;(IPSFL);Private non-profit sector;4500;196018105;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2014;(IPSFL);Private non-profit sector;251;51383670;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2014;(IPSFL);Private non-profit sector;14;36136765;0.0;Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2014;(IPSFL);Private non-profit sector;58;17564650;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2014;(IPSFL);Private non-profit sector;8040;196999531;0.0;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2014;(IPSFL);Private non-profit sector;957;97256083;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2014;(IPSFL);Private non-profit sector;211;27108615;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2014;(IPSFL);Private non-profit sector;2109;139135225;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2014;(IPSFL);Private non-profit sector;74;27239109;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2014;(EMPRESAS_IPSFL);Private non-profit sector;35821;38312937;0.09;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2014;(EMPRESAS_IPSFL);Private non-profit sector;227361;54411393;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2014;(EMPRESAS_IPSFL);Private non-profit sector;89039;20636251;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2014;(EMPRESAS_IPSFL);Private non-profit sector;976672;62636949;1.56;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2014;(EMPRESAS_IPSFL);Private non-profit sector;39412;7738447;0.51;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2014;(EMPRESAS_IPSFL);Private non-profit sector;170945;32602458;0.52;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2014;(EMPRESAS_IPSFL);Private non-profit sector;1845074;196018105;0.94;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2014;(EMPRESAS_IPSFL);Private non-profit sector;283531;51383670;0.55;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2014;(EMPRESAS_IPSFL);Private non-profit sector;118211;36136765;0.33;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2014;(EMPRESAS_IPSFL);Private non-profit sector;25933;17564650;0.15;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2014;(EMPRESAS_IPSFL);Private non-profit sector;1680112;196999531;0.85;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2014;(EMPRESAS_IPSFL);Private non-profit sector;413776;97256083;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2014;(EMPRESAS_IPSFL);Private non-profit sector;12002;27108615;0.04;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2014;(EMPRESAS_IPSFL);Private non-profit sector;532087;139135225;0.38;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2014;(EMPRESAS_IPSFL);Private non-profit sector;99886;27239109;0.37;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2014;(EMPRESAS);Business enterprise sector;35612;38312937;0.09;Empresas
+(ES11) Galicia;Galicia;Galicia;2014;(EMPRESAS);Business enterprise sector;227243;54411393;0.42;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2014;(EMPRESAS);Business enterprise sector;88901;20636251;0.43;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2014;(EMPRESAS);Business enterprise sector;36001;12158496;0.3;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2014;(EMPRESAS);Business enterprise sector;975297;62636949;1.56;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2014;(EMPRESAS);Business enterprise sector;216137;17642027;1.23;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2014;(EMPRESAS);Business enterprise sector;39339;7738447;0.51;Empresas
+(ES24) Aragón;Aragón;Aragon;2014;(EMPRESAS);Business enterprise sector;170892;32602458;0.52;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2014;(EMPRESAS);Business enterprise sector;1840574;196018105;0.94;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2014;(EMPRESAS);Business enterprise sector;283280;51383670;0.55;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2014;(EMPRESAS);Business enterprise sector;118197;36136765;0.33;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2014;(EMPRESAS);Business enterprise sector;25875;17564650;0.15;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2014;(EMPRESAS);Business enterprise sector;1672072;196999531;0.85;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2014;(EMPRESAS);Business enterprise sector;412819;97256083;0.42;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2014;(EMPRESAS);Business enterprise sector;11791;27108615;0.04;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2014;(EMPRESAS);Business enterprise sector;529978;139135225;0.38;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2014;(EMPRESAS);Business enterprise sector;99812;27239109;0.37;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2015;(ADMINISTRACION_PUBLICA);Government sector;64269;39636569;0.16;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2015;(ADMINISTRACION_PUBLICA);Government sector;76987;57010602;0.14;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2015;(ADMINISTRACION_PUBLICA);Government sector;29398;21388142;0.14;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2015;(ADMINISTRACION_PUBLICA);Government sector;20215;12443843;0.16;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2015;(ADMINISTRACION_PUBLICA);Government sector;95794;65073341;0.15;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2015;(ADMINISTRACION_PUBLICA);Government sector;14884;8033065;0.19;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2015;(ADMINISTRACION_PUBLICA);Government sector;72466;33265930;0.22;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2015;(ADMINISTRACION_PUBLICA);Government sector;894860;206231525;0.43;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2015;(ADMINISTRACION_PUBLICA);Government sector;50268;53183396;0.09;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2015;(ADMINISTRACION_PUBLICA);Government sector;32717;37998035;0.09;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2015;(ADMINISTRACION_PUBLICA);Government sector;23870;18494971;0.13;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2015;(ADMINISTRACION_PUBLICA);Government sector;605046;206434270;0.29;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2015;(ADMINISTRACION_PUBLICA);Government sector;127219;101214206;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2015;(ADMINISTRACION_PUBLICA);Government sector;31685;28653742;0.11;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2015;(ADMINISTRACION_PUBLICA);Government sector;318516;146406094;0.22;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2015;(ADMINISTRACION_PUBLICA);Government sector;36045;29168718;0.12;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2015;(ENSENIANZA_SUPERIOR);Higher education sector;101658;39636569;0.26;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2015;(ENSENIANZA_SUPERIOR);Higher education sector;195932;57010602;0.34;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2015;(ENSENIANZA_SUPERIOR);Higher education sector;57894;21388142;0.27;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2015;(ENSENIANZA_SUPERIOR);Higher education sector;43825;12443843;0.35;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2015;(ENSENIANZA_SUPERIOR);Higher education sector;235016;65073341;0.36;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2015;(ENSENIANZA_SUPERIOR);Higher education sector;22114;8033065;0.28;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2015;(ENSENIANZA_SUPERIOR);Higher education sector;69906;33265930;0.21;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2015;(ENSENIANZA_SUPERIOR);Higher education sector;582087;206231525;0.28;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2015;(ENSENIANZA_SUPERIOR);Higher education sector;197538;53183396;0.37;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2015;(ENSENIANZA_SUPERIOR);Higher education sector;67985;37998035;0.18;Enseñanza Superior
+(ES43) Extremadura;Extremadura;Extremadura;2015;(ENSENIANZA_SUPERIOR);Higher education sector;72427;18494971;0.39;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2015;(ENSENIANZA_SUPERIOR);Higher education sector;714923;206434270;0.35;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2015;(ENSENIANZA_SUPERIOR);Higher education sector;471860;101214206;0.47;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2015;(ENSENIANZA_SUPERIOR);Higher education sector;43913;28653742;0.15;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2015;(ENSENIANZA_SUPERIOR);Higher education sector;650766;146406094;0.44;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2015;(ENSENIANZA_SUPERIOR);Higher education sector;104274;29168718;0.36;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2015;(_T);All Sectors;202146;39636569;0.51;Total
+(ES11) Galicia;Galicia;Galicia;2015;(_T);All Sectors;496560;57010602;0.87;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2015;(_T);All Sectors;158604;21388142;0.74;Total
+(ES13) Cantabria;Cantabria;Cantabria;2015;(_T);All Sectors;103326;12443843;0.83;Total
+(ES21) País Vasco;País Vasco;Basque Country;2015;(_T);All Sectors;1269313;65073341;1.95;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2015;(_T);All Sectors;299573;18334417;1.63;Total
+(ES23) La Rioja;La Rioja;La Rioja;2015;(_T);All Sectors;71225;8033065;0.89;Total
+(ES24) Aragón;Aragón;Aragon;2015;(_T);All Sectors;302122;33265930;0.91;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2015;(_T);All Sectors;3480739;206231525;1.69;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2015;(_T);All Sectors;536189;53183396;1.01;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2015;(_T);All Sectors;203112;37998035;0.53;Total
+(ES43) Extremadura;Extremadura;Extremadura;2015;(_T);All Sectors;116584;18494971;0.63;Total
+(ES51) Cataluña;Cataluña;Catalonia;2015;(_T);All Sectors;3106752;206434270;1.5;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2015;(_T);All Sectors;1013400;101214206;1.0;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2015;(_T);All Sectors;89138;28653742;0.31;Total
+(ES61) Andalucía;Andalucía;Andalusia;2015;(_T);All Sectors;1476451;146406094;1.01;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2015;(_T);All Sectors;244164;29168718;0.84;Total
+(ES70) Canarias;Canarias;Canary Islands;2015;(IPSFL);Private non-profit sector;185;39636569;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2015;(IPSFL);Private non-profit sector;197;57010602;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2015;(IPSFL);Private non-profit sector;162;21388142;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2015;(IPSFL);Private non-profit sector;3025;12443843;0.02;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2015;(IPSFL);Private non-profit sector;1671;65073341;0.0;Instituciones Privadas sin Fines de Lucro
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2015;(IPSFL);Private non-profit sector;190;18334417;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2015;(IPSFL);Private non-profit sector;72;8033065;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2015;(IPSFL);Private non-profit sector;156;33265930;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2015;(IPSFL);Private non-profit sector;4796;206231525;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2015;(IPSFL);Private non-profit sector;332;53183396;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2015;(IPSFL);Private non-profit sector;151;37998035;0.0;Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2015;(IPSFL);Private non-profit sector;100;18494971;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2015;(IPSFL);Private non-profit sector;13927;206434270;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2015;(IPSFL);Private non-profit sector;449;101214206;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2015;(IPSFL);Private non-profit sector;213;28653742;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2015;(IPSFL);Private non-profit sector;1499;146406094;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2015;(IPSFL);Private non-profit sector;367;29168718;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2015;(EMPRESAS_IPSFL);Private non-profit sector;36219;39636569;0.09;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2015;(EMPRESAS_IPSFL);Private non-profit sector;223641;57010602;0.39;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2015;(EMPRESAS_IPSFL);Private non-profit sector;71311;21388142;0.33;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2015;(EMPRESAS_IPSFL);Private non-profit sector;39287;12443843;0.32;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2015;(EMPRESAS_IPSFL);Private non-profit sector;938503;65073341;1.44;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2015;(EMPRESAS_IPSFL);Private non-profit sector;204037;18334417;1.11;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2015;(EMPRESAS_IPSFL);Private non-profit sector;34227;8033065;0.43;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2015;(EMPRESAS_IPSFL);Private non-profit sector;159750;33265930;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2015;(EMPRESAS_IPSFL);Private non-profit sector;2003792;206231525;0.97;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2015;(EMPRESAS_IPSFL);Private non-profit sector;288382;53183396;0.54;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2015;(EMPRESAS_IPSFL);Private non-profit sector;102410;37998035;0.27;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES43) Extremadura;Extremadura;Extremadura;2015;(EMPRESAS_IPSFL);Private non-profit sector;20287;18494971;0.11;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2015;(EMPRESAS_IPSFL);Private non-profit sector;1786784;206434270;0.87;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2015;(EMPRESAS_IPSFL);Private non-profit sector;414320;101214206;0.41;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2015;(EMPRESAS_IPSFL);Private non-profit sector;13540;28653742;0.05;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2015;(EMPRESAS_IPSFL);Private non-profit sector;507170;146406094;0.35;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2015;(EMPRESAS_IPSFL);Private non-profit sector;103844;29168718;0.36;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2015;(EMPRESAS);Business enterprise sector;36034;39636569;0.09;Empresas
+(ES11) Galicia;Galicia;Galicia;2015;(EMPRESAS);Business enterprise sector;223444;57010602;0.39;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2015;(EMPRESAS);Business enterprise sector;71149;21388142;0.33;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2015;(EMPRESAS);Business enterprise sector;36262;12443843;0.29;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2015;(EMPRESAS);Business enterprise sector;936832;65073341;1.44;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2015;(EMPRESAS);Business enterprise sector;203847;18334417;1.11;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2015;(EMPRESAS);Business enterprise sector;34155;8033065;0.43;Empresas
+(ES24) Aragón;Aragón;Aragon;2015;(EMPRESAS);Business enterprise sector;159594;33265930;0.48;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2015;(EMPRESAS);Business enterprise sector;1998996;206231525;0.97;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2015;(EMPRESAS);Business enterprise sector;288050;53183396;0.54;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2015;(EMPRESAS);Business enterprise sector;102259;37998035;0.27;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2015;(EMPRESAS);Business enterprise sector;20187;18494971;0.11;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2015;(EMPRESAS);Business enterprise sector;1772857;206434270;0.86;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2015;(EMPRESAS);Business enterprise sector;413871;101214206;0.41;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2015;(EMPRESAS);Business enterprise sector;13327;28653742;0.05;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2015;(EMPRESAS);Business enterprise sector;505671;146406094;0.35;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2015;(EMPRESAS);Business enterprise sector;103477;29168718;0.35;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2016;(ADMINISTRACION_PUBLICA);Government sector;60175;40979670;0.15;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2016;(ADMINISTRACION_PUBLICA);Government sector;82024;58564023;0.14;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2016;(ADMINISTRACION_PUBLICA);Government sector;28985;21675441;0.13;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2016;(ADMINISTRACION_PUBLICA);Government sector;23260;12833899;0.18;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2016;(ADMINISTRACION_PUBLICA);Government sector;95747;67114993;0.14;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2016;(ADMINISTRACION_PUBLICA);Government sector;27075;18911331;0.14;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2016;(ADMINISTRACION_PUBLICA);Government sector;15682;8074094;0.19;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2016;(ADMINISTRACION_PUBLICA);Government sector;79430;34542128;0.23;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2016;(ADMINISTRACION_PUBLICA);Government sector;865147;214469101;0.4;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2016;(ADMINISTRACION_PUBLICA);Government sector;49900;54630532;0.09;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2016;(ADMINISTRACION_PUBLICA);Government sector;26837;39136242;0.07;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2016;(ADMINISTRACION_PUBLICA);Government sector;24515;19069471;0.13;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2016;(ADMINISTRACION_PUBLICA);Government sector;599304;214502547;0.28;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2016;(ADMINISTRACION_PUBLICA);Government sector;131392;104205396;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2016;(ADMINISTRACION_PUBLICA);Government sector;32198;30233284;0.11;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2016;(ADMINISTRACION_PUBLICA);Government sector;276331;149901897;0.18;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2016;(ADMINISTRACION_PUBLICA);Government sector;34774;30009138;0.12;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2016;(ENSENIANZA_SUPERIOR);Higher education sector;105084;40979670;0.26;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2016;(ENSENIANZA_SUPERIOR);Higher education sector;181137;58564023;0.31;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2016;(ENSENIANZA_SUPERIOR);Higher education sector;57803;21675441;0.27;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2016;(ENSENIANZA_SUPERIOR);Higher education sector;44008;12833899;0.34;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2016;(ENSENIANZA_SUPERIOR);Higher education sector;227260;67114993;0.34;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2016;(ENSENIANZA_SUPERIOR);Higher education sector;19394;8074094;0.24;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2016;(ENSENIANZA_SUPERIOR);Higher education sector;70158;34542128;0.2;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2016;(ENSENIANZA_SUPERIOR);Higher education sector;641532;214469101;0.3;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2016;(ENSENIANZA_SUPERIOR);Higher education sector;193177;54630532;0.35;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2016;(ENSENIANZA_SUPERIOR);Higher education sector;709041;214502547;0.33;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2016;(ENSENIANZA_SUPERIOR);Higher education sector;471984;104205396;0.45;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2016;(ENSENIANZA_SUPERIOR);Higher education sector;43263;30233284;0.14;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2016;(ENSENIANZA_SUPERIOR);Higher education sector;579023;149901897;0.39;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2016;(ENSENIANZA_SUPERIOR);Higher education sector;111656;30009138;0.37;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2016;(_T);All Sectors;198586;40979670;0.48;Total
+(ES11) Galicia;Galicia;Galicia;2016;(_T);All Sectors;503888;58564023;0.86;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2016;(_T);All Sectors;161352;21675441;0.74;Total
+(ES13) Cantabria;Cantabria;Cantabria;2016;(_T);All Sectors;105921;12833899;0.83;Total
+(ES21) País Vasco;País Vasco;Basque Country;2016;(_T);All Sectors;1302828;67114993;1.94;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2016;(_T);All Sectors;308606;18911331;1.63;Total
+(ES23) La Rioja;La Rioja;La Rioja;2016;(_T);All Sectors;67336;8074094;0.83;Total
+(ES24) Aragón;Aragón;Aragon;2016;(_T);All Sectors;310138;34542128;0.9;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2016;(_T);All Sectors;3504858;214469101;1.63;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2016;(_T);All Sectors;606603;54630532;1.11;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2016;(_T);All Sectors;216222;39136242;0.55;Total
+(ES43) Extremadura;Extremadura;Extremadura;2016;(_T);All Sectors;106042;19069471;0.56;Total
+(ES51) Cataluña;Cataluña;Catalonia;2016;(_T);All Sectors;3103405;214502547;1.45;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2016;(_T);All Sectors;1038033;104205396;1.0;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2016;(_T);All Sectors;94568;30233284;0.31;Total
+(ES61) Andalucía;Andalucía;Andalusia;2016;(_T);All Sectors;1359795;149901897;0.91;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2016;(_T);All Sectors;269137;30009138;0.9;Total
+(ES70) Canarias;Canarias;Canary Islands;2016;(IPSFL);Private non-profit sector;180;40979670;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2016;(IPSFL);Private non-profit sector;1642;58564023;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2016;(IPSFL);Private non-profit sector;117;21675441;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2016;(IPSFL);Private non-profit sector;3020;12833899;0.02;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2016;(IPSFL);Private non-profit sector;1319;67114993;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2016;(IPSFL);Private non-profit sector;35;8074094;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2016;(IPSFL);Private non-profit sector;85;34542128;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2016;(IPSFL);Private non-profit sector;5474;214469101;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2016;(IPSFL);Private non-profit sector;309;54630532;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2016;(IPSFL);Private non-profit sector;16105;214502547;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2016;(IPSFL);Private non-profit sector;445;104205396;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2016;(IPSFL);Private non-profit sector;290;30233284;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2016;(IPSFL);Private non-profit sector;2685;149901897;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2016;(IPSFL);Private non-profit sector;139;30009138;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2016;(EMPRESAS_IPSFL);Private non-profit sector;33327;40979670;0.08;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2016;(EMPRESAS_IPSFL);Private non-profit sector;240728;58564023;0.41;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2016;(EMPRESAS_IPSFL);Private non-profit sector;74563;21675441;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2016;(EMPRESAS_IPSFL);Private non-profit sector;38653;12833899;0.3;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2016;(EMPRESAS_IPSFL);Private non-profit sector;979822;67114993;1.46;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2016;(EMPRESAS_IPSFL);Private non-profit sector;32259;8074094;0.4;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2016;(EMPRESAS_IPSFL);Private non-profit sector;160551;34542128;0.46;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2016;(EMPRESAS_IPSFL);Private non-profit sector;1998179;214469101;0.93;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2016;(EMPRESAS_IPSFL);Private non-profit sector;363527;54630532;0.67;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2016;(EMPRESAS_IPSFL);Private non-profit sector;1795060;214502547;0.84;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2016;(EMPRESAS_IPSFL);Private non-profit sector;434657;104205396;0.42;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2016;(EMPRESAS_IPSFL);Private non-profit sector;19107;30233284;0.06;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2016;(EMPRESAS_IPSFL);Private non-profit sector;504442;149901897;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2016;(EMPRESAS_IPSFL);Private non-profit sector;122707;30009138;0.41;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2016;(EMPRESAS);Business enterprise sector;33147;40979670;0.08;Empresas
+(ES11) Galicia;Galicia;Galicia;2016;(EMPRESAS);Business enterprise sector;239086;58564023;0.41;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2016;(EMPRESAS);Business enterprise sector;74446;21675441;0.34;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2016;(EMPRESAS);Business enterprise sector;35633;12833899;0.28;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2016;(EMPRESAS);Business enterprise sector;978503;67114993;1.46;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2016;(EMPRESAS);Business enterprise sector;211019;18911331;1.12;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2016;(EMPRESAS);Business enterprise sector;32224;8074094;0.4;Empresas
+(ES24) Aragón;Aragón;Aragon;2016;(EMPRESAS);Business enterprise sector;160466;34542128;0.46;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2016;(EMPRESAS);Business enterprise sector;1992705;214469101;0.93;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2016;(EMPRESAS);Business enterprise sector;363218;54630532;0.66;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2016;(EMPRESAS);Business enterprise sector;128881;39136242;0.33;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2016;(EMPRESAS);Business enterprise sector;20335;19069471;0.11;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2016;(EMPRESAS);Business enterprise sector;1778955;214502547;0.83;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2016;(EMPRESAS);Business enterprise sector;434212;104205396;0.42;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2016;(EMPRESAS);Business enterprise sector;18817;30233284;0.06;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2016;(EMPRESAS);Business enterprise sector;501757;149901897;0.33;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2016;(EMPRESAS);Business enterprise sector;122568;30009138;0.41;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2017;(ADMINISTRACION_PUBLICA);Government sector;75316;43035839;0.18;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2017;(ADMINISTRACION_PUBLICA);Government sector;85383;60630852;0.14;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2017;(ADMINISTRACION_PUBLICA);Government sector;25776;22538267;0.11;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2017;(ADMINISTRACION_PUBLICA);Government sector;21140;13318023;0.16;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2017;(ADMINISTRACION_PUBLICA);Government sector;98592;69585295;0.14;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2017;(ADMINISTRACION_PUBLICA);Government sector;29747;19698794;0.15;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2017;(ADMINISTRACION_PUBLICA);Government sector;15929;8351707;0.19;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2017;(ADMINISTRACION_PUBLICA);Government sector;65902;35983544;0.18;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2017;(ADMINISTRACION_PUBLICA);Government sector;886319;224373156;0.4;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2017;(ADMINISTRACION_PUBLICA);Government sector;47890;55879293;0.09;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2017;(ADMINISTRACION_PUBLICA);Government sector;28010;40768959;0.07;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2017;(ADMINISTRACION_PUBLICA);Government sector;24471;20169546;0.12;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2017;(ADMINISTRACION_PUBLICA);Government sector;619818;223139777;0.28;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2017;(ADMINISTRACION_PUBLICA);Government sector;126286;108666712;0.12;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2017;(ADMINISTRACION_PUBLICA);Government sector;35275;31746251;0.11;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2017;(ADMINISTRACION_PUBLICA);Government sector;274307;156789484;0.17;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2017;(ADMINISTRACION_PUBLICA);Government sector;34863;31192490;0.11;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2017;(ENSENIANZA_SUPERIOR);Higher education sector;110963;43035839;0.26;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2017;(ENSENIANZA_SUPERIOR);Higher education sector;196123;60630852;0.32;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2017;(ENSENIANZA_SUPERIOR);Higher education sector;58207;22538267;0.26;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2017;(ENSENIANZA_SUPERIOR);Higher education sector;46143;13318023;0.35;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2017;(ENSENIANZA_SUPERIOR);Higher education sector;237088;69585295;0.34;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2017;(ENSENIANZA_SUPERIOR);Higher education sector;19852;8351707;0.24;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2017;(ENSENIANZA_SUPERIOR);Higher education sector;71748;35983544;0.2;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2017;(ENSENIANZA_SUPERIOR);Higher education sector;675486;224373156;0.3;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2017;(ENSENIANZA_SUPERIOR);Higher education sector;196351;55879293;0.35;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2017;(ENSENIANZA_SUPERIOR);Higher education sector;68291;40768959;0.17;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2017;(ENSENIANZA_SUPERIOR);Higher education sector;723023;223139777;0.32;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2017;(ENSENIANZA_SUPERIOR);Higher education sector;481365;108666712;0.44;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2017;(ENSENIANZA_SUPERIOR);Higher education sector;48733;31746251;0.15;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2017;(ENSENIANZA_SUPERIOR);Higher education sector;616956;156789484;0.39;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2017;(_T);All Sectors;220468;43035839;0.51;Total
+(ES11) Galicia;Galicia;Galicia;2017;(_T);All Sectors;571657;60630852;0.94;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2017;(_T);All Sectors;182514;22538267;0.81;Total
+(ES13) Cantabria;Cantabria;Cantabria;2017;(_T);All Sectors;109009;13318023;0.82;Total
+(ES21) País Vasco;País Vasco;Basque Country;2017;(_T);All Sectors;1351332;69585295;1.94;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2017;(_T);All Sectors;343065;19698794;1.74;Total
+(ES23) La Rioja;La Rioja;La Rioja;2017;(_T);All Sectors;74319;8351707;0.89;Total
+(ES24) Aragón;Aragón;Aragon;2017;(_T);All Sectors;312953;35983544;0.87;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2017;(_T);All Sectors;3694649;224373156;1.65;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2017;(_T);All Sectors;683254;55879293;1.22;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2017;(_T);All Sectors;228895;40768959;0.56;Total
+(ES43) Extremadura;Extremadura;Extremadura;2017;(_T);All Sectors;114117;20169546;0.57;Total
+(ES51) Cataluña;Cataluña;Catalonia;2017;(_T);All Sectors;3275799;223139777;1.47;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2017;(_T);All Sectors;1081870;108666712;1.0;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2017;(_T);All Sectors;113533;31746251;0.36;Total
+(ES61) Andalucía;Andalucía;Andalusia;2017;(_T);All Sectors;1422969;156789484;0.91;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2017;(_T);All Sectors;280418;31192490;0.9;Total
+(ES70) Canarias;Canarias;Canary Islands;2017;(IPSFL);Private non-profit sector;132;43035839;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2017;(IPSFL);Private non-profit sector;2227;60630852;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2017;(IPSFL);Private non-profit sector;96;22538267;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2017;(IPSFL);Private non-profit sector;2207;13318023;0.02;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2017;(IPSFL);Private non-profit sector;1334;69585295;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2017;(IPSFL);Private non-profit sector;34;8351707;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2017;(IPSFL);Private non-profit sector;81;35983544;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2017;(IPSFL);Private non-profit sector;6003;224373156;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2017;(IPSFL);Private non-profit sector;255;55879293;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2017;(IPSFL);Private non-profit sector;225;40768959;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2017;(IPSFL);Private non-profit sector;14482;223139777;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2017;(IPSFL);Private non-profit sector;369;108666712;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2017;(IPSFL);Private non-profit sector;246;31746251;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2017;(IPSFL);Private non-profit sector;2181;156789484;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2017;(EMPRESAS_IPSFL);Private non-profit sector;34189;43035839;0.08;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2017;(EMPRESAS_IPSFL);Private non-profit sector;290151;60630852;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2017;(EMPRESAS_IPSFL);Private non-profit sector;98531;22538267;0.44;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2017;(EMPRESAS_IPSFL);Private non-profit sector;41726;13318023;0.31;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2017;(EMPRESAS_IPSFL);Private non-profit sector;1015652;69585295;1.46;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2017;(EMPRESAS_IPSFL);Private non-profit sector;38537;8351707;0.46;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2017;(EMPRESAS_IPSFL);Private non-profit sector;175303;35983544;0.49;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2017;(EMPRESAS_IPSFL);Private non-profit sector;2132844;224373156;0.95;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2017;(EMPRESAS_IPSFL);Private non-profit sector;439013;55879293;0.79;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2017;(EMPRESAS_IPSFL);Private non-profit sector;132594;40768959;0.33;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2017;(EMPRESAS_IPSFL);Private non-profit sector;1932957;223139777;0.87;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2017;(EMPRESAS_IPSFL);Private non-profit sector;474219;108666712;0.44;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2017;(EMPRESAS_IPSFL);Private non-profit sector;29525;31746251;0.09;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2017;(EMPRESAS_IPSFL);Private non-profit sector;531707;156789484;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2017;(EMPRESAS);Business enterprise sector;34057;43035839;0.08;Empresas
+(ES11) Galicia;Galicia;Galicia;2017;(EMPRESAS);Business enterprise sector;287924;60630852;0.47;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2017;(EMPRESAS);Business enterprise sector;98435;22538267;0.44;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2017;(EMPRESAS);Business enterprise sector;39519;13318023;0.3;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2017;(EMPRESAS);Business enterprise sector;1014318;69585295;1.46;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2017;(EMPRESAS);Business enterprise sector;238778;19698794;1.21;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2017;(EMPRESAS);Business enterprise sector;38503;8351707;0.46;Empresas
+(ES24) Aragón;Aragón;Aragon;2017;(EMPRESAS);Business enterprise sector;175222;35983544;0.49;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2017;(EMPRESAS);Business enterprise sector;2126841;224373156;0.95;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2017;(EMPRESAS);Business enterprise sector;438758;55879293;0.79;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2017;(EMPRESAS);Business enterprise sector;132369;40768959;0.32;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2017;(EMPRESAS);Business enterprise sector;25367;20169546;0.13;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2017;(EMPRESAS);Business enterprise sector;1918475;223139777;0.86;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2017;(EMPRESAS);Business enterprise sector;473850;108666712;0.44;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2017;(EMPRESAS);Business enterprise sector;29279;31746251;0.09;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2017;(EMPRESAS);Business enterprise sector;529526;156789484;0.34;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2017;(EMPRESAS);Business enterprise sector;127978;31192490;0.41;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2018;(ADMINISTRACION_PUBLICA);Government sector;77460;44609266;0.17;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2018;(ADMINISTRACION_PUBLICA);Government sector;84914;62649363;0.14;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2018;(ADMINISTRACION_PUBLICA);Government sector;23794;23185680;0.1;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2018;(ADMINISTRACION_PUBLICA);Government sector;19348;13843935;0.14;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2018;(ADMINISTRACION_PUBLICA);Government sector;95922;71915111;0.13;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2018;(ADMINISTRACION_PUBLICA);Government sector;32432;20235995;0.16;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2018;(ADMINISTRACION_PUBLICA);Government sector;16990;8649852;0.2;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2018;(ADMINISTRACION_PUBLICA);Government sector;73613;37213896;0.2;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2018;(ADMINISTRACION_PUBLICA);Government sector;887682;233735808;0.38;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2018;(ADMINISTRACION_PUBLICA);Government sector;50746;58326859;0.09;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2018;(ADMINISTRACION_PUBLICA);Government sector;30155;42290925;0.07;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2018;(ADMINISTRACION_PUBLICA);Government sector;26678;20713254;0.13;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2018;(ADMINISTRACION_PUBLICA);Government sector;617632;231101287;0.27;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2018;(ADMINISTRACION_PUBLICA);Government sector;127795;112749574;0.11;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2018;(ADMINISTRACION_PUBLICA);Government sector;33950;33185968;0.1;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2018;(ADMINISTRACION_PUBLICA);Government sector;282779;161894301;0.17;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2018;(ADMINISTRACION_PUBLICA);Government sector;33340;31715345;0.11;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2018;(ENSENIANZA_SUPERIOR);Higher education sector;94183;44609266;0.21;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2018;(ENSENIANZA_SUPERIOR);Higher education sector;207066;62649363;0.33;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2018;(ENSENIANZA_SUPERIOR);Higher education sector;51222;23185680;0.22;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2018;(ENSENIANZA_SUPERIOR);Higher education sector;49170;13843935;0.36;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2018;(ENSENIANZA_SUPERIOR);Higher education sector;249791;71915111;0.35;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2018;(ENSENIANZA_SUPERIOR);Higher education sector;19308;8649852;0.22;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2018;(ENSENIANZA_SUPERIOR);Higher education sector;76725;37213896;0.21;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2018;(ENSENIANZA_SUPERIOR);Higher education sector;719440;233735808;0.31;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2018;(ENSENIANZA_SUPERIOR);Higher education sector;211731;58326859;0.36;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2018;(ENSENIANZA_SUPERIOR);Higher education sector;732526;231101287;0.32;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2018;(ENSENIANZA_SUPERIOR);Higher education sector;509692;112749574;0.45;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2018;(ENSENIANZA_SUPERIOR);Higher education sector;50522;33185968;0.15;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2018;(ENSENIANZA_SUPERIOR);Higher education sector;644585;161894301;0.4;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2018;(ENSENIANZA_SUPERIOR);Higher education sector;125038;31715345;0.39;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2018;(_T);All Sectors;214965;44609266;0.48;Total
+(ES11) Galicia;Galicia;Galicia;2018;(_T);All Sectors;590727;62649363;0.94;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2018;(_T);All Sectors;188453;23185680;0.81;Total
+(ES13) Cantabria;Cantabria;Cantabria;2018;(_T);All Sectors;117858;13843935;0.85;Total
+(ES21) País Vasco;País Vasco;Basque Country;2018;(_T);All Sectors;1451319;71915111;2.02;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2018;(_T);All Sectors;344439;20235995;1.7;Total
+(ES23) La Rioja;La Rioja;La Rioja;2018;(_T);All Sectors;69507;8649852;0.8;Total
+(ES24) Aragón;Aragón;Aragon;2018;(_T);All Sectors;339741;37213896;0.91;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2018;(_T);All Sectors;3922792;233735808;1.68;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2018;(_T);All Sectors;762659;58326859;1.31;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2018;(_T);All Sectors;219039;42290925;0.52;Total
+(ES43) Extremadura;Extremadura;Extremadura;2018;(_T);All Sectors;121950;20713254;0.59;Total
+(ES51) Cataluña;Cataluña;Catalonia;2018;(_T);All Sectors;3512716;231101287;1.52;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2018;(_T);All Sectors;1174248;112749574;1.04;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2018;(_T);All Sectors;128558;33185968;0.39;Total
+(ES61) Andalucía;Andalucía;Andalusia;2018;(_T);All Sectors;1479417;161894301;0.91;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2018;(_T);All Sectors;303097;31715345;0.96;Total
+(ES70) Canarias;Canarias;Canary Islands;2018;(IPSFL);Private non-profit sector;176;44609266;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2018;(IPSFL);Private non-profit sector;2599;62649363;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2018;(IPSFL);Private non-profit sector;74;23185680;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2018;(IPSFL);Private non-profit sector;2640;13843935;0.02;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2018;(IPSFL);Private non-profit sector;1275;71915111;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2018;(IPSFL);Private non-profit sector;46;8649852;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2018;(IPSFL);Private non-profit sector;24;37213896;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2018;(IPSFL);Private non-profit sector;9877;233735808;0.0;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2018;(IPSFL);Private non-profit sector;315;58326859;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2018;(IPSFL);Private non-profit sector;16487;231101287;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2018;(IPSFL);Private non-profit sector;1500;112749574;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2018;(IPSFL);Private non-profit sector;285;33185968;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2018;(IPSFL);Private non-profit sector;2755;161894301;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2018;(IPSFL);Private non-profit sector;145;31715345;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2018;(EMPRESAS_IPSFL);Private non-profit sector;43322;44609266;0.1;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2018;(EMPRESAS_IPSFL);Private non-profit sector;298748;62649363;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2018;(EMPRESAS_IPSFL);Private non-profit sector;113437;23185680;0.49;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2018;(EMPRESAS_IPSFL);Private non-profit sector;49340;13843935;0.36;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2018;(EMPRESAS_IPSFL);Private non-profit sector;1105607;71915111;1.54;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2018;(EMPRESAS_IPSFL);Private non-profit sector;33209;8649852;0.38;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2018;(EMPRESAS_IPSFL);Private non-profit sector;189403;37213896;0.51;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2018;(EMPRESAS_IPSFL);Private non-profit sector;2315671;233735808;0.99;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2018;(EMPRESAS_IPSFL);Private non-profit sector;500183;58326859;0.86;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2018;(EMPRESAS_IPSFL);Private non-profit sector;2162557;231101287;0.94;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2018;(EMPRESAS_IPSFL);Private non-profit sector;536762;112749574;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2018;(EMPRESAS_IPSFL);Private non-profit sector;44087;33185968;0.13;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2018;(EMPRESAS_IPSFL);Private non-profit sector;552053;161894301;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2018;(EMPRESAS_IPSFL);Private non-profit sector;144719;31715345;0.46;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2018;(EMPRESAS);Business enterprise sector;43146;44609266;0.1;Empresas
+(ES11) Galicia;Galicia;Galicia;2018;(EMPRESAS);Business enterprise sector;296149;62649363;0.47;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2018;(EMPRESAS);Business enterprise sector;113363;23185680;0.49;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2018;(EMPRESAS);Business enterprise sector;46700;13843935;0.34;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2018;(EMPRESAS);Business enterprise sector;1104332;71915111;1.54;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2018;(EMPRESAS);Business enterprise sector;233160;20235995;1.15;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2018;(EMPRESAS);Business enterprise sector;33163;8649852;0.38;Empresas
+(ES24) Aragón;Aragón;Aragon;2018;(EMPRESAS);Business enterprise sector;189379;37213896;0.51;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2018;(EMPRESAS);Business enterprise sector;2305794;233735808;0.99;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2018;(EMPRESAS);Business enterprise sector;499868;58326859;0.86;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2018;(EMPRESAS);Business enterprise sector;129542;42290925;0.31;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2018;(EMPRESAS);Business enterprise sector;30449;20713254;0.15;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2018;(EMPRESAS);Business enterprise sector;2146070;231101287;0.93;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2018;(EMPRESAS);Business enterprise sector;535262;112749574;0.47;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2018;(EMPRESAS);Business enterprise sector;43802;33185968;0.13;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2018;(EMPRESAS);Business enterprise sector;549298;161894301;0.34;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2018;(EMPRESAS);Business enterprise sector;144574;31715345;0.46;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2019;(ADMINISTRACION_PUBLICA);Government sector;81881;45766832;0.18;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2019;(ADMINISTRACION_PUBLICA);Government sector;85389;64502005;0.13;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2019;(ADMINISTRACION_PUBLICA);Government sector;24773;23666618;0.1;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2019;(ADMINISTRACION_PUBLICA);Government sector;20080;14274351;0.14;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2019;(ADMINISTRACION_PUBLICA);Government sector;98186;73999981;0.13;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2019;(ADMINISTRACION_PUBLICA);Government sector;33633;21070268;0.16;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2019;(ADMINISTRACION_PUBLICA);Government sector;16320;8889997;0.18;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2019;(ADMINISTRACION_PUBLICA);Government sector;80210;38465053;0.21;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2019;(ADMINISTRACION_PUBLICA);Government sector;930335;243889359;0.38;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2019;(ADMINISTRACION_PUBLICA);Government sector;50956;59649198;0.09;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2019;(ADMINISTRACION_PUBLICA);Government sector;30599;43393303;0.07;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2019;(ADMINISTRACION_PUBLICA);Government sector;28564;21166132;0.13;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2019;(ADMINISTRACION_PUBLICA);Government sector;667586;240165818;0.28;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2019;(ADMINISTRACION_PUBLICA);Government sector;132761;116588528;0.11;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2019;(ADMINISTRACION_PUBLICA);Government sector;34476;34350576;0.1;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2019;(ADMINISTRACION_PUBLICA);Government sector;297855;166478730;0.18;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2019;(ADMINISTRACION_PUBLICA);Government sector;34690;33000651;0.11;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2019;(ENSENIANZA_SUPERIOR);Higher education sector;209574;64502005;0.32;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2019;(ENSENIANZA_SUPERIOR);Higher education sector;57229;23666618;0.24;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2019;(ENSENIANZA_SUPERIOR);Higher education sector;249644;73999981;0.34;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2019;(ENSENIANZA_SUPERIOR);Higher education sector;756774;243889359;0.31;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2019;(ENSENIANZA_SUPERIOR);Higher education sector;226351;59649198;0.38;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2019;(ENSENIANZA_SUPERIOR);Higher education sector;72099;43393303;0.17;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2019;(ENSENIANZA_SUPERIOR);Higher education sector;760782;240165818;0.32;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2019;(ENSENIANZA_SUPERIOR);Higher education sector;531075;116588528;0.46;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2019;(ENSENIANZA_SUPERIOR);Higher education sector;678502;166478730;0.41;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2019;(ENSENIANZA_SUPERIOR);Higher education sector;134756;33000651;0.41;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2019;(_T);All Sectors;219872;45766832;0.48;Total
+(ES11) Galicia;Galicia;Galicia;2019;(_T);All Sectors;627329;64502005;0.97;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2019;(_T);All Sectors;195601;23666618;0.83;Total
+(ES13) Cantabria;Cantabria;Cantabria;2019;(_T);All Sectors;119008;14274351;0.83;Total
+(ES21) País Vasco;País Vasco;Basque Country;2019;(_T);All Sectors;1474109;73999981;1.99;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2019;(_T);All Sectors;355779;21070268;1.69;Total
+(ES23) La Rioja;La Rioja;La Rioja;2019;(_T);All Sectors;67745;8889997;0.76;Total
+(ES24) Aragón;Aragón;Aragon;2019;(_T);All Sectors;358602;38465053;0.93;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2019;(_T);All Sectors;4100551;243889359;1.68;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2019;(_T);All Sectors;800924;59649198;1.34;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2019;(_T);All Sectors;253003;43393303;0.58;Total
+(ES43) Extremadura;Extremadura;Extremadura;2019;(_T);All Sectors;139320;21166132;0.66;Total
+(ES51) Cataluña;Cataluña;Catalonia;2019;(_T);All Sectors;3596646;240165818;1.5;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2019;(_T);All Sectors;1264029;116588528;1.08;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2019;(_T);All Sectors;134242;34350576;0.39;Total
+(ES61) Andalucía;Andalucía;Andalusia;2019;(_T);All Sectors;1538408;166478730;0.92;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2019;(_T);All Sectors;323429;33000651;0.98;Total
+(ES11) Galicia;Galicia;Galicia;2019;(IPSFL);Private non-profit sector;2369;64502005;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2019;(IPSFL);Private non-profit sector;23;23666618;0.0;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2019;(IPSFL);Private non-profit sector;1180;73999981;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2019;(IPSFL);Private non-profit sector;14632;243889359;0.01;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2019;(IPSFL);Private non-profit sector;265;59649198;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2019;(IPSFL);Private non-profit sector;302;43393303;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2019;(IPSFL);Private non-profit sector;16613;240165818;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2019;(IPSFL);Private non-profit sector;455;116588528;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2019;(IPSFL);Private non-profit sector;3123;166478730;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2019;(IPSFL);Private non-profit sector;114;33000651;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2019;(EMPRESAS_IPSFL);Private non-profit sector;332366;64502005;0.52;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2019;(EMPRESAS_IPSFL);Private non-profit sector;113600;23666618;0.48;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2019;(EMPRESAS_IPSFL);Private non-profit sector;1126280;73999981;1.52;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2019;(EMPRESAS_IPSFL);Private non-profit sector;2413441;243889359;0.99;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2019;(EMPRESAS_IPSFL);Private non-profit sector;523616;59649198;0.88;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2019;(EMPRESAS_IPSFL);Private non-profit sector;150305;43393303;0.35;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2019;(EMPRESAS_IPSFL);Private non-profit sector;2168278;240165818;0.9;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2019;(EMPRESAS_IPSFL);Private non-profit sector;600192;116588528;0.51;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2019;(EMPRESAS_IPSFL);Private non-profit sector;562051;166478730;0.34;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2019;(EMPRESAS_IPSFL);Private non-profit sector;153983;33000651;0.47;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2019;(EMPRESAS);Business enterprise sector;40042;45766832;0.09;Empresas
+(ES11) Galicia;Galicia;Galicia;2019;(EMPRESAS);Business enterprise sector;329997;64502005;0.51;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2019;(EMPRESAS);Business enterprise sector;113577;23666618;0.48;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2019;(EMPRESAS);Business enterprise sector;45215;14274351;0.32;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2019;(EMPRESAS);Business enterprise sector;1125100;73999981;1.52;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2019;(EMPRESAS);Business enterprise sector;237796;21070268;1.13;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2019;(EMPRESAS);Business enterprise sector;32300;8889997;0.36;Empresas
+(ES24) Aragón;Aragón;Aragon;2019;(EMPRESAS);Business enterprise sector;200365;38465053;0.52;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2019;(EMPRESAS);Business enterprise sector;2398809;243889359;0.98;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2019;(EMPRESAS);Business enterprise sector;523351;59649198;0.88;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2019;(EMPRESAS);Business enterprise sector;150003;43393303;0.35;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2019;(EMPRESAS);Business enterprise sector;32032;21166132;0.15;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2019;(EMPRESAS);Business enterprise sector;2151665;240165818;0.9;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2019;(EMPRESAS);Business enterprise sector;599737;116588528;0.51;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2019;(EMPRESAS);Business enterprise sector;47647;34350576;0.14;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2019;(EMPRESAS);Business enterprise sector;558928;166478730;0.34;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2019;(EMPRESAS);Business enterprise sector;153869;33000651;0.47;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2020;(ADMINISTRACION_PUBLICA);Government sector;81197;37587399;0.22;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2020;(ADMINISTRACION_PUBLICA);Government sector;98462;59007178;0.17;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2020;(ADMINISTRACION_PUBLICA);Government sector;25759;21376392;0.12;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2020;(ADMINISTRACION_PUBLICA);Government sector;21633;12991241;0.17;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2020;(ADMINISTRACION_PUBLICA);Government sector;89500;66672598;0.13;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2020;(ADMINISTRACION_PUBLICA);Government sector;33479;19160726;0.17;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2020;(ADMINISTRACION_PUBLICA);Government sector;17048;8186915;0.21;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2020;(ADMINISTRACION_PUBLICA);Government sector;72666;35955571;0.2;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2020;(ADMINISTRACION_PUBLICA);Government sector;1005489;221061932;0.45;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2020;(ADMINISTRACION_PUBLICA);Government sector;54322;54794589;0.1;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2020;(ADMINISTRACION_PUBLICA);Government sector;37722;40254360;0.09;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2020;(ADMINISTRACION_PUBLICA);Government sector;29537;19497343;0.15;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2020;(ADMINISTRACION_PUBLICA);Government sector;668489;214857435;0.31;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2020;(ADMINISTRACION_PUBLICA);Government sector;139721;106067171;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2020;(ADMINISTRACION_PUBLICA);Government sector;36311;26669106;0.14;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2020;(ADMINISTRACION_PUBLICA);Government sector;305840;150452909;0.2;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2020;(ADMINISTRACION_PUBLICA);Government sector;35694;30440306;0.12;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2020;(ENSENIANZA_SUPERIOR);Higher education sector;92283;37587399;0.25;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2020;(ENSENIANZA_SUPERIOR);Higher education sector;214458;59007178;0.36;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2020;(ENSENIANZA_SUPERIOR);Higher education sector;63386;21376392;0.3;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2020;(ENSENIANZA_SUPERIOR);Higher education sector;51539;12991241;0.4;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2020;(ENSENIANZA_SUPERIOR);Higher education sector;253023;66672598;0.38;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2020;(ENSENIANZA_SUPERIOR);Higher education sector;76630;35955571;0.21;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2020;(ENSENIANZA_SUPERIOR);Higher education sector;777308;221061932;0.35;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2020;(ENSENIANZA_SUPERIOR);Higher education sector;223836;54794589;0.41;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2020;(ENSENIANZA_SUPERIOR);Higher education sector;73869;40254360;0.18;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2020;(ENSENIANZA_SUPERIOR);Higher education sector;763710;214857435;0.36;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2020;(ENSENIANZA_SUPERIOR);Higher education sector;524778;106067171;0.49;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2020;(ENSENIANZA_SUPERIOR);Higher education sector;727876;150452909;0.48;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2020;(ENSENIANZA_SUPERIOR);Higher education sector;140339;30440306;0.46;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2020;(_T);All Sectors;217808;37587399;0.58;Total
+(ES11) Galicia;Galicia;Galicia;2020;(_T);All Sectors;641680;59007178;1.09;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2020;(_T);All Sectors;193658;21376392;0.91;Total
+(ES13) Cantabria;Cantabria;Cantabria;2020;(_T);All Sectors;120120;12991241;0.92;Total
+(ES21) País Vasco;País Vasco;Basque Country;2020;(_T);All Sectors;1461517;66672598;2.19;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2020;(_T);All Sectors;366353;19160726;1.91;Total
+(ES23) La Rioja;La Rioja;La Rioja;2020;(_T);All Sectors;64412;8186915;0.79;Total
+(ES24) Aragón;Aragón;Aragon;2020;(_T);All Sectors;339438;35955571;0.94;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2020;(_T);All Sectors;4252947;221061932;1.92;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2020;(_T);All Sectors;758475;54794589;1.38;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2020;(_T);All Sectors;261065;40254360;0.65;Total
+(ES43) Extremadura;Extremadura;Extremadura;2020;(_T);All Sectors;125337;19497343;0.64;Total
+(ES51) Cataluña;Cataluña;Catalonia;2020;(_T);All Sectors;3619256;214857435;1.68;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2020;(_T);All Sectors;1236012;106067171;1.17;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2020;(_T);All Sectors;137698;26669106;0.52;Total
+(ES61) Andalucía;Andalucía;Andalusia;2020;(_T);All Sectors;1627247;150452909;1.08;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2020;(_T);All Sectors;341157;30440306;1.12;Total
+(ES70) Canarias;Canarias;Canary Islands;2020;(IPSFL);Private non-profit sector;109;37587399;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2020;(IPSFL);Private non-profit sector;2679;59007178;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2020;(IPSFL);Private non-profit sector;35;21376392;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2020;(IPSFL);Private non-profit sector;1617;12991241;0.01;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2020;(IPSFL);Private non-profit sector;1118;66672598;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2020;(IPSFL);Private non-profit sector;0;35955571;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2020;(IPSFL);Private non-profit sector;19523;221061932;0.01;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2020;(IPSFL);Private non-profit sector;148;54794589;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2020;(IPSFL);Private non-profit sector;271;40254360;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2020;(IPSFL);Private non-profit sector;15920;214857435;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2020;(IPSFL);Private non-profit sector;480;106067171;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2020;(IPSFL);Private non-profit sector;3272;150452909;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2020;(IPSFL);Private non-profit sector;141;30440306;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2020;(EMPRESAS_IPSFL);Private non-profit sector;44327;37587399;0.12;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2020;(EMPRESAS_IPSFL);Private non-profit sector;328760;59007178;0.56;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2020;(EMPRESAS_IPSFL);Private non-profit sector;104513;21376392;0.49;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2020;(EMPRESAS_IPSFL);Private non-profit sector;46949;12991241;0.36;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2020;(EMPRESAS_IPSFL);Private non-profit sector;1118994;66672598;1.68;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2020;(EMPRESAS_IPSFL);Private non-profit sector;190142;35955571;0.53;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2020;(EMPRESAS_IPSFL);Private non-profit sector;2470150;221061932;1.12;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2020;(EMPRESAS_IPSFL);Private non-profit sector;480317;54794589;0.88;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2020;(EMPRESAS_IPSFL);Private non-profit sector;149474;40254360;0.37;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2020;(EMPRESAS_IPSFL);Private non-profit sector;2187057;214857435;1.02;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2020;(EMPRESAS_IPSFL);Private non-profit sector;571513;106067171;0.54;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2020;(EMPRESAS_IPSFL);Private non-profit sector;593532;150452909;0.39;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2020;(EMPRESAS_IPSFL);Private non-profit sector;165124;30440306;0.54;Empresas e Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2020;(EMPRESAS);Business enterprise sector;44218;37587399;0.12;Empresas
+(ES11) Galicia;Galicia;Galicia;2020;(EMPRESAS);Business enterprise sector;326081;59007178;0.55;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2020;(EMPRESAS);Business enterprise sector;104478;21376392;0.49;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2020;(EMPRESAS);Business enterprise sector;45332;12991241;0.35;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2020;(EMPRESAS);Business enterprise sector;1117876;66672598;1.68;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2020;(EMPRESAS);Business enterprise sector;247294;19160726;1.29;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2020;(EMPRESAS);Business enterprise sector;27292;8186915;0.33;Empresas
+(ES24) Aragón;Aragón;Aragon;2020;(EMPRESAS);Business enterprise sector;190142;35955571;0.53;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2020;(EMPRESAS);Business enterprise sector;2450627;221061932;1.11;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2020;(EMPRESAS);Business enterprise sector;480169;54794589;0.88;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2020;(EMPRESAS);Business enterprise sector;149203;40254360;0.37;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2020;(EMPRESAS);Business enterprise sector;36051;19497343;0.18;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2020;(EMPRESAS);Business enterprise sector;2171137;214857435;1.01;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2020;(EMPRESAS);Business enterprise sector;571033;106067171;0.54;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2020;(EMPRESAS);Business enterprise sector;50961;26669106;0.19;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2020;(EMPRESAS);Business enterprise sector;590260;150452909;0.39;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2020;(EMPRESAS);Business enterprise sector;164983;30440306;0.54;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2021;(_T);All Sectors;238542;41407275;0.58;Total
+(ES11) Galicia;Galicia;Galicia;2021;(_T);All Sectors;694942;64387386;1.08;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2021;(_T);All Sectors;204327;23617641;0.87;Total
+(ES13) Cantabria;Cantabria;Cantabria;2021;(_T);All Sectors;133210;14206538;0.94;Total
+(ES21) País Vasco;País Vasco;Basque Country;2021;(_T);All Sectors;1666672;72513029;2.3;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2021;(_T);All Sectors;390206;20821017;1.87;Total
+(ES23) La Rioja;La Rioja;La Rioja;2021;(_T);All Sectors;64987;8735750;0.74;Total
+(ES24) Aragón;Aragón;Aragon;2021;(_T);All Sectors;386939;38782157;1.0;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2021;(_T);All Sectors;4538085;239837609;1.89;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2021;(_T);All Sectors;795932;59465900;1.34;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2021;(_T);All Sectors;339734;44123986;0.77;Total
+(ES43) Extremadura;Extremadura;Extremadura;2021;(_T);All Sectors;149078;21551517;0.69;Total
+(ES51) Cataluña;Cataluña;Catalonia;2021;(_T);All Sectors;4083036;234820402;1.74;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2021;(_T);All Sectors;1354194;116386906;1.16;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2021;(_T);All Sectors;146044;30512146;0.48;Total
+(ES61) Andalucía;Andalucía;Andalusia;2021;(_T);All Sectors;1702682;166296356;1.02;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2021;(_T);All Sectors;351429;33603543;1.05;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2021;(_T);All Sectors;3620;1634006;0.22;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2021;(_T);All Sectors;5589;1534391;0.36;Total
+(ES70) Canarias;Canarias;Canary Islands;2021;(IPSFL);Private non-profit sector;263;41407275;0.0;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2021;(IPSFL);Private non-profit sector;3481;64387386;0.01;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2021;(IPSFL);Private non-profit sector;42;23617641;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2021;(IPSFL);Private non-profit sector;2243;14206538;0.02;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2021;(IPSFL);Private non-profit sector;1307;72513029;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2021;(IPSFL);Private non-profit sector;24854;239837609;0.01;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2021;(IPSFL);Private non-profit sector;222;59465900;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2021;(IPSFL);Private non-profit sector;290;44123986;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2021;(IPSFL);Private non-profit sector;17163;234820402;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2021;(IPSFL);Private non-profit sector;1009;116386906;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2021;(IPSFL);Private non-profit sector;4149;166296356;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2021;(IPSFL);Private non-profit sector;192;33603543;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2021;(ENSENIANZA_SUPERIOR);Higher education sector;97311;41407275;0.24;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2021;(ENSENIANZA_SUPERIOR);Higher education sector;240077;64387386;0.37;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2021;(ENSENIANZA_SUPERIOR);Higher education sector;66093;23617641;0.28;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2021;(ENSENIANZA_SUPERIOR);Higher education sector;53762;14206538;0.38;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2021;(ENSENIANZA_SUPERIOR);Higher education sector;265812;72513029;0.37;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2021;(ENSENIANZA_SUPERIOR);Higher education sector;856925;239837609;0.36;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2021;(ENSENIANZA_SUPERIOR);Higher education sector;248360;59465900;0.42;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2021;(ENSENIANZA_SUPERIOR);Higher education sector;81127;44123986;0.18;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2021;(ENSENIANZA_SUPERIOR);Higher education sector;850264;234820402;0.36;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2021;(ENSENIANZA_SUPERIOR);Higher education sector;567644;116386906;0.49;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2021;(ENSENIANZA_SUPERIOR);Higher education sector;777197;166296356;0.47;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2021;(ENSENIANZA_SUPERIOR);Higher education sector;147020;33603543;0.44;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2021;(EMPRESAS);Business enterprise sector;53395;41407275;0.13;Empresas
+(ES11) Galicia;Galicia;Galicia;2021;(EMPRESAS);Business enterprise sector;350934;64387386;0.55;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2021;(EMPRESAS);Business enterprise sector;108776;23617641;0.46;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2021;(EMPRESAS);Business enterprise sector;56397;14206538;0.4;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2021;(EMPRESAS);Business enterprise sector;1291172;72513029;1.78;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2021;(EMPRESAS);Business enterprise sector;255164;20821017;1.23;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2021;(EMPRESAS);Business enterprise sector;27531;8735750;0.32;Empresas
+(ES24) Aragón;Aragón;Aragon;2021;(EMPRESAS);Business enterprise sector;225763;38782157;0.58;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2021;(EMPRESAS);Business enterprise sector;2642843;239837609;1.1;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2021;(EMPRESAS);Business enterprise sector;485492;59465900;0.82;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2021;(EMPRESAS);Business enterprise sector;216514;44123986;0.49;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2021;(EMPRESAS);Business enterprise sector;41334;21551517;0.19;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2021;(EMPRESAS);Business enterprise sector;2492285;234820402;1.06;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2021;(EMPRESAS);Business enterprise sector;636800;116386906;0.55;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2021;(EMPRESAS);Business enterprise sector;54278;30512146;0.18;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2021;(EMPRESAS);Business enterprise sector;591584;166296356;0.36;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2021;(EMPRESAS);Business enterprise sector;165584;33603543;0.49;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2021;(ADMINISTRACION_PUBLICA);Government sector;87573;41407275;0.21;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2021;(ADMINISTRACION_PUBLICA);Government sector;100449;64387386;0.16;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2021;(ADMINISTRACION_PUBLICA);Government sector;29416;23617641;0.12;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2021;(ADMINISTRACION_PUBLICA);Government sector;20808;14206538;0.15;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2021;(ADMINISTRACION_PUBLICA);Government sector;108382;72513029;0.15;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2021;(ADMINISTRACION_PUBLICA);Government sector;37546;20821017;0.18;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2021;(ADMINISTRACION_PUBLICA);Government sector;17705;8735750;0.2;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2021;(ADMINISTRACION_PUBLICA);Government sector;78999;38782157;0.2;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2021;(ADMINISTRACION_PUBLICA);Government sector;1013463;239837609;0.42;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2021;(ADMINISTRACION_PUBLICA);Government sector;61859;59465900;0.1;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2021;(ADMINISTRACION_PUBLICA);Government sector;41803;44123986;0.09;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2021;(ADMINISTRACION_PUBLICA);Government sector;33132;21551517;0.15;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2021;(ADMINISTRACION_PUBLICA);Government sector;723324;234820402;0.31;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2021;(ADMINISTRACION_PUBLICA);Government sector;148742;116386906;0.13;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2021;(ADMINISTRACION_PUBLICA);Government sector;38313;30512146;0.13;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2021;(ADMINISTRACION_PUBLICA);Government sector;329753;166296356;0.2;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2021;(ADMINISTRACION_PUBLICA);Government sector;38632;33603543;0.11;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2022;(_T);All Sectors;271596;48551111;0.56;Total
+(ES11) Galicia;Galicia;Galicia;2022;(_T);All Sectors;751045;71365906;1.05;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2022;(_T);All Sectors;217867;26481237;0.82;Total
+(ES13) Cantabria;Cantabria;Cantabria;2022;(_T);All Sectors;138479;15540457;0.89;Total
+(ES21) País Vasco;País Vasco;Basque Country;2022;(_T);All Sectors;1772820;80480881;2.2;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2022;(_T);All Sectors;409931;23210913;1.77;Total
+(ES23) La Rioja;La Rioja;La Rioja;2022;(_T);All Sectors;82328;9713131;0.85;Total
+(ES24) Aragón;Aragón;Aragon;2022;(_T);All Sectors;447121;43453612;1.03;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2022;(_T);All Sectors;5130046;267578839;1.92;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2022;(_T);All Sectors;866999;65121330;1.33;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2022;(_T);All Sectors;313897;49675613;0.63;Total
+(ES43) Extremadura;Extremadura;Extremadura;2022;(_T);All Sectors;158054;23140516;0.68;Total
+(ES51) Cataluña;Cataluña;Catalonia;2022;(_T);All Sectors;4827232;258686459;1.87;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2022;(_T);All Sectors;1485293;127589937;1.16;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2022;(_T);All Sectors;164211;37164955;0.44;Total
+(ES61) Andalucía;Andalucía;Andalusia;2022;(_T);All Sectors;1890566;183635844;1.03;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2022;(_T);All Sectors;387214;37492649;1.03;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2022;(_T);All Sectors;3992;1763707;0.23;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2022;(_T);All Sectors;6064;1654183;0.37;Total
+(ES70) Canarias;Canarias;Canary Islands;2022;(IPSFL);Private non-profit sector;3567;48551111;0.01;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2022;(IPSFL);Private non-profit sector;4890;71365906;0.01;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2022;(IPSFL);Private non-profit sector;93;26481237;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2022;(IPSFL);Private non-profit sector;2313;15540457;0.01;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2022;(IPSFL);Private non-profit sector;1575;80480881;0.0;Instituciones Privadas sin Fines de Lucro
+(ES23) La Rioja;La Rioja;La Rioja;2022;(IPSFL);Private non-profit sector;41;9713131;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2022;(IPSFL);Private non-profit sector;668;43453612;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2022;(IPSFL);Private non-profit sector;27449;267578839;0.01;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2022;(IPSFL);Private non-profit sector;611;65121330;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2022;(IPSFL);Private non-profit sector;273;49675613;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2022;(IPSFL);Private non-profit sector;18602;258686459;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2022;(IPSFL);Private non-profit sector;1377;127589937;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2022;(IPSFL);Private non-profit sector;56;37164955;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2022;(IPSFL);Private non-profit sector;5199;183635844;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2022;(IPSFL);Private non-profit sector;155;37492649;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2022;(ENSENIANZA_SUPERIOR);Higher education sector;103127;48551111;0.21;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2022;(ENSENIANZA_SUPERIOR);Higher education sector;258791;71365906;0.36;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2022;(ENSENIANZA_SUPERIOR);Higher education sector;74383;26481237;0.28;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2022;(ENSENIANZA_SUPERIOR);Higher education sector;58575;15540457;0.38;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2022;(ENSENIANZA_SUPERIOR);Higher education sector;297995;80480881;0.37;Enseñanza Superior
+(ES23) La Rioja;La Rioja;La Rioja;2022;(ENSENIANZA_SUPERIOR);Higher education sector;22820;9713131;0.23;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2022;(ENSENIANZA_SUPERIOR);Higher education sector;90933;43453612;0.21;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2022;(ENSENIANZA_SUPERIOR);Higher education sector;960881;267578839;0.36;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2022;(ENSENIANZA_SUPERIOR);Higher education sector;272169;65121330;0.42;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2022;(ENSENIANZA_SUPERIOR);Higher education sector;79668;49675613;0.16;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2022;(ENSENIANZA_SUPERIOR);Higher education sector;953810;258686459;0.37;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2022;(ENSENIANZA_SUPERIOR);Higher education sector;633534;127589937;0.5;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2022;(ENSENIANZA_SUPERIOR);Higher education sector;60362;37164955;0.16;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2022;(ENSENIANZA_SUPERIOR);Higher education sector;816588;183635844;0.44;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2022;(ENSENIANZA_SUPERIOR);Higher education sector;151957;37492649;0.41;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2022;(EMPRESAS);Business enterprise sector;70265;48551111;0.14;Empresas
+(ES11) Galicia;Galicia;Galicia;2022;(EMPRESAS);Business enterprise sector;383914;71365906;0.54;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2022;(EMPRESAS);Business enterprise sector;105708;26481237;0.4;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2022;(EMPRESAS);Business enterprise sector;55763;15540457;0.36;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2022;(EMPRESAS);Business enterprise sector;1342039;80480881;1.67;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2022;(EMPRESAS);Business enterprise sector;270607;23210913;1.17;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2022;(EMPRESAS);Business enterprise sector;37674;9713131;0.39;Empresas
+(ES24) Aragón;Aragón;Aragon;2022;(EMPRESAS);Business enterprise sector;262622;43453612;0.6;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2022;(EMPRESAS);Business enterprise sector;3001696;267578839;1.12;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2022;(EMPRESAS);Business enterprise sector;519290;65121330;0.8;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2022;(EMPRESAS);Business enterprise sector;185492;49675613;0.37;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2022;(EMPRESAS);Business enterprise sector;45894;23140516;0.2;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2022;(EMPRESAS);Business enterprise sector;3022294;258686459;1.17;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2022;(EMPRESAS);Business enterprise sector;667797;127589937;0.52;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2022;(EMPRESAS);Business enterprise sector;62036;37164955;0.17;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2022;(EMPRESAS);Business enterprise sector;676368;183635844;0.37;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2022;(EMPRESAS);Business enterprise sector;191920;37492649;0.51;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2022;(ADMINISTRACION_PUBLICA);Government sector;94636;48551111;0.19;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2022;(ADMINISTRACION_PUBLICA);Government sector;103451;71365906;0.14;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2022;(ADMINISTRACION_PUBLICA);Government sector;37682;26481237;0.14;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2022;(ADMINISTRACION_PUBLICA);Government sector;21829;15540457;0.14;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2022;(ADMINISTRACION_PUBLICA);Government sector;131211;80480881;0.16;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2022;(ADMINISTRACION_PUBLICA);Government sector;37844;23210913;0.16;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2022;(ADMINISTRACION_PUBLICA);Government sector;21793;9713131;0.22;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2022;(ADMINISTRACION_PUBLICA);Government sector;92899;43453612;0.21;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2022;(ADMINISTRACION_PUBLICA);Government sector;1140020;267578839;0.43;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2022;(ADMINISTRACION_PUBLICA);Government sector;74930;65121330;0.12;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2022;(ADMINISTRACION_PUBLICA);Government sector;48464;49675613;0.1;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2022;(ADMINISTRACION_PUBLICA);Government sector;32248;23140516;0.14;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2022;(ADMINISTRACION_PUBLICA);Government sector;832526;258686459;0.32;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2022;(ADMINISTRACION_PUBLICA);Government sector;182584;127589937;0.14;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2022;(ADMINISTRACION_PUBLICA);Government sector;41757;37164955;0.11;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2022;(ADMINISTRACION_PUBLICA);Government sector;392412;183635844;0.21;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2022;(ADMINISTRACION_PUBLICA);Government sector;43183;37492649;0.12;Administración Pública
+(ES70) Canarias;Canarias;Canary Islands;2023;(_T);All Sectors;309304;54193658;0.57;Total
+(ES11) Galicia;Galicia;Galicia;2023;(_T);All Sectors;962801;77356297;1.24;Total
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2023;(_T);All Sectors;278980;28325520;0.98;Total
+(ES13) Cantabria;Cantabria;Cantabria;2023;(_T);All Sectors;161454;16776590;0.96;Total
+(ES21) País Vasco;País Vasco;Basque Country;2023;(_T);All Sectors;2062113;87857474;2.35;Total
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2023;(_T);All Sectors;446706;25041231;1.78;Total
+(ES23) La Rioja;La Rioja;La Rioja;2023;(_T);All Sectors;96928;10618056;0.91;Total
+(ES24) Aragón;Aragón;Aragon;2023;(_T);All Sectors;543624;46673641;1.16;Total
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2023;(_T);All Sectors;6039560;293069284;2.06;Total
+(ES41) Castilla y León;Castilla y León;Castile and León;2023;(_T);All Sectors;963634;70876328;1.36;Total
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2023;(_T);All Sectors;332831;53929118;0.62;Total
+(ES43) Extremadura;Extremadura;Extremadura;2023;(_T);All Sectors;179329;24870107;0.72;Total
+(ES51) Cataluña;Cataluña;Catalonia;2023;(_T);All Sectors;5364909;281845146;1.9;Total
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2023;(_T);All Sectors;1713279;139419926;1.23;Total
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2023;(_T);All Sectors;201008;42083948;0.48;Total
+(ES61) Andalucía;Andalucía;Andalusia;2023;(_T);All Sectors;2285666;199951794;1.14;Total
+(ES62) Región de Murcia;Región de Murcia;Murcia;2023;(_T);All Sectors;426454;40385838;1.06;Total
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2023;(_T);All Sectors;4252;1888536;0.23;Total
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2023;(_T);All Sectors;6321;1750186;0.36;Total
+(ES70) Canarias;Canarias;Canary Islands;2023;(IPSFL);Private non-profit sector;2808;54193658;0.01;Instituciones Privadas sin Fines de Lucro
+(ES11) Galicia;Galicia;Galicia;2023;(IPSFL);Private non-profit sector;3282;77356297;0.0;Instituciones Privadas sin Fines de Lucro
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2023;(IPSFL);Private non-profit sector;293;28325520;0.0;Instituciones Privadas sin Fines de Lucro
+(ES13) Cantabria;Cantabria;Cantabria;2023;(IPSFL);Private non-profit sector;4370;16776590;0.03;Instituciones Privadas sin Fines de Lucro
+(ES21) País Vasco;País Vasco;Basque Country;2023;(IPSFL);Private non-profit sector;1531;87857474;0.0;Instituciones Privadas sin Fines de Lucro
+(ES24) Aragón;Aragón;Aragon;2023;(IPSFL);Private non-profit sector;931;46673641;0.0;Instituciones Privadas sin Fines de Lucro
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2023;(IPSFL);Private non-profit sector;21354;293069284;0.01;Instituciones Privadas sin Fines de Lucro
+(ES41) Castilla y León;Castilla y León;Castile and León;2023;(IPSFL);Private non-profit sector;372;70876328;0.0;Instituciones Privadas sin Fines de Lucro
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2023;(IPSFL);Private non-profit sector;565;53929118;0.0;Instituciones Privadas sin Fines de Lucro
+(ES51) Cataluña;Cataluña;Catalonia;2023;(IPSFL);Private non-profit sector;19353;281845146;0.01;Instituciones Privadas sin Fines de Lucro
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2023;(IPSFL);Private non-profit sector;1861;139419926;0.0;Instituciones Privadas sin Fines de Lucro
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2023;(IPSFL);Private non-profit sector;152;42083948;0.0;Instituciones Privadas sin Fines de Lucro
+(ES61) Andalucía;Andalucía;Andalusia;2023;(IPSFL);Private non-profit sector;4921;199951794;0.0;Instituciones Privadas sin Fines de Lucro
+(ES62) Región de Murcia;Región de Murcia;Murcia;2023;(IPSFL);Private non-profit sector;139;40385838;0.0;Instituciones Privadas sin Fines de Lucro
+(ES63) Ciudad Autónoma de Ceuta;Ciudad Autónoma de Ceuta;Ceuta;2023;(IPSFL);Private non-profit sector;0;1888536;0.0;Instituciones Privadas sin Fines de Lucro
+(ES64) Ciudad Autónoma de Melilla;Ciudad Autónoma de Melilla;Melilla;2023;(IPSFL);Private non-profit sector;0;1750186;0.0;Instituciones Privadas sin Fines de Lucro
+(ES70) Canarias;Canarias;Canary Islands;2023;(ENSENIANZA_SUPERIOR);Higher education sector;116269;54193658;0.21;Enseñanza Superior
+(ES11) Galicia;Galicia;Galicia;2023;(ENSENIANZA_SUPERIOR);Higher education sector;371362;77356297;0.48;Enseñanza Superior
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2023;(ENSENIANZA_SUPERIOR);Higher education sector;77515;28325520;0.27;Enseñanza Superior
+(ES13) Cantabria;Cantabria;Cantabria;2023;(ENSENIANZA_SUPERIOR);Higher education sector;70950;16776590;0.42;Enseñanza Superior
+(ES21) País Vasco;País Vasco;Basque Country;2023;(ENSENIANZA_SUPERIOR);Higher education sector;331027;87857474;0.38;Enseñanza Superior
+(ES24) Aragón;Aragón;Aragon;2023;(ENSENIANZA_SUPERIOR);Higher education sector;106163;46673641;0.23;Enseñanza Superior
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2023;(ENSENIANZA_SUPERIOR);Higher education sector;1019577;293069284;0.35;Enseñanza Superior
+(ES41) Castilla y León;Castilla y León;Castile and León;2023;(ENSENIANZA_SUPERIOR);Higher education sector;292701;70876328;0.41;Enseñanza Superior
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2023;(ENSENIANZA_SUPERIOR);Higher education sector;91150;53929118;0.17;Enseñanza Superior
+(ES51) Cataluña;Cataluña;Catalonia;2023;(ENSENIANZA_SUPERIOR);Higher education sector;1025008;281845146;0.36;Enseñanza Superior
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2023;(ENSENIANZA_SUPERIOR);Higher education sector;705962;139419926;0.51;Enseñanza Superior
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2023;(ENSENIANZA_SUPERIOR);Higher education sector;70581;42083948;0.17;Enseñanza Superior
+(ES61) Andalucía;Andalucía;Andalusia;2023;(ENSENIANZA_SUPERIOR);Higher education sector;1032287;199951794;0.52;Enseñanza Superior
+(ES62) Región de Murcia;Región de Murcia;Murcia;2023;(ENSENIANZA_SUPERIOR);Higher education sector;165213;40385838;0.41;Enseñanza Superior
+(ES70) Canarias;Canarias;Canary Islands;2023;(EMPRESAS);Business enterprise sector;89179;54193658;0.16;Empresas
+(ES11) Galicia;Galicia;Galicia;2023;(EMPRESAS);Business enterprise sector;460586;77356297;0.6;Empresas
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2023;(EMPRESAS);Business enterprise sector;156343;28325520;0.55;Empresas
+(ES13) Cantabria;Cantabria;Cantabria;2023;(EMPRESAS);Business enterprise sector;59367;16776590;0.35;Empresas
+(ES21) País Vasco;País Vasco;Basque Country;2023;(EMPRESAS);Business enterprise sector;1575506;87857474;1.79;Empresas
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2023;(EMPRESAS);Business enterprise sector;300238;25041231;1.2;Empresas
+(ES23) La Rioja;La Rioja;La Rioja;2023;(EMPRESAS);Business enterprise sector;39158;10618056;0.37;Empresas
+(ES24) Aragón;Aragón;Aragon;2023;(EMPRESAS);Business enterprise sector;321648;46673641;0.69;Empresas
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2023;(EMPRESAS);Business enterprise sector;3465544;293069284;1.18;Empresas
+(ES41) Castilla y León;Castilla y León;Castile and León;2023;(EMPRESAS);Business enterprise sector;588277;70876328;0.83;Empresas
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2023;(EMPRESAS);Business enterprise sector;190075;53929118;0.35;Empresas
+(ES43) Extremadura;Extremadura;Extremadura;2023;(EMPRESAS);Business enterprise sector;46530;24870107;0.19;Empresas
+(ES51) Cataluña;Cataluña;Catalonia;2023;(EMPRESAS);Business enterprise sector;3450417;281845146;1.22;Empresas
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2023;(EMPRESAS);Business enterprise sector;797251;139419926;0.57;Empresas
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2023;(EMPRESAS);Business enterprise sector;83710;42083948;0.2;Empresas
+(ES61) Andalucía;Andalucía;Andalusia;2023;(EMPRESAS);Business enterprise sector;785073;199951794;0.39;Empresas
+(ES62) Región de Murcia;Región de Murcia;Murcia;2023;(EMPRESAS);Business enterprise sector;206717;40385838;0.51;Empresas
+(ES70) Canarias;Canarias;Canary Islands;2023;(ADMINISTRACION_PUBLICA);Government sector;101048;54193658;0.19;Administración Pública
+(ES11) Galicia;Galicia;Galicia;2023;(ADMINISTRACION_PUBLICA);Government sector;127572;77356297;0.16;Administración Pública
+(ES12) Principado de Asturias;Principado de Asturias;Asturias;2023;(ADMINISTRACION_PUBLICA);Government sector;44830;28325520;0.16;Administración Pública
+(ES13) Cantabria;Cantabria;Cantabria;2023;(ADMINISTRACION_PUBLICA);Government sector;26767;16776590;0.16;Administración Pública
+(ES21) País Vasco;País Vasco;Basque Country;2023;(ADMINISTRACION_PUBLICA);Government sector;154049;87857474;0.18;Administración Pública
+(ES22) Comunidad Foral de Navarra;Comunidad Foral de Navarra;Navarre;2023;(ADMINISTRACION_PUBLICA);Government sector;41747;25041231;0.17;Administración Pública
+(ES23) La Rioja;La Rioja;La Rioja;2023;(ADMINISTRACION_PUBLICA);Government sector;21507;10618056;0.2;Administración Pública
+(ES24) Aragón;Aragón;Aragon;2023;(ADMINISTRACION_PUBLICA);Government sector;114882;46673641;0.25;Administración Pública
+(ES30) Comunidad de Madrid;Comunidad de Madrid;Madrid;2023;(ADMINISTRACION_PUBLICA);Government sector;1533085;293069284;0.52;Administración Pública
+(ES41) Castilla y León;Castilla y León;Castile and León;2023;(ADMINISTRACION_PUBLICA);Government sector;82285;70876328;0.12;Administración Pública
+(ES42) Castilla - La Mancha;Castilla - La Mancha;Castilla–La Mancha;2023;(ADMINISTRACION_PUBLICA);Government sector;51041;53929118;0.09;Administración Pública
+(ES43) Extremadura;Extremadura;Extremadura;2023;(ADMINISTRACION_PUBLICA);Government sector;50547;24870107;0.2;Administración Pública
+(ES51) Cataluña;Cataluña;Catalonia;2023;(ADMINISTRACION_PUBLICA);Government sector;870131;281845146;0.31;Administración Pública
+(ES52) Comunidad Valenciana;Comunidad Valenciana;Valencia;2023;(ADMINISTRACION_PUBLICA);Government sector;208205;139419926;0.15;Administración Pública
+(ES53) Illes Balears / Islas Baleares;Illes Balears / Islas Baleares;Balearic Islands;2023;(ADMINISTRACION_PUBLICA);Government sector;46566;42083948;0.11;Administración Pública
+(ES61) Andalucía;Andalucía;Andalusia;2023;(ADMINISTRACION_PUBLICA);Government sector;463385;199951794;0.23;Administración Pública
+(ES62) Región de Murcia;Región de Murcia;Murcia;2023;(ADMINISTRACION_PUBLICA);Government sector;54384;40385838;0.13;Administración Pública
