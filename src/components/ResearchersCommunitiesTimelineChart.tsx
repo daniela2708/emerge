@@ -10,7 +10,7 @@ import {
 } from 'recharts';
 import { ChevronDown } from 'lucide-react';
 import country_flags from '../logos/country_flags.json';
-import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { communityFlags } from '../utils/spanishCommunitiesUtils';
 import {
   ResearchersCommunityData,
   getCommunityValue,
@@ -100,11 +100,11 @@ const FlagImage = ({
   } else if (type === 'community' && code) {
     // Buscar bandera de comunidad
     if (code === 'canarias') {
-      const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+      const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
       flagUrl = canaryFlag?.flag || '';
     } else {
       // Buscar por nombre de comunidad
-      const communityFlag = autonomous_communities_flags.find(flag => 
+      const communityFlag = communityFlags.find(flag =>
         flag.community.toLowerCase().includes(code.toLowerCase()) ||
         flag.code.toLowerCase() === code.toLowerCase()
       );
@@ -159,10 +159,10 @@ const FlagsCustomComponent = (props: {
       return esFlag?.flag || '/logos/spain.svg';
     } else if (type === 'community' && code) {
       if (code === 'canarias') {
-        const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+        const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
         return canaryFlag?.flag || '';
       } else {
-        const communityFlag = autonomous_communities_flags.find(flag => 
+        const communityFlag = communityFlags.find(flag =>
           flag.community.toLowerCase().includes(code.toLowerCase()) ||
           flag.code.toLowerCase() === code.toLowerCase()
         );

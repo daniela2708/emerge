@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import { Calendar, ChevronDown } from 'lucide-react';
 import Papa from 'papaparse';
-import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { communityFlags, communityNameMapping } from '../utils/spanishCommunitiesUtils';
 
 // Definición de los sectores de I+D
 const rdSectors = [
@@ -140,9 +140,9 @@ const Flag: React.FC<FlagProps> = ({ code, width = 24, height = 18, className = 
   
   // Búsqueda de banderas en el JSON
   const esFlag = "/logos/spain.svg";
-  const canaryFlag = autonomous_communities_flags.find(community => community.code === 'CAN');
-  const communityFlag = code === 'community' && communityCode ? 
-    autonomous_communities_flags.find(community => community.code === communityCode) : null;
+  const canaryFlag = communityFlags.find(community => community.code === 'CAN');
+  const communityFlag = code === 'community' && communityCode ?
+    communityFlags.find(community => community.code === communityCode) : null;
   
   switch(code) {
     case 'es':
@@ -197,63 +197,6 @@ interface CustomTooltipProps {
 }
 
 // Tabla de mapeo entre nombres de comunidades en el CSV y nombres en español/inglés
-const communityNameMapping: { [key: string]: { es: string, en: string } } = {
-  'Andalucía': { es: 'Andalucía', en: 'Andalusia' },
-  'Andalucia': { es: 'Andalucía', en: 'Andalusia' },
-  'Aragón': { es: 'Aragón', en: 'Aragon' },
-  'Aragon': { es: 'Aragón', en: 'Aragon' },
-  'Principado de Asturias': { es: 'Asturias', en: 'Asturias' },
-  'Asturias': { es: 'Asturias', en: 'Asturias' },
-  'Illes Balears / Islas Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Islas Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Illes Balears': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Balearic Islands': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Canarias': { es: 'Canarias', en: 'Canary Islands' },
-  'Islas Canarias': { es: 'Canarias', en: 'Canary Islands' },
-  'Canary Islands': { es: 'Canarias', en: 'Canary Islands' },
-  'Cantabria': { es: 'Cantabria', en: 'Cantabria' },
-  'Castilla - La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla-La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla-la Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castillalamancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla y León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla y Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla-León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla-Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castile and León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castile and Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Cataluña': { es: 'Cataluña', en: 'Catalonia' },
-  'Cataluna': { es: 'Cataluña', en: 'Catalonia' },
-  'Catalunya': { es: 'Cataluña', en: 'Catalonia' },
-  'Catalonia': { es: 'Cataluña', en: 'Catalonia' },
-  'Comunidad Valenciana': { es: 'Com. Valenciana', en: 'Valencia' },
-  'C. Valenciana': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Valencia': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Valencian Community': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Extremadura': { es: 'Extremadura', en: 'Extremadura' },
-  'Galicia': { es: 'Galicia', en: 'Galicia' },
-  'La Rioja': { es: 'La Rioja', en: 'La Rioja' },
-  'Rioja': { es: 'La Rioja', en: 'La Rioja' },
-  'Comunidad de Madrid': { es: 'Madrid', en: 'Madrid' },
-  'Madrid': { es: 'Madrid', en: 'Madrid' },
-  'Región de Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Region de Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Comunidad Foral de Navarra': { es: 'Navarra', en: 'Navarre' },
-  'Navarra': { es: 'Navarra', en: 'Navarre' },
-  'Navarre': { es: 'Navarra', en: 'Navarre' },
-  'País Vasco': { es: 'País Vasco', en: 'Basque Country' },
-  'Pais Vasco': { es: 'País Vasco', en: 'Basque Country' },
-  'Euskadi': { es: 'País Vasco', en: 'Basque Country' },
-  'Basque Country': { es: 'País Vasco', en: 'Basque Country' },
-  'Ciudad Autónoma de Ceuta': { es: 'Ceuta', en: 'Ceuta' },
-  'Ceuta': { es: 'Ceuta', en: 'Ceuta' },
-  'Ciudad Autónoma de Melilla': { es: 'Melilla', en: 'Melilla' },
-  'Melilla': { es: 'Melilla', en: 'Melilla' }
-};
 
 const CommunityDistribution: React.FC<CommunityDistributionProps> = ({ language }) => {
   const [selectedYear, setSelectedYear] = useState<string>('2023');
@@ -264,7 +207,7 @@ const CommunityDistribution: React.FC<CommunityDistributionProps> = ({ language 
   const [selectedCommunity, setSelectedCommunity] = useState<CommunityOption>({
     name: language === 'es' ? 'Madrid' : 'Madrid',
     code: 'MAD',
-    flag: autonomous_communities_flags.find(f => f.code === 'MAD')?.flag || ''
+    flag: communityFlags.find(f => f.code === 'MAD')?.flag || ''
   });
   const [availableCommunities, setAvailableCommunities] = useState<CommunityOption[]>([]);
   const [ccaaData, setCcaaData] = useState<GastoIDComunidadesData[]>([]);
@@ -463,7 +406,7 @@ const CommunityDistribution: React.FC<CommunityDistributionProps> = ({ language 
           }
         }
 
-        const communityFlag = autonomous_communities_flags.find(flag =>
+        const communityFlag = communityFlags.find(flag =>
           normalizeText(flag.community).includes(normalizeText(communityName)) ||
           normalizeText(communityName).includes(normalizeText(flag.community))
         );

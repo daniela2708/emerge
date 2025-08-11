@@ -12,7 +12,7 @@ import {
   ChevronDown
 } from 'lucide-react';
 import country_flags from '../logos/country_flags.json';
-import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { communityFlags } from '../utils/spanishCommunitiesUtils';
 
 // Interfaz para los datos de PIB y gasto en I+D
 interface GDPConsolidadoData {
@@ -192,7 +192,7 @@ const RDComparisonChart: React.FC<RDComparisonChartProps> = ({
       const euFlag = country_flags.find(flag => flag.iso3 === 'EUU');
       flagUrl = euFlag?.flag || 'https://flagcdn.com/eu.svg';
     } else if (type === 'canary') {
-      const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+      const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
       flagUrl = canaryFlag?.flag || '';
     } else if (type === 'country' && iso3) {
       const countryFlag = country_flags.find(flag => flag.iso3 === iso3);
@@ -472,7 +472,7 @@ const RDComparisonChart: React.FC<RDComparisonChartProps> = ({
         const euFlag = country_flags.find(flag => flag.iso3 === 'EUU');
         return euFlag?.flag || 'https://flagcdn.com/eu.svg';
       } else if (type === 'canary') {
-        const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+        const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
         return canaryFlag?.flag || '';
       } else if (type === 'country' && iso3) {
         const countryFlag = country_flags.find(flag => flag.iso3 === iso3);

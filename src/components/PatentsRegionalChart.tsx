@@ -12,7 +12,7 @@ import {
   ChartEvent
 } from 'chart.js';
 // Importar datos de banderas de comunidades autónomas
-import autonomousCommunitiesFlagsData from '../logos/autonomous_communities_flags.json';
+import { communityFlags } from '../utils/spanishCommunitiesUtils';
 
 // Registrar componentes necesarios de Chart.js
 ChartJS.register(
@@ -112,15 +112,7 @@ const autonomousCommunitiesMapping: Record<string, {es: string, en: string, flag
   'ES64': {es: 'Ciudad de Melilla', en: 'City of Melilla', flag: '🏴󠁥󠁳󠁭󠁬󠁿', provinces: ['Melilla']}
 };
 
-// Interfaz para los elementos del archivo de banderas de comunidades autónomas
-interface AutonomousCommunityFlag {
-  community: string;
-  code: string;
-  flag: string;
-}
-
-// Asegurar el tipo correcto para el array de banderas
-const autonomousCommunitiesFlags = autonomousCommunitiesFlagsData as AutonomousCommunityFlag[];
+// Las banderas de comunidades autónomas se importan desde utilitarios compartidos
 
 // Función para obtener la URL de la bandera de la comunidad autónoma
 const getAutonomousCommunityFlagUrl = (regionCode: string): string => {
@@ -150,7 +142,7 @@ const getAutonomousCommunityFlagUrl = (regionCode: string): string => {
   const flagCode = nutsToFlagCodeMapping[regionCode];
   if (!flagCode) return '';
   
-  const flagData = autonomousCommunitiesFlags.find(flag => flag.code === flagCode);
+  const flagData = communityFlags.find(flag => flag.code === flagCode);
   return flagData?.flag || '';
 };
 

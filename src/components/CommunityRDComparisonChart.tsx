@@ -8,11 +8,11 @@ import {
   ResponsiveContainer,
   Customized
 } from 'recharts';
-import { 
+import {
   ChevronDown
 } from 'lucide-react';
 import country_flags from '../logos/country_flags.json';
-import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { communityFlags, communityNameMapping } from '../utils/spanishCommunitiesUtils';
 
 // Interfaz para los datos de PIB y gasto en I+D
 interface GDPConsolidadoData {
@@ -98,63 +98,6 @@ interface AxisScale {
 }
 
 // Tabla de mapeo entre nombres de comunidades en el CSV y nombres en español/inglés
-const communityNameMapping: { [key: string]: { es: string, en: string } } = {
-  'Andalucía': { es: 'Andalucía', en: 'Andalusia' },
-  'Andalucia': { es: 'Andalucía', en: 'Andalusia' },
-  'Aragón': { es: 'Aragón', en: 'Aragon' },
-  'Aragon': { es: 'Aragón', en: 'Aragon' },
-  'Principado de Asturias': { es: 'Asturias', en: 'Asturias' },
-  'Asturias': { es: 'Asturias', en: 'Asturias' },
-  'Illes Balears / Islas Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Islas Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Illes Balears': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Balearic Islands': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Canarias': { es: 'Canarias', en: 'Canary Islands' },
-  'Islas Canarias': { es: 'Canarias', en: 'Canary Islands' },
-  'Canary Islands': { es: 'Canarias', en: 'Canary Islands' },
-  'Cantabria': { es: 'Cantabria', en: 'Cantabria' },
-  'Castilla - La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla-La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla-la Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castillalamancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla y León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla y Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla-León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla-Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castile and León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castile and Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Cataluña': { es: 'Cataluña', en: 'Catalonia' },
-  'Cataluna': { es: 'Cataluña', en: 'Catalonia' },
-  'Catalunya': { es: 'Cataluña', en: 'Catalonia' },
-  'Catalonia': { es: 'Cataluña', en: 'Catalonia' },
-  'Comunidad Valenciana': { es: 'Com. Valenciana', en: 'Valencia' },
-  'C. Valenciana': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Valencia': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Valencian Community': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Extremadura': { es: 'Extremadura', en: 'Extremadura' },
-  'Galicia': { es: 'Galicia', en: 'Galicia' },
-  'La Rioja': { es: 'La Rioja', en: 'La Rioja' },
-  'Rioja': { es: 'La Rioja', en: 'La Rioja' },
-  'Comunidad de Madrid': { es: 'Madrid', en: 'Madrid' },
-  'Madrid': { es: 'Madrid', en: 'Madrid' },
-  'Región de Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Region de Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Comunidad Foral de Navarra': { es: 'Navarra', en: 'Navarre' },
-  'Navarra': { es: 'Navarra', en: 'Navarre' },
-  'Navarre': { es: 'Navarra', en: 'Navarre' },
-  'País Vasco': { es: 'País Vasco', en: 'Basque Country' },
-  'Pais Vasco': { es: 'País Vasco', en: 'Basque Country' },
-  'Euskadi': { es: 'País Vasco', en: 'Basque Country' },
-  'Basque Country': { es: 'País Vasco', en: 'Basque Country' },
-  'Ciudad Autónoma de Ceuta': { es: 'Ceuta', en: 'Ceuta' },
-  'Ceuta': { es: 'Ceuta', en: 'Ceuta' },
-  'Ciudad Autónoma de Melilla': { es: 'Melilla', en: 'Melilla' },
-  'Melilla': { es: 'Melilla', en: 'Melilla' }
-};
 
 // Parámetros para las banderas
 const FLAG_SIZE = 20;
@@ -275,7 +218,7 @@ const CommunityRDComparisonChart: React.FC<CommunityRDComparisonChartProps> = ({
         }
         
         // Buscar la comunidad en el objeto de banderas
-        const flag = autonomous_communities_flags.find(f => 
+        const flag = communityFlags.find(f =>
           normalizeText(f.community) === normalizeText(communityName) || 
           f.community.includes(originalName.replace(/\(ES\d+\)\s/, ''))
         );
@@ -617,10 +560,10 @@ const CommunityRDComparisonChart: React.FC<CommunityRDComparisonChartProps> = ({
       const spainFlag = country_flags.find(flag => flag.iso3 === 'ESP');
       flagUrl = spainFlag?.flag || '';
     } else if (type === 'canary') {
-      const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+      const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
       flagUrl = canaryFlag?.flag || '';
     } else if (type === 'community' && code) {
-      const communityFlag = autonomous_communities_flags.find(flag => flag.code === code);
+      const communityFlag = communityFlags.find(flag => flag.code === code);
       flagUrl = communityFlag?.flag || '';
     }
     
@@ -671,10 +614,10 @@ const CommunityRDComparisonChart: React.FC<CommunityRDComparisonChartProps> = ({
         const spainFlag = country_flags.find(flag => flag.iso3 === 'ESP');
         return spainFlag?.flag || '';
       } else if (type === 'canary') {
-        const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+        const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
         return canaryFlag?.flag || '';
       } else if (type === 'community' && code) {
-        const communityFlag = autonomous_communities_flags.find(flag => flag.code === code);
+        const communityFlag = communityFlags.find(flag => flag.code === code);
         return communityFlag?.flag || '';
       }
       return '';

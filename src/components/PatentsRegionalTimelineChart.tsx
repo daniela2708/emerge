@@ -9,7 +9,7 @@ import {
   Customized
 } from 'recharts';
 import { ChevronDown } from 'lucide-react';
-import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { communityFlags } from '../utils/spanishCommunitiesUtils';
 
 // Interfaz para los datos de patentes regionales
 interface RegionalPatentsData {
@@ -194,10 +194,10 @@ const FlagImage = ({
   
   // Buscar bandera de comunidad
   if (community === 'Canarias') {
-    const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+    const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
     flagUrl = canaryFlag?.flag || '';
   } else {
-    const communityFlag = autonomous_communities_flags.find(flag => 
+    const communityFlag = communityFlags.find(flag =>
       flag.community.toLowerCase().includes(community.toLowerCase()) ||
       community.toLowerCase().includes(flag.community.toLowerCase())
     );
@@ -247,10 +247,10 @@ const FlagsCustomComponent = (props: {
   // Función para obtener URL de bandera
   const getFlagUrl = (community: string) => {
     if (community === 'Canarias') {
-      const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');
+      const canaryFlag = communityFlags.find(flag => flag.code === 'CAN');
       return canaryFlag?.flag || '';
     } else {
-      const communityFlag = autonomous_communities_flags.find(flag => 
+      const communityFlag = communityFlags.find(flag =>
         flag.community.toLowerCase().includes(community.toLowerCase()) ||
         community.toLowerCase().includes(flag.community.toLowerCase())
       );
