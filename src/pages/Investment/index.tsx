@@ -810,18 +810,13 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                             ? bestRegion["Comunidad Limpio"] 
                             : bestRegion["Comunidad en Inglés"];
                           
-                          // Re-calcular el valor por si hay comas o puntos mezclados
-                          let value = 0;
-                          try {
-                            // Buscar el valor específico en el array de datos
-                            const val = allRegionData
-                              .filter(item => item["Comunidad Limpio"] === bestRegion["Comunidad Limpio"])
-                              .map(item => [item["Sector Nombre"], item["% PIB I+D"]])
-                              .find(([key]) => key === "% PIB I+D")?.[1] || '0';
-                            value = parseFloat(String(val).replace(',', '.'));
-                          } catch {
-                            // En caso de error, usar valor por defecto
-                        }
+                            // Obtener el valor del % del PIB en I+D para la región seleccionada
+                            let value = 0;
+                            try {
+                              value = parseFloat(bestRegion["% PIB I+D"].replace(',', '.'));
+                            } catch {
+                              // En caso de error, usar el valor por defecto
+                            }
                         
                         return (
                           <div>
