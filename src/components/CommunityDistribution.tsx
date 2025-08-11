@@ -361,220 +361,151 @@ const CommunityDistribution: React.FC<CommunityDistributionProps> = ({ language 
     return { type: 'Desconocido' };
   };
 
-  // Cargar datos desde archivos CSV
+  // Cargar datos desde archivos CSV una sola vez
   useEffect(() => {
     async function fetchData() {
       try {
-        // Cargar datos de comunidades autónomas
-        const gastoIDResponse = await fetch('/data/GDP_data/gasto_ID_comunidades_porcentaje_pib.csv');
-        const gastoIDContent = await gastoIDResponse.text();
-        
-        // Cargar datos consolidados de España
-        const gdpConsolidadoResponse = await fetch('/data/GDP_data/gdp_consolidado.csv');
-        const gdpConsolidadoContent = await gdpConsolidadoResponse.text();
-        
-        // Array para almacenar los datos consolidados
-        let dataConsolidada: GastoIDComunidadesData[] = [];
-        
-        // Procesar CSV de comunidades autónomas
-        Papa.parse(gastoIDContent, {
+        const gastoIDContent = await fetch('/data/GDP_data/gasto_ID_comunidades_porcentaje_pib.csv').then(r => r.text());
+        const gdpConsolidadoContent = await fetch('/data/GDP_data/gdp_consolidado.csv').then(r => r.text());
+
+        let dataConsolidada: GastoIDComunidadesData[] = Papa.parse<GastoIDComunidadesData>(gastoIDContent, {
           header: true,
-          delimiter: ";",
-          skipEmptyLines: true,
-          complete: (results: PapaParseResults<GastoIDComunidadesData>) => {
-            dataConsolidada = results.data;
-            
-            // Ahora procesar el CSV de datos consolidados de España
-            Papa.parse(gdpConsolidadoContent, {
-              header: true,
-              delimiter: ",",
-              skipEmptyLines: true,
-              complete: (resultsSpain: PapaParseResults<GDPConsolidadoData>) => {
-                // Filtrar para obtener solo los datos de España
-                const spainData = resultsSpain.data.filter((row) => 
-                  row.Country === "Spain" || row.País === "España"
-                );
-                
-                // Convertir datos de España al formato GastoIDComunidadesData
-                const spainFormattedData = spainData.map((row) => {
-                  // Procesar el valor de manera segura
-                  let rdInvestmentValue = 0;
-                  if (row.Approx_RD_Investment_million_euro) {
-                    // Asegurar que usamos el punto como separador decimal
-                    rdInvestmentValue = parseFloat(String(row.Approx_RD_Investment_million_euro).replace(/,/g, '.'));
-                  }
-                  
-                  // Procesar valor GDP de manera segura
-                  let gdpValue = 0;
-                  if (row['GDP Current prices, million euro']) {
-                    gdpValue = parseFloat(String(row['GDP Current prices, million euro']).replace(/,/g, '.'));
-                  }
-                  
-                  return {
-                    'Comunidad (Original)': 'España',
-                    'Comunidad Limpio': 'España',
-                    'Comunidad en Inglés': 'Spain',
-                    'Año': row.Year || '',
-                    'Sector Id': row.Sector === 'All Sectors' ? '(_T)' : 
-                                 row.Sector === 'Business enterprise sector' ? '(EMPRESAS)' :
-                                 row.Sector === 'Government sector' ? '(ADMINISTRACION_PUBLICA)' :
-                                 row.Sector === 'Higher education sector' ? '(ENSENIANZA_SUPERIOR)' :
-                                 row.Sector === 'Private non-profit sector' ? '(IPSFL)' : '',
-                    'Sector': row.Sector || '',
-                    // Guardar el valor monetario como número, no como string
-                    'ValorMonetarioMill': !isNaN(rdInvestmentValue) ? rdInvestmentValue : 0,
-                    // Convertir a miles para compatibilidad
-                    'Gasto en I+D (Miles €)': !isNaN(rdInvestmentValue) ? 
-                                             (rdInvestmentValue * 1000).toString() : '',
-                    'PIB (Miles €)': !isNaN(gdpValue) ? 
-                                    (gdpValue * 1000).toString() : '',
-                    '% PIB I+D': row['%GDP'] ? row['%GDP'].toString().replace(/,/g, '.') : '',
-                    'Sector Nombre': row.Sector === 'Business enterprise sector' ? 'Empresas' :
-                                     row.Sector === 'Government sector' ? 'Administración Pública' :
-                                     row.Sector === 'Higher education sector' ? 'Enseñanza Superior' :
-                                     row.Sector === 'Private non-profit sector' ? 'Instituciones Privadas sin Fines de Lucro' : 
-                                     row.Sector === 'All Sectors' ? 'Total' : row.Sector,
-                    // Campos adicionales para datos del CSV de gdp_consolidado
-                    'Country': row.Country,
-                    'Year': row.Year,
-                    'Approx_RD_Investment_million_euro': row.Approx_RD_Investment_million_euro,
-                    'GDP Current prices, million euro': row['GDP Current prices, million euro'],
-                    '%GDP': row['%GDP']
-                  } as GastoIDComunidadesData;
-                });
-                
-                // Combinar ambos conjuntos de datos
-                dataConsolidada = [...dataConsolidada, ...spainFormattedData];
-                setCcaaData(dataConsolidada);
-                
-                // Extraer comunidades autónomas disponibles
-                const uniqueCommunities = new Set<string>();
-                const communitiesData: CommunityOption[] = [];
+          delimiter: ';',
+          skipEmptyLines: true
+        }).data;
 
-                // Filtrar por el año seleccionado y sector total
-                const filteredData = dataConsolidada.filter(item => 
-                  item['Año'] === selectedYear && 
-                  item['Sector Id'] === "(_T)" &&
-                  item['Comunidad Limpio'] !== 'Total nacional' &&
-                  item['Comunidad Limpio'] !== 'España'
-                );
+        const spainData = Papa.parse<GDPConsolidadoData>(gdpConsolidadoContent, {
+          header: true,
+          delimiter: ',',
+          skipEmptyLines: true
+        }).data.filter(row => row.Country === 'Spain' || row.País === 'España');
 
-                // Extraer comunidades únicas
-                filteredData.forEach(item => {
-                  const communityName = item['Comunidad Limpio'];
-                  
-                  if (!uniqueCommunities.has(communityName)) {
-                    uniqueCommunities.add(communityName);
-                    
-                    // Buscar nombre estandarizado en el mapeo
-                    let displayName = communityName;
-                    let code = '';
-                    let flagUrl = '';
-                    
-                    // Buscar en el mapeo de comunidades para nombres estandarizados
-                    for (const [originalName, mappedNames] of Object.entries(communityNameMapping)) {
-                      if (normalizeText(originalName) === normalizeText(communityName)) {
-                        // Usar el nombre traducido según el idioma
-                        displayName = language === 'es' ? mappedNames.es : mappedNames.en;
-                          break;
-                      }
-                    }
-                    
-                    // Buscar la bandera de la comunidad
-                      const communityFlag = autonomous_communities_flags.find(flag => 
-                        normalizeText(flag.community).includes(normalizeText(communityName)) ||
-                        normalizeText(communityName).includes(normalizeText(flag.community))
-                      );
-                      
-                      if (communityFlag) {
-                        code = communityFlag.code;
-                        flagUrl = communityFlag.flag;
-                    }
-                    
-                    // Excluir Canarias ya que tiene su propia gráfica
-                    if (code !== 'CAN' && !normalizeText(communityName).includes('canarias') && !normalizeText(displayName).includes('canary')) {
-                      // Agregar a la lista de comunidades disponibles
-                      communitiesData.push({
-                        name: displayName,
-                        originalName: communityName, // Guardar nombre original para búsqueda de datos
-                        code: code,
-                        flag: flagUrl
-                      });
-                    }
-                  }
-                });
-                
-                // Ordenar comunidades alfabéticamente, pero con Madrid primero
-                const sortedCommunities = communitiesData.sort((a, b) => {
-                  if (a.code === 'MAD') return -1;
-                  if (b.code === 'MAD') return 1;
-                  return a.name.localeCompare(b.name, language === 'es' ? 'es' : 'en');
-                });
-                
-                setAvailableCommunities(sortedCommunities);
-                
-                // Asegurar que la comunidad seleccionada existe en los datos
-                const currentCommunityExists = sortedCommunities.some(c => c.code === selectedCommunity.code);
-                if (!currentCommunityExists && sortedCommunities.length > 0) {
-                  setSelectedCommunity(sortedCommunities[0]);
-                }
-                
-                // Extraer años disponibles y configurar estado
-                const years = [...new Set(dataConsolidada.map(row => row['Año']))].sort((a, b) => b.localeCompare(a));
-                setYears(years);
-                
-                // Procesar datos para el año y sector actual
-                const processed = processData(dataConsolidada, selectedYear, selectedSector);
-                setRegionsData(processed);
-                setLoading(false);
-              },
-              error: (error: Error) => {
-                console.error('Error parsing Spain GDP CSV:', error);
-                // Si falla al cargar los datos de España, continuar con los datos de CCAA solamente
-                setCcaaData(dataConsolidada);
-            
-            // Extraer años disponibles
-                const years = [...new Set(dataConsolidada.map(row => row['Año']))].sort((a, b) => b.localeCompare(a));
-                setYears(years);
-            
-            setSelectedCommunity(selectedCommunity);
-            
-                const processed = processData(dataConsolidada, selectedYear, selectedSector);
-            setRegionsData(processed);
-            setLoading(false);
-              }
-            });
-          },
-          error: (error: Error) => {
-            console.error('Error parsing CCAA CSV:', error);
-            setLoading(false);
+        const spainFormattedData = spainData.map(row => {
+          let rdInvestmentValue = 0;
+          if (row.Approx_RD_Investment_million_euro) {
+            rdInvestmentValue = parseFloat(String(row.Approx_RD_Investment_million_euro).replace(/,/g, '.'));
           }
+          let gdpValue = 0;
+          if (row['GDP Current prices, million euro']) {
+            gdpValue = parseFloat(String(row['GDP Current prices, million euro']).replace(/,/g, '.'));
+          }
+
+          return {
+            'Comunidad (Original)': 'España',
+            'Comunidad Limpio': 'España',
+            'Comunidad en Inglés': 'Spain',
+            'Año': row.Year || '',
+            'Sector Id': row.Sector === 'All Sectors' ? '(_T)' :
+                         row.Sector === 'Business enterprise sector' ? '(EMPRESAS)' :
+                         row.Sector === 'Government sector' ? '(ADMINISTRACION_PUBLICA)' :
+                         row.Sector === 'Higher education sector' ? '(ENSENIANZA_SUPERIOR)' :
+                         row.Sector === 'Private non-profit sector' ? '(IPSFL)' : '',
+            'Sector': row.Sector || '',
+            'ValorMonetarioMill': !isNaN(rdInvestmentValue) ? rdInvestmentValue : 0,
+            'Gasto en I+D (Miles €)': !isNaN(rdInvestmentValue) ? (rdInvestmentValue * 1000).toString() : '',
+            'PIB (Miles €)': !isNaN(gdpValue) ? (gdpValue * 1000).toString() : '',
+            '% PIB I+D': row['%GDP'] ? row['%GDP'].toString().replace(/,/g, '.') : '',
+            'Sector Nombre': row.Sector === 'Business enterprise sector' ? 'Empresas' :
+                             row.Sector === 'Government sector' ? 'Administración Pública' :
+                             row.Sector === 'Higher education sector' ? 'Enseñanza Superior' :
+                             row.Sector === 'Private non-profit sector' ? 'Instituciones Privadas sin Fines de Lucro' :
+                             row.Sector === 'All Sectors' ? 'Total' : row.Sector,
+            'Country': row.Country,
+            'Year': row.Year,
+            'Approx_RD_Investment_million_euro': row.Approx_RD_Investment_million_euro,
+            'GDP Current prices, million euro': row['GDP Current prices, million euro'],
+            '%GDP': row['%GDP']
+          } as GastoIDComunidadesData;
         });
+
+        dataConsolidada = [...dataConsolidada, ...spainFormattedData];
+        setCcaaData(dataConsolidada);
+
+        const years = [...new Set(dataConsolidada.map(row => row['Año']))].sort((a, b) => b.localeCompare(a));
+        setYears(years);
       } catch (error) {
         console.error('Error fetching data:', error);
+      } finally {
         setLoading(false);
       }
     }
-    
+
     fetchData();
-  }, [language, selectedYear]);
+  }, []);
   
-  // Actualizar datos cuando cambia algún filtro
+  // Actualizar comunidades disponibles y datos procesados cuando cambian los filtros
   useEffect(() => {
-    if (ccaaData.length > 0) {
-      const processed = processData(ccaaData, selectedYear, selectedSector);
-      
-      // Establecer el orden de los sectores según la primera región (España)
-      if (processed.length > 0 && processed[0].name === (language === 'es' ? 'España' : 'Spain')) {
-        const spainSectorsOrder = processed[0].data
-          .sort((a: SectorDataItem, b: SectorDataItem) => b.value - a.value)
-          .map((sector: SectorDataItem) => sector.id || '');
-        setSectorOrder(spainSectorsOrder);
+    if (ccaaData.length === 0) return;
+
+    const uniqueCommunities = new Set<string>();
+    const communitiesData: CommunityOption[] = [];
+
+    const filteredData = ccaaData.filter(item =>
+      item['Año'] === selectedYear &&
+      item['Sector Id'] === '(_T)' &&
+      item['Comunidad Limpio'] !== 'Total nacional' &&
+      item['Comunidad Limpio'] !== 'España'
+    );
+
+    filteredData.forEach(item => {
+      const communityName = item['Comunidad Limpio'];
+      if (!uniqueCommunities.has(communityName)) {
+        uniqueCommunities.add(communityName);
+
+        let displayName = communityName;
+        let code = '';
+        let flagUrl = '';
+
+        for (const [originalName, mappedNames] of Object.entries(communityNameMapping)) {
+          if (normalizeText(originalName) === normalizeText(communityName)) {
+            displayName = language === 'es' ? mappedNames.es : mappedNames.en;
+            break;
+          }
+        }
+
+        const communityFlag = autonomous_communities_flags.find(flag =>
+          normalizeText(flag.community).includes(normalizeText(communityName)) ||
+          normalizeText(communityName).includes(normalizeText(flag.community))
+        );
+
+        if (communityFlag) {
+          code = communityFlag.code;
+          flagUrl = communityFlag.flag;
+        }
+
+        if (code !== 'CAN' && !normalizeText(communityName).includes('canarias')) {
+          communitiesData.push({
+            name: displayName,
+            originalName: communityName,
+            code,
+            flag: flagUrl
+          });
+        }
       }
-      
-      setRegionsData(processed);
+    });
+
+    const sortedCommunities = communitiesData.sort((a, b) => {
+      if (a.code === 'MAD') return -1;
+      if (b.code === 'MAD') return 1;
+      return a.name.localeCompare(b.name, language === 'es' ? 'es' : 'en');
+    });
+
+    setAvailableCommunities(sortedCommunities);
+
+    if (!sortedCommunities.some(c => c.code === selectedCommunity.code) && sortedCommunities.length > 0) {
+      setSelectedCommunity(sortedCommunities[0]);
     }
-  }, [selectedYear, selectedCommunity, language, ccaaData]);
+
+    const processed = processData(ccaaData, selectedYear, selectedSector);
+    if (processed.length > 0 && processed[0].name === (language === 'es' ? 'España' : 'Spain')) {
+      const spainSectorsOrder = processed[0].data
+        .sort((a: SectorDataItem, b: SectorDataItem) => b.value - a.value)
+        .map((sector: SectorDataItem) => sector.id || '');
+      setSectorOrder(spainSectorsOrder);
+    }
+
+    setRegionsData(processed);
+  }, [ccaaData, selectedYear, selectedSector, language, selectedCommunity]);
 
   // Función para normalizar texto (eliminar acentos)
   const normalizeText = (text: string | undefined): string => {
