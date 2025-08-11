@@ -4,7 +4,6 @@ import {
   Line,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
   Customized
@@ -647,9 +646,8 @@ const PatentsEuropeanTimelineChart: React.FC<PatentsEuropeanTimelineChartProps> 
             data={timeSeriesData}
             margin={{ top: 20, right: 60, left: 20, bottom: 10 }}
           >
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-            <XAxis 
-              dataKey="year" 
+            <XAxis
+              dataKey="year"
               tick={{ fill: '#4b5563', fontSize: 10 }}
               tickLine={{ stroke: '#9ca3af' }}
               axisLine={{ stroke: '#e5e7eb' }}
