@@ -974,7 +974,7 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       
       // MEJORA: Ajustar escala para utilizar más espacio disponible
       const peninsulaScale = containerWidth * 2.8; // Reducido de 3.2 a 2.8 para hacer el mapa más pequeño
-      const canariasScale = containerWidth * 2.5; // Mantener proporción similar al mapa de investigadores
+      const canariasScale = containerWidth * 3; // Aumentar tamaño de las islas
       
       // Crear proyección para España peninsular (centrada y escalada para maximizar el espacio)
       const projectionMainland = d3.geoMercator()
@@ -986,8 +986,15 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       const canariasRect = {
         x: containerWidth * 0.05,
         y: containerHeight * 0.58,
-        width: containerWidth * 0.22, // Recuadro más angosto
-        height: containerHeight * 0.16
+        width: containerWidth * 0.24,
+        height: containerHeight * 0.18
+      };
+
+      const ceutaMelillaRect = {
+        x: containerWidth * 0.70,
+        y: containerHeight * 0.05,
+        width: containerWidth * 0.30,
+        height: containerHeight * 0.18
       };
 
       // Crear proyección específica para las Islas Canarias centrada en su recuadro
@@ -1001,14 +1008,20 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       
       // Crear proyección específica para Ceuta y Melilla (compartirán recuadro)
       const projectionCeuta = d3.geoMercator()
-        .center([-5.3, 35.9])  // Centro en Ceuta
-        .scale(containerWidth * 16)     // Reducido de 22 a 16 para hacer Ceuta más pequeña
-        .translate([containerWidth * 0.78, containerHeight * 0.15]); // Posición en parte superior derecha
-      
+        .center([-5.3, 35.9])
+        .scale(containerWidth * 20)
+        .translate([
+          ceutaMelillaRect.x + ceutaMelillaRect.width * 0.25,
+          ceutaMelillaRect.y + ceutaMelillaRect.height / 2,
+        ]);
+
       const projectionMelilla = d3.geoMercator()
-        .center([-3.0, 35.3])  // Centro en Melilla
-        .scale(containerWidth * 16)     // Reducido de 22 a 16 para hacer Melilla más pequeña
-        .translate([containerWidth * 0.90, containerHeight * 0.15]); // Posición en parte superior derecha
+        .center([-3.0, 35.3])
+        .scale(containerWidth * 20)
+        .translate([
+          ceutaMelillaRect.x + ceutaMelillaRect.width * 0.75,
+          ceutaMelillaRect.y + ceutaMelillaRect.height / 2,
+        ]);
       
       // Crear generador de path para península
       const pathGeneratorMainland = d3.geoPath().projection(projectionMainland);
@@ -1794,10 +1807,10 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       if (ceutaFeatures.length > 0 || melillaFeatures.length > 0) {
         // Fondo blanco translúcido para el recuadro
         ceutaMelillaGroup.append('rect')
-          .attr('x', containerWidth * 0.70)
-          .attr('y', containerHeight * 0.05)
-          .attr('width', containerWidth * 0.28)
-          .attr('height', containerHeight * 0.15)
+          .attr('x', ceutaMelillaRect.x)
+          .attr('y', ceutaMelillaRect.y)
+          .attr('width', ceutaMelillaRect.width)
+          .attr('height', ceutaMelillaRect.height)
           .attr('rx', 4)
           .attr('ry', 4)
           .attr('fill', 'rgba(255, 255, 255, 0.8)')
@@ -1805,22 +1818,22 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
           .attr('stroke-width', 1)
           .attr('stroke-dasharray', '3,3')
           .lower();
-        
+
         // Etiquetas individuales para cada ciudad
         // Etiqueta para Ceuta (parte izquierda)
         ceutaMelillaGroup.append('text')
-          .attr('x', containerWidth * 0.78)
-          .attr('y', containerHeight * 0.10)
+          .attr('x', ceutaMelillaRect.x + ceutaMelillaRect.width * 0.25)
+          .attr('y', ceutaMelillaRect.y + ceutaMelillaRect.height * 0.15)
           .attr('font-size', '9px')
           .attr('text-anchor', 'middle')
           .attr('font-weight', 'bold')
           .attr('fill', '#444')
           .text('Ceuta');
-        
+
         // Etiqueta para Melilla (parte derecha)
         ceutaMelillaGroup.append('text')
-          .attr('x', containerWidth * 0.90)
-          .attr('y', containerHeight * 0.10)
+          .attr('x', ceutaMelillaRect.x + ceutaMelillaRect.width * 0.75)
+          .attr('y', ceutaMelillaRect.y + ceutaMelillaRect.height * 0.15)
           .attr('font-size', '9px')
           .attr('text-anchor', 'middle')
           .attr('font-weight', 'bold')
