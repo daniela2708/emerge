@@ -50,6 +50,7 @@ export default defineConfig({
       }
     })
   ],
+  base: './',
   publicDir: 'public',
   server: {
     port: 5173,
@@ -58,13 +59,17 @@ export default defineConfig({
     open: true, // Abre el navegador automáticamente
     headers: {
       'X-Content-Type-Options': 'nosniff',
-      'Cache-Control': 'public, max-age=3600'
+      'Cache-Control': 'public, max-age=3600',
+      'Cross-Origin-Embedder-Policy': 'require-corp',
+      'Cross-Origin-Opener-Policy': 'same-origin'
     }
   },
   preview: {
     headers: {
       'X-Content-Type-Options': 'nosniff',
-      'Cache-Control': 'public, max-age=3600'
+      'Cache-Control': 'public, max-age=3600',
+      'Cross-Origin-Embedder-Policy': 'require-corp',
+      'Cross-Origin-Opener-Policy': 'same-origin'
     }
   },
   // Incluye una configuración específica para que Vite sirva correctamente los archivos CSV
@@ -81,9 +86,16 @@ export default defineConfig({
   logLevel: 'info',
   // Salida compatible con navegadores modernos y algunos más antiguos
   build: {
-    target: 'es2018'
+    target: 'es2015',
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   esbuild: {
-    target: 'es2018'
+    target: 'es2015'
   }
 })
