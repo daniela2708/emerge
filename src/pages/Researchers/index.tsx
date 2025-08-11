@@ -61,6 +61,7 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
   const [availableYears, setAvailableYears] = useState<number[]>([]);
   const [availableCommunityYears, setAvailableCommunityYears] = useState<number[]>([]);
   const [selectedYear, setSelectedYear] = useState<number>(2023);
+  const [selectedKeyYear, setSelectedKeyYear] = useState<number>(2023);
   const [selectedCommunityYear, setSelectedCommunityYear] = useState<number>(2021); // Año por defecto para comunidades
   
   // Estados separados para cada sección
@@ -114,6 +115,7 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
         // Establecer el año más reciente como predeterminado
         if (years.length > 0) {
           setSelectedYear(years[0]);
+          setSelectedKeyYear(years[0]);
         }
 
         setError(null);
@@ -199,6 +201,12 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
 
     loadCommunityData();
   }, [language]);
+
+  useEffect(() => {
+    if (availableYears.length > 0 && !availableYears.includes(selectedKeyYear)) {
+      setSelectedKeyYear(availableYears[0]);
+    }
+  }, [availableYears, selectedKeyYear]);
 
   // Función para mapear el valor del sector al código utilizado en los datos
   const mapSectorToCode = (sector: string): string => {
@@ -373,12 +381,31 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
       {/* Sección 1: Key Metrics */}
       <div className="mb-12 mt-[-15px]">
         <SectionTitle title={language === 'es' ? "Métricas clave" : "Key Metrics"} />
+        <div className="mb-4 flex items-center">
+          <div className="flex items-center">
+            <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            <h2 className="text-gray-700 font-medium text-sm">
+              {language === 'es' ? 'Información para el año' : 'Information for year'}
+            </h2>
+            <select
+              value={selectedKeyYear}
+              onChange={(e) => setSelectedKeyYear(parseInt(e.target.value))}
+              className="ml-2 border border-gray-300 rounded px-2 py-0.5 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+            >
+              {availableYears.map(year => (
+                <option key={year} value={year}>{year}</option>
+              ))}
+            </select>
+          </div>
+        </div>
         <div className="mb-8">
           <SubsectionTitle title={language === 'es' ? "Indicadores de investigación" : "Research Indicators"} />
           <ResearchersKeyMetrics
             researchersData={researchersData}
             communityData={researchersCommunityData}
-            selectedYear={selectedYear}
+            selectedYear={selectedKeyYear}
             language={language}
             isLoading={isLoading}
             isCommunityLoading={isCommunityLoading}

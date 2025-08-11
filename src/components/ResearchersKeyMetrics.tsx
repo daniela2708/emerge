@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import { TrendingUp, TrendingDown, Users, MapPin, Award, PieChart } from 'lucide-react';
 
 // Interfaces para los datos
@@ -86,15 +86,6 @@ const ResearchersKeyMetrics: React.FC<ResearchersKeyMetricsProps> = ({
   isLoading,
   isCommunityLoading
 }) => {
-  const [metrics, setMetrics] = useState<{
-    totalResearchers: number;
-    spainRanking: number;
-    totalCountries: number;
-    topCommunity: { name: string; value: number };
-    spainGrowth: number;
-    euPercentage: number;
-    topSector: { name: string; percentage: number };
-  } | null>(null);
 
   // Textos localizados
   const texts = {
@@ -183,26 +174,26 @@ const ResearchersKeyMetrics: React.FC<ResearchersKeyMetricsProps> = ({
     }
   };
 
-  useEffect(() => {
+  const metrics = useMemo(() => {
     if (isLoading || isCommunityLoading || !researchersData.length) {
-      return;
+      return null;
     }
 
     try {
       // 1. Calcular total de investigadores en España
-      const spainDataCurrent = researchersData.find(item => 
-        item.geo === 'ES' && 
-        item.TIME_PERIOD === selectedYear.toString() && 
+      const spainDataCurrent = researchersData.find(item =>
+        item.geo === 'ES' &&
+        item.TIME_PERIOD === selectedYear.toString() &&
         item.sectperf === 'TOTAL'
       );
-      
-      const totalResearchers = spainDataCurrent ? 
+
+      const totalResearchers = spainDataCurrent ?
         parseInt(spainDataCurrent.OBS_VALUE?.replace(',', '') || '0') : 0;
 
       // 2. Calcular ranking de España en Europa
       const europeanDataCurrent = researchersData
-        .filter(item => 
-          item.TIME_PERIOD === selectedYear.toString() && 
+        .filter(item =>
+          item.TIME_PERIOD === selectedYear.toString() &&
           item.sectperf === 'TOTAL' &&
           item.geo !== 'EU27_2020' &&
           item.OBS_VALUE
@@ -237,34 +228,34 @@ const ResearchersKeyMetrics: React.FC<ResearchersKeyMetricsProps> = ({
 
       // 4. Calcular crecimiento de España año sobre año
       const spainDataPrevious = researchersData.find(item =>
-        item.geo === 'ES' && 
-        item.TIME_PERIOD === (selectedYear - 1).toString() && 
+        item.geo === 'ES' &&
+        item.TIME_PERIOD === (selectedYear - 1).toString() &&
         item.sectperf === 'TOTAL'
       );
 
-      const previousValue = spainDataPrevious ? 
+      const previousValue = spainDataPrevious ?
         parseInt(spainDataPrevious.OBS_VALUE?.replace(',', '') || '0') : 0;
-      
-      const spainGrowth = previousValue > 0 ? 
+
+      const spainGrowth = previousValue > 0 ?
         ((totalResearchers - previousValue) / previousValue) * 100 : 0;
 
       // 5. Calcular porcentaje de España respecto al total UE
       const euDataCurrent = researchersData.find(item =>
-        item.geo === 'EU27_2020' && 
-        item.TIME_PERIOD === selectedYear.toString() && 
+        item.geo === 'EU27_2020' &&
+        item.TIME_PERIOD === selectedYear.toString() &&
         item.sectperf === 'TOTAL'
       );
 
-      const euTotal = euDataCurrent ? 
+      const euTotal = euDataCurrent ?
         parseInt(euDataCurrent.OBS_VALUE?.replace(',', '') || '0') : 0;
-      
+
       const euPercentage = euTotal > 0 ? (totalResearchers / euTotal) * 100 : 0;
 
       // 6. Encontrar sector principal en España
       const spainSectorData = researchersData
         .filter(item =>
-          item.geo === 'ES' && 
-          item.TIME_PERIOD === selectedYear.toString() && 
+          item.geo === 'ES' &&
+          item.TIME_PERIOD === selectedYear.toString() &&
           item.sectperf !== 'TOTAL' &&
           item.OBS_VALUE
         )
@@ -280,7 +271,7 @@ const ResearchersKeyMetrics: React.FC<ResearchersKeyMetricsProps> = ({
         percentage: totalResearchers > 0 ? (topSectorData.value / totalResearchers) * 100 : 0
       } : { name: t.noData, percentage: 0 };
 
-      setMetrics({
+      return {
         totalResearchers,
         spainRanking,
         totalCountries,
@@ -288,11 +279,11 @@ const ResearchersKeyMetrics: React.FC<ResearchersKeyMetricsProps> = ({
         spainGrowth,
         euPercentage,
         topSector
-      });
+      };
 
     } catch (error) {
       console.error('Error calculating metrics:', error);
-      setMetrics(null);
+      return null;
     }
   }, [researchersData, communityData, selectedYear, language, isLoading, isCommunityLoading]);
 
