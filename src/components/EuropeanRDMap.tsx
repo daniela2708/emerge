@@ -1011,24 +1011,9 @@ const EuropeanRDMap: React.FC<EuropeanRDMapProps> = ({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [geojsonData, setGeojsonData] = useState<GeoJsonData | null>(null);
-  const [valueRange, setValueRange] = useState<{min: number, max: number}>({min: 0, max: 3.5});
-  
+
   // Acceso a los textos localizados
   const t = mapTexts[language];
-
-  // Obtener la paleta de colores para el sector seleccionado
-  const colorPalette = getSectorPalette(selectedSector);
-  
-  // Preparar paleta de colores para el sector seleccionado
-  useEffect(() => {
-    // No hacemos nada, pero mantenemos la dependencia para posibles futuras optimizaciones
-  }, [selectedSector, colorPalette]);
-
-  // Calcular el rango de valores cuando cambia el sector o el año
-  useEffect(() => {
-    const newRange = getSectorValueRange(data, selectedYear.toString(), selectedSector, dataDisplayType);
-    setValueRange(newRange);
-  }, [data, selectedYear, selectedSector, dataDisplayType]);
 
   // Cargar el GeoJSON
   useEffect(() => {
@@ -1167,20 +1152,20 @@ const EuropeanRDMap: React.FC<EuropeanRDMapProps> = ({
       const svg = d3.select(currentSvg);
       svg.selectAll('*').remove();
 
-      const width = 600;
-      const height = 450;
-      
+      const width = 560;
+      const height = 420;
+
       // Configurar la proyección
       const projection = d3.geoMercator()
-        .center([10, 55])
-        .scale(450)
+        .center([10, 52])
+        .scale(420)
         .translate([width / 2, height / 2]);
-      
+
       const path = d3.geoPath().projection(projection);
-      
-      // Crear el grupo para el mapa
+
+      // Crear el grupo para el mapa y centrarlo
       const mapGroup = svg.append('g')
-        .attr('transform', 'translate(0, 30)'); // Desplazar el mapa para dejar espacio al título
+        .attr('transform', 'translate(20, 20)');
       
       // Preparar datos para poder calcular el ranking
       const countryValues: Array<{ feature: GeoJsonFeature; value: number | null }> = [];
@@ -1688,78 +1673,11 @@ const EuropeanRDMap: React.FC<EuropeanRDMapProps> = ({
         })
         .style('cursor', onClick ? 'pointer' : 'default');
       
-      // Crear etiquetas para la leyenda basadas en el rango de valores
-      const min = valueRange.min;
-      const max = valueRange.max;
-      const range = max - min;
-      
-      const threshold1 = min + (range * 0.2);
-      const threshold2 = min + (range * 0.4);
-      const threshold3 = min + (range * 0.6);
-      const threshold4 = min + (range * 0.8);
-      
-      // Redondear los umbrales para mayor legibilidad
-      const formatLegendValue = (value: number) => {
-        if (dataDisplayType === 'percent_gdp') {
-          return `${value.toFixed(2)}%`;
-        } else {
-          // Redondear a la centena más cercana si es menor a 10.000, si no a la millar
-          let rounded = value;
-          if (value < 10000) {
-            rounded = Math.round(value / 100) * 100;
-          } else {
-            rounded = Math.round(value / 1000) * 1000;
-          }
-          return `${formatNumberWithThousandSeparator(rounded, 0)} M€`;
-        }
-      };
-
-      // Mejorar el degradado de colores para que el contraste sea más claro
-      // Usar d3.interpolate para crear un gradiente perceptible entre min y max
-      const colorInterpolator = d3.interpolateRgb(colorPalette.MIN, colorPalette.MAX);
-      function getGradientColor(val: number) {
-        if (max === min) return colorPalette.MID;
-        const t = (val - min) / (max - min);
-        return colorInterpolator(t);
-      }
-
-      // Añadir leyenda
-      const legendGroup = svg.append('g')
-        .attr('transform', `translate(20, ${height - 170})`);
-      
-      // Añadir primero 'Sin datos' y luego '0' a la leyenda
-      const legendLabels = [
-        { color: colorPalette.NULL, label: language === 'es' ? 'Sin datos' : 'No data' },
-        { color: colorPalette.ZERO, label: '0' + (dataDisplayType === 'percent_gdp' ? '%' : ' M€') },
-      ];
-      // Luego los rangos normales
-      const legendValues = [min, threshold1, threshold2, threshold3, threshold4, max];
-      legendValues.forEach((val, i) => {
-        let label = '';
-        if (i === 0) label = `< ${formatLegendValue(threshold1)}`;
-        else if (i === legendValues.length - 1) label = `> ${formatLegendValue(threshold4)}`;
-        else label = `${formatLegendValue(legendValues[i])}`;
-        legendLabels.push({ color: getGradientColor(val), label });
-      });
-      // Renderizar la leyenda sin solapamientos
-      legendLabels.forEach((item, i) => {
-        legendGroup.append('rect')
-          .attr('x', 0)
-          .attr('y', i * 20)
-          .attr('width', 15)
-          .attr('height', 15)
-          .attr('fill', item.color);
-        legendGroup.append('text')
-          .attr('x', 20)
-          .attr('y', i * 20 + 12)
-          .text(item.label)
-          .attr('font-size', '12px')
-          .attr('fill', '#000000');
-      });
+      // Leyenda eliminada según requerimiento
     };
 
     renderMap();
-  }, [geojsonData, getCountryValueOptimized, language, onClick, colorPalette, valueRange, t, labels, autonomousCommunitiesData, dataDisplayType]);
+  }, [geojsonData, getCountryValueOptimized, language, onClick, t, labels, autonomousCommunitiesData, dataDisplayType]);
   
   return (
     <div className="relative w-full h-full" ref={mapContainerRef}>
@@ -1827,11 +1745,11 @@ const EuropeanRDMap: React.FC<EuropeanRDMapProps> = ({
         </div>
       </div>
       
-      <svg 
-        ref={svgRef} 
-        width="100%" 
-        height="100%" 
-        viewBox="0 0 600 450" 
+      <svg
+        ref={svgRef}
+        width="100%"
+        height="100%"
+        viewBox="0 0 560 420"
         preserveAspectRatio="xMidYMid meet"
       />
       
