@@ -155,6 +155,8 @@ const SectorDistribution: React.FC<SectorDistributionProps> = ({ language }) => 
     localName: 'España',
     iso3: 'ESP'
   });
+  const [gdpData, setGdpData] = useState<GDPConsolidadoData[]>([]);
+  const [ccaaData, setCcaaData] = useState<GastoIDComunidadesData[]>([]);
   
   // Textos localizados
   const texts = {
@@ -196,141 +198,98 @@ const SectorDistribution: React.FC<SectorDistributionProps> = ({ language }) => 
   // 1. Añadir una referencia al contenedor del gráfico
   const chartContainerRef = useRef<HTMLDivElement>(null);
 
-  // Cargar datos desde archivos CSV
+  // Cargar datos una sola vez al montar el componente
   useEffect(() => {
     async function fetchData() {
-      setLoading(true);
       try {
-        // Cargar datos de Europa y países desde gdp_consolidado.csv
         const gdpResponse = await fetch('/data/GDP_data/gdp_consolidado.csv');
         const gdpCsv = await gdpResponse.text();
-        
-        // Cargar datos de comunidades autónomas desde gasto_ID_comunidades_porcentaje_pib.csv
+        const parsedGdp = Papa.parse<GDPConsolidadoData>(gdpCsv, {
+          header: true,
+          skipEmptyLines: true
+        }).data;
+
         const ccaaResponse = await fetch('/data/GDP_data/gasto_ID_comunidades_porcentaje_pib.csv');
         const ccaaCsv = await ccaaResponse.text();
-        
-        // Parsear los datos
-        const gdpData = Papa.parse<GDPConsolidadoData>(gdpCsv, {
+        const parsedCcaa = Papa.parse<GastoIDComunidadesData>(ccaaCsv, {
           header: true,
+          delimiter: ';',
           skipEmptyLines: true
         }).data;
-        
-        const ccaaData = Papa.parse<GastoIDComunidadesData>(ccaaCsv, {
-          header: true,
-          delimiter: ';', // Este CSV usa ; como separador
-          skipEmptyLines: true
-        }).data;
-        
-        // Extraer años disponibles
-        const availableYears = [...new Set(gdpData.map(row => row.Year))].sort((a, b) => b.localeCompare(a));
-        setYears(availableYears);
-        
-        // Si el año seleccionado no está disponible, seleccionar el más reciente
-        const yearToUse = availableYears.includes(selectedYear) ? selectedYear : availableYears[0];
-        if (yearToUse !== selectedYear) {
-          setSelectedYear(yearToUse);
-        }
-        
-        // Extraer países disponibles para el año seleccionado (excluyendo la UE y zona Euro)
-        const availableCountries = gdpData
-          .filter(row => 
-            row.Year === yearToUse && 
-            row.Sector === "All Sectors" && 
-            !row.Country.includes("European Union") && 
-            !row.Country.includes("Euro area")
-          )
-          .reduce((acc: CountryOption[], row) => {
-            const existingCountry = acc.find(c => c.iso3 === row.ISO3);
-            if (!existingCountry) {
-              acc.push({
-                name: row.Country,
-                localName: row.País,
-                iso3: row.ISO3
-              });
-            }
-            return acc;
-          }, [])
-          .sort((a, b) => {
-            // Poner España primero, luego ordenar alfabéticamente según el idioma
-            if (a.iso3 === 'ESP') return -1;
-            if (b.iso3 === 'ESP') return 1;
-            return language === 'es' 
-              ? a.localName.localeCompare(b.localName) 
-              : a.name.localeCompare(b.name);
-          });
-        
-        console.log(`Países disponibles para el año ${yearToUse}: ${availableCountries.length}`);
-        setCountries(availableCountries);
-        
-        // Verificar si el país seleccionado actualmente está disponible para el año seleccionado
-        const currentCountryAvailable = availableCountries.some(c => c.iso3 === selectedCountry?.iso3);
-        
-        // Si el país seleccionado no está disponible para el año, seleccionar España o el primer país disponible
-        if (!currentCountryAvailable) {
-          const defaultCountry = availableCountries.find(c => c.iso3 === 'ESP') || availableCountries[0];
-          setSelectedCountry(defaultCountry);
-          console.log(`Seleccionando país por defecto: ${defaultCountry?.name}`);
-        }
-        
-        // Procesar datos con el nuevo país seleccionado
-        if (selectedCountry) {
-          processData(gdpData, ccaaData, selectedYear, selectedCountry.iso3);
-        }
+
+        setGdpData(parsedGdp);
+        setCcaaData(parsedCcaa);
       } catch (error) {
-        console.error("Error loading data:", error);
+        console.error('Error loading data:', error);
       } finally {
         setLoading(false);
       }
     }
-    
-    fetchData();
-  }, [language, selectedYear]); // Recargar cuando cambia el idioma o el año
 
-  // Efecto adicional para procesar datos cuando cambia el país seleccionado
+    fetchData();
+  }, []);
+
+  // Actualizar años disponibles cuando se cargan los datos
   useEffect(() => {
-    if (selectedCountry) {
-      async function updateCountryData() {
-        setLoading(true);
-        try {
-          // Cargar datos de Europa y países desde gdp_consolidado.csv
-          const gdpResponse = await fetch('/data/GDP_data/gdp_consolidado.csv');
-          const gdpCsv = await gdpResponse.text();
-          
-          // Cargar datos de comunidades autónomas
-          const ccaaResponse = await fetch('/data/GDP_data/gasto_ID_comunidades_porcentaje_pib.csv');
-          const ccaaCsv = await ccaaResponse.text();
-          
-          // Parsear los datos
-          const gdpData = Papa.parse<GDPConsolidadoData>(gdpCsv, {
-            header: true,
-            skipEmptyLines: true
-          }).data;
-          
-          const ccaaData = Papa.parse<GastoIDComunidadesData>(ccaaCsv, {
-            header: true,
-            delimiter: ';',
-            skipEmptyLines: true
-          }).data;
-          
-          // Procesar datos con el nuevo país seleccionado
-          processData(gdpData, ccaaData, selectedYear, selectedCountry.iso3);
-        } catch (error) {
-          console.error("Error updating country data:", error);
-        } finally {
-          setLoading(false);
-        }
-      }
-      
-      updateCountryData();
+    if (gdpData.length === 0) return;
+
+    const availableYears = [...new Set(gdpData.map(row => row.Year))].sort((a, b) => b.localeCompare(a));
+    setYears(availableYears);
+
+    if (!availableYears.includes(selectedYear)) {
+      setSelectedYear(availableYears[0]);
     }
-  }, [selectedCountry]);
+  }, [gdpData]);
+
+  // Actualizar países disponibles cuando cambia el año, idioma o los datos
+  useEffect(() => {
+    if (gdpData.length === 0) return;
+
+    const availableCountries = gdpData
+      .filter(row =>
+        row.Year === selectedYear &&
+        row.Sector === 'All Sectors' &&
+        !row.Country.includes('European Union') &&
+        !row.Country.includes('Euro area')
+      )
+      .reduce((acc: CountryOption[], row) => {
+        const existingCountry = acc.find(c => c.iso3 === row.ISO3);
+        if (!existingCountry) {
+          acc.push({
+            name: row.Country,
+            localName: row.País,
+            iso3: row.ISO3
+          });
+        }
+        return acc;
+      }, [])
+      .sort((a, b) => {
+        if (a.iso3 === 'ESP') return -1;
+        if (b.iso3 === 'ESP') return 1;
+        return language === 'es'
+          ? a.localName.localeCompare(b.localName)
+          : a.name.localeCompare(b.name);
+      });
+
+    setCountries(availableCountries);
+
+    if (!availableCountries.some(c => c.iso3 === selectedCountry?.iso3)) {
+      const defaultCountry = availableCountries.find(c => c.iso3 === 'ESP') || availableCountries[0];
+      setSelectedCountry(defaultCountry);
+    }
+  }, [gdpData, selectedYear, language]);
+
+  // Procesar datos cuando cambian las dependencias relevantes
+  useEffect(() => {
+    if (gdpData.length && ccaaData.length && selectedCountry) {
+      processData(gdpData, ccaaData, selectedYear, selectedCountry.iso3);
+    }
+  }, [gdpData, ccaaData, selectedYear, selectedCountry, language]);
 
   // Procesar datos CSV - Aseguramos que siempre cargamos datos desde los CSV correctos
   const processData = (gdpData: GDPConsolidadoData[], ccaaData: GastoIDComunidadesData[], year: string, selectedCountryISO3: string = 'ESP') => {
-    console.log(`Procesando datos para año: ${year}, idioma: ${language}, país: ${selectedCountryISO3}`);
-    
     // Verificamos el formato de los datos para determinar si los valores ya están en porcentaje o decimal
-    const sampleEUData = gdpData.find(row => 
+    const sampleEUData = gdpData.find(row =>
       row.Year === year && 
       row['%GDP'] !== undefined
     );
@@ -344,8 +303,6 @@ const SectorDistribution: React.FC<SectorDistributionProps> = ({ language }) => 
     const euValueIsPercentage = sampleEUData && parseFloat(sampleEUData['%GDP']) > 1;
     const canaryValueIsPercentage = sampleCanaryData && parseFloat(sampleCanaryData['% PIB I+D']) > 1;
     
-    console.log(`Formato detectado - UE/Países: ${euValueIsPercentage ? 'Porcentaje' : 'Decimal'}, Canarias: ${canaryValueIsPercentage ? 'Porcentaje' : 'Decimal'}`);
-
     // Datos para la UE desde gdp_consolidado.csv
     const euTotalData = gdpData.find(row => 
       row.Year === year && 
