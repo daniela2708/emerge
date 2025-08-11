@@ -409,7 +409,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-8">
                 {/* Mapa de Europa */}
                 <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100 order-2 xl:order-1">
-                  <div className="h-[400px] sm:h-[500px] lg:h-[660px]">
+                  <div className="h-[600px] sm:h-[750px] lg:h-[900px] flex items-center justify-center">
                     <PatentsEuropeanMap
                       data={patentsData}
                       selectedYear={selectedYear}

@@ -1796,7 +1796,7 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
 
 
   return (
-    <div className="relative w-full" style={{ height: '620px' }}>
+    <div className="relative w-full max-w-5xl mx-auto" style={{ height: '800px' }}>
       <div className="mb-2 text-center">
         <h3 className="text-sm font-semibold text-gray-800">
           {getMapTitle()} · {selectedYear}
@@ -1807,7 +1807,7 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
         </div>
       </div>
       
-      <div className="relative" style={{ height: '540px', border: '1px solid #f0f0f0', borderRadius: '8px', overflow: 'hidden' }}>
+      <div className="relative mx-auto" style={{ height: '720px', border: '1px solid #f0f0f0', borderRadius: '8px', overflow: 'hidden' }}>
         {isLoading ? (
           <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-80">
             <div className="text-center">
