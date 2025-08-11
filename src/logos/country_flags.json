@@ -351,7 +351,7 @@
     "country": "España",
     "code": "ES",
     "iso3": "ESP",
-    "flag": "/logos/spain.svg"
+    "flag": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPgogIDxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjIiIGZpbGw9IiNjNjBiMWUiLz4KICA8cmVjdCB5PSIwLjUiIHdpZHRoPSMzIiBoZWlnaHQ9IjEiIGZpbGw9IiNmZmM0MDAiLz4KPC9zdmc+Cg=="
   },
   {
     "country": "Estados Unidos",

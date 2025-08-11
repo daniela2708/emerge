@@ -1,4 +1,5 @@
 import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { SPAIN_FLAG } from './spainFlag';
 
 // Interfaz para los datos de investigadores por comunidades autónomas
 export interface ResearchersCommunityData {
@@ -228,7 +229,7 @@ export function getCommunityValue(
 
 // Función unificada para obtener la bandera de una comunidad
 export function getCommunityFlagUrl(communityName: string, language: 'es' | 'en'): string {
-  if (!communityName) return "/logos/spain.svg";
+  if (!communityName) return SPAIN_FLAG;
   
   const possibleNames = [communityName];
   
@@ -357,7 +358,7 @@ export function getCommunityFlagUrl(communityName: string, language: 'es' | 'en'
   }
   
   // Fallback: bandera de España
-  return "/logos/spain.svg";
+  return SPAIN_FLAG;
 }
 
 // Función para obtener el valor de España (total nacional)

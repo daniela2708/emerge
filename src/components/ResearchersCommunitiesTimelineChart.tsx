@@ -11,6 +11,7 @@ import {
 import { ChevronDown } from 'lucide-react';
 import country_flags from '../logos/country_flags.json';
 import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { SPAIN_FLAG } from '../utils/spainFlag';
 import {
   ResearchersCommunityData,
   getCommunityValue,
@@ -96,7 +97,7 @@ const FlagImage = ({
   if (type === 'country' && code === 'ES') {
     // Bandera de España
     const esFlag = country_flags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-    flagUrl = esFlag?.flag || '/logos/spain.svg';
+    flagUrl = esFlag?.flag || SPAIN_FLAG;
   } else if (type === 'community' && code) {
     // Buscar bandera de comunidad
     if (code === 'canarias') {
@@ -156,7 +157,7 @@ const FlagsCustomComponent = (props: {
   const getFlagUrl = (type: 'country' | 'community', code?: string) => {
     if (type === 'country' && code === 'ES') {
       const esFlag = country_flags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-      return esFlag?.flag || '/logos/spain.svg';
+      return esFlag?.flag || SPAIN_FLAG;
     } else if (type === 'community' && code) {
       if (code === 'canarias') {
         const canaryFlag = autonomous_communities_flags.find(flag => flag.code === 'CAN');

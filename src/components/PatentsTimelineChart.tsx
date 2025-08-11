@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 // Importando datos de country_flags.json
 import countryFlagsData from '../logos/country_flags.json';
+import { SPAIN_FLAG } from '../utils/spainFlag';
 
 // Definir la interfaz para los datos de patentes
 interface PatentsData {
@@ -101,7 +102,7 @@ const FlagsCustomComponent = (props: {
       return 'https://flagcdn.com/eu.svg';
     }
     if (type === 'es') {
-      return '/logos/spain.svg';
+      return SPAIN_FLAG;
     }
     if (type === 'country' && code) {
       // Buscar en el archivo de banderas
@@ -575,7 +576,7 @@ const PatentsTimelineChart: React.FC<PatentsTimelineChartProps> = ({
     } else if (type === 'es') {
       // Bandera de España
       const esFlag = countryFlags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-      flagUrl = esFlag?.flag || "/logos/spain.svg";
+      flagUrl = esFlag?.flag || SPAIN_FLAG;
     } else if (type === 'country' && code) {
       // Manejar casos especiales
       if (code === 'EL') {

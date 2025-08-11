@@ -12,6 +12,7 @@ import {
 import countryFlagsData from '../logos/country_flags.json';
 import { EUROPEAN_COUNTRY_CODES } from '../utils/europeanCountries';
 import { PatentsDisplayType } from './DataTypeSelector';
+import { SPAIN_FLAG } from '../utils/spainFlag';
 
 // Definir la interfaz para los datos de patentes (igual que en la página principal)
 interface PatentsData {
@@ -97,7 +98,7 @@ const FlagsCustomComponent = (props: {
       return 'https://flagcdn.com/eu.svg';
     }
     if (type === 'es') {
-      return '/logos/spain.svg';
+      return SPAIN_FLAG;
     }
     if (type === 'country' && code) {
       // Buscar en el archivo de banderas
@@ -520,7 +521,7 @@ const PatentsEuropeanTimelineChart: React.FC<PatentsEuropeanTimelineChartProps> 
   }) => {
     const getFlagUrl = (type: 'eu' | 'es' | 'country', code?: string) => {
       if (type === 'eu') return 'https://flagcdn.com/eu.svg';
-      if (type === 'es') return '/logos/spain.svg';
+      if (type === 'es') return SPAIN_FLAG;
       if (type === 'country' && code) {
         const foundFlag = countryFlags.find(flag => 
           flag.code.toUpperCase() === code.toUpperCase() ||
