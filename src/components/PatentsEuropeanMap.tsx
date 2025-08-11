@@ -1796,7 +1796,7 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
 
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto" style={{ height: '800px' }}>
+    <div className="relative w-full max-w-5xl mx-auto">
       <div className="mb-2 text-center">
         <h3 className="text-sm font-semibold text-gray-800">
           {getMapTitle()} · {selectedYear}
