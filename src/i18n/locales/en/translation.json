@@ -29,21 +29,26 @@
     "total": "Total Investment",
     "year": "Year",
     "percentage": "Percentage",
-    "overview": "R&D Investment Overview"
+    "overview": "R&D Investment Overview",
+    "description": "Analysis of financial effort in R&D as a percentage of GDP, sectoral distribution and comparative temporal evolution."
   },
   "researchers": {
     "title": "Number of Researchers",
     "public": "Public Sector",
     "private": "Private Sector",
     "total": "Total Researchers",
-    "year": "Year"
+    "year": "Year",
+    "description": "Human capital dedicated to research and development by activity sectors, with territorial analysis and temporal evolution. Data in full-time equivalent (FTE).",
+    "legend": "Researchers (FTE)",
+    "tooltipTitle": "Researchers"
   },
   "patents": {
     "title": "Number of Patents",
     "public": "Public Sector",
     "private": "Private Sector",
     "total": "Total Patents",
-    "year": "Year"
+    "year": "Year",
+    "description": "Analysis of patent applications filed with the European Patent Office (EPO) as an indicator of territorial innovation capacity, with regional and sectoral comparative data."
   },
   "common": {
     "canaryIslands": "Canary Islands",
@@ -65,4 +70,4 @@
     "basqueCountry": "Basque Country",
     "maxSelectionsReached": "Maximum of {{count}} selections"
   }
-} 
+}

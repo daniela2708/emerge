@@ -88,7 +88,9 @@ const mapTexts = {
     tooltipTitle: 'Investigadores',
     researchers: 'Investigadores',
     researchersPerThousand: 'Investigadores por mil habitantes',
-    noData: 'Sin datos'
+    noData: 'Sin datos',
+    noResearchers: 'Sin investigadores',
+    of: 'de'
   },
   'en': {
     loading: 'Loading map...',
@@ -100,7 +102,9 @@ const mapTexts = {
     tooltipTitle: 'Researchers',
     researchers: 'Researchers',
     researchersPerThousand: 'Researchers per thousand inhabitants',
-    noData: 'No data'
+    noData: 'No data',
+    noResearchers: 'No researchers',
+    of: 'of'
   }
 };
 
@@ -1589,7 +1593,7 @@ const ResearchersSpanishRegionsMap: React.FC<ResearchersSpanishRegionsMapProps> 
                         <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
               </div>
-                    <div class="text-gray-500 font-medium">${language === 'es' ? 'Sin datos' : 'No data'}</div>
+                    <div class="text-gray-500 font-medium">${mapTexts[language].noData}</div>
               </div>
             </div>
           `;
@@ -1617,7 +1621,7 @@ const ResearchersSpanishRegionsMap: React.FC<ResearchersSpanishRegionsMapProps> 
               </div>
               <div class="flex items-center">
                 <span class="text-xl font-bold text-orange-500">0</span>
-                <span class="text-xs ml-2 text-orange-500">${language === 'es' ? 'Sin investigadores' : 'No researchers'}</span>
+                <span class="text-xs ml-2 text-orange-500">${mapTexts[language].noResearchers}</span>
                       </div>
                     </div>
               </div>
@@ -1667,7 +1671,7 @@ const ResearchersSpanishRegionsMap: React.FC<ResearchersSpanishRegionsMapProps> 
                   <line x1="12" y1="8" x2="12" y2="12"></line>
                   <line x1="12" y1="16" x2="12.01" y2="16"></line>
                 </svg>
-                <span>Sin datos vs ${selectedYear - 1}</span>
+                <span>${mapTexts[language].noData} vs ${selectedYear - 1}</span>
               </div>
             `;
           }
@@ -1683,9 +1687,9 @@ const ResearchersSpanishRegionsMap: React.FC<ResearchersSpanishRegionsMapProps> 
                     <circle cx="12" cy="8" r="6" />
                     <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
                   </svg>
-                  <span class="font-medium">Rank </span>
+                  <span class="font-medium">${mapTexts[language].rankLabel} </span>
                   <span class="font-bold text-lg mx-1">${ranking.rank}</span>
-                  <span class="text-gray-600">${language === 'es' ? `de ${ranking.total}` : `of ${ranking.total}`}</span>
+                  <span class="text-gray-600">${mapTexts[language].of} ${ranking.total}</span>
                 </div>
               </div>
             `;
@@ -2254,6 +2258,7 @@ const ResearchersSpanishRegionsMap: React.FC<ResearchersSpanishRegionsMapProps> 
             }}
           >
             <svg ref={svgRef} className="w-full h-full"></svg>
+            <div className="text-xs text-gray-600 text-center mt-2">{mapTexts[language].legend}</div>
           </div>
         </>
       )}
