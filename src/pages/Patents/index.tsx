@@ -406,56 +406,52 @@ const Patents: React.FC<PatentsProps> = (props) => {
               </div>
               
               {/* Primera fila: Mapa y Gráfica - Mejorado para móvil */}
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-8">
+              <div className="flex flex-col lg:flex-row gap-6 mb-8">
                 {/* Mapa de Europa */}
-                <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100 order-2 xl:order-1">
-                  <div className="h-[600px] sm:h-[750px] lg:h-[900px] flex items-center justify-center">
-                    <PatentsEuropeanMap
-                      data={patentsData}
-                      selectedYear={selectedYear}
-                      language={language}
-                      patsDisplayType={patsDisplayType}
-                      cooperationPartner={cooperationPartner}
-                    />
-                  </div>
+                <div className="w-full lg:w-1/2 min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-4 order-2 lg:order-1">
+                  <PatentsEuropeanMap
+                    data={patentsData}
+                    selectedYear={selectedYear}
+                    language={language}
+                    patsDisplayType={patsDisplayType}
+                    cooperationPartner={cooperationPartner}
+                  />
                 </div>
-                
+
                 {/* Ranking de países */}
-                <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100 order-1 xl:order-2">
-                  <div className="h-[400px] sm:h-[500px] lg:h-[660px]">
-                    {patentsData.length > 0 ? (
-                      <div className="h-full overflow-hidden">
-                        <PatentsRankingChart
-                          data={patentsData}
-                          selectedYear={selectedYear}
-                          language={language}
-                          patsDisplayType={patsDisplayType}
-                          cooperationPartner={cooperationPartner}
-                        />
-                      </div>
-                    ) : (
-                      <div className="flex justify-center items-center h-full">
-                        {isLoading ? (
-                          <div className="flex flex-col items-center">
-                            <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-blue-500"></div>
-                            <p className="mt-2 sm:mt-4 text-gray-500 text-sm sm:text-base">{t.loading}</p>
-                          </div>
-                        ) : error ? (
-                          <div className="text-red-500 text-sm sm:text-base text-center px-4">
-                            <p>{error}</p>
-                          </div>
-                        ) : (
-                          <div className="bg-gray-50 p-4 sm:p-8 rounded-lg text-center">
-                            <p className="text-gray-600 text-sm sm:text-base">
-                              {language === 'es' ? 
-                                'Gráfico de ranking disponible en el mapa europeo' : 
-                                'Ranking chart available in the European map'}
-                            </p>
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
+                <div className="w-full lg:w-1/2 min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-4 order-1 lg:order-2">
+                  {patentsData.length > 0 ? (
+                    <div className="h-full overflow-hidden">
+                      <PatentsRankingChart
+                        data={patentsData}
+                        selectedYear={selectedYear}
+                        language={language}
+                        patsDisplayType={patsDisplayType}
+                        cooperationPartner={cooperationPartner}
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex justify-center items-center h-full">
+                      {isLoading ? (
+                        <div className="flex flex-col items-center">
+                          <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-blue-500"></div>
+                          <p className="mt-2 sm:mt-4 text-gray-500 text-sm sm:text-base">{t.loading}</p>
+                        </div>
+                      ) : error ? (
+                        <div className="text-red-500 text-sm sm:text-base text-center px-4">
+                          <p>{error}</p>
+                        </div>
+                      ) : (
+                        <div className="bg-gray-50 p-4 sm:p-8 rounded-lg text-center">
+                          <p className="text-gray-600 text-sm sm:text-base">
+                            {language === 'es' ?
+                              'Gráfico de ranking disponible en el mapa europeo' :
+                              'Ranking chart available in the European map'}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
