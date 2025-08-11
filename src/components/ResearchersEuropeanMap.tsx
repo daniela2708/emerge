@@ -875,8 +875,6 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
   
-  // Añadir estado para almacenar el rango de valores
-  const [valueRange, setValueRange] = useState<{min: number, max: number, median?: number, quartiles?: number[]}>({min: 0, max: 1});
   
   // Textos del idioma seleccionado
   const t = mapTexts[language];
@@ -937,26 +935,9 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
     // Usar d3 para obtener una versión más oscura del color
     return d3.color(baseColor)?.darker(0.8)?.toString() || '#333333';
   };
-  
-  // Calcular el rango de valores cuando cambian los datos, año o sector
-  useEffect(() => {
-    if (!data || data.length === 0) return;
-    
-    // Calcular el rango de valores solo para países europeos (sin entidades supranacionales)
-    const range = getValueRange(data, selectedYear, selectedSector);
-    setValueRange(range);
-    
-    console.log("Rango de valores actualizado para mapa:");
-    console.log(`- Año: ${selectedYear}`);
-    console.log(`- Sector: ${selectedSector}`);
-    console.log(`- Valor mínimo: ${range.min}`);
-    console.log(`- Valor máximo: ${range.max}`);
-    console.log(`- Cuartiles: ${range.quartiles?.join(', ')}`);
-  }, [data, selectedYear, selectedSector]);
-  
-  // Cargar mapa de Europa
-  useEffect(() => {
-    const fetchMap = async () => {
+    // Cargar mapa de Europa
+    useEffect(() => {
+      const fetchMap = async () => {
       setIsLoading(true);
       try {
         const response = await fetch(EUROPE_GEOJSON_URL);
@@ -1082,15 +1063,22 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
       // Limpiar SVG
       const svg = d3.select(svgRef.current);
       svg.selectAll('*').remove();
-      
+
+      const width = 560;
+      const height = 420;
+
       // Configurar proyección
       const projection = d3.geoMercator()
-        .center([10, 55])
-        .scale(700)
-        .translate([svg.node()?.getBoundingClientRect().width ?? 500 / 2, 350]);
-      
+        .center([10, 52])
+        .scale(420)
+        .translate([width / 2, height / 2]);
+
       // Crear generador de paths
       const pathGenerator = d3.geoPath().projection(projection);
+
+      // Grupo contenedor del mapa para centrarlo
+      const mapGroup = svg.append('g')
+        .attr('transform', 'translate(20, 20)');
       
       // Función para obtener el ranking de un país (se usará después de dibujar los países)
       const getCountryRank = (feature: GeoJsonFeature, countryValuesMap: Map<string, number>): { rank: number, total: number } | null => {
@@ -1188,92 +1176,6 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
           rank: position + 1, // +1 porque los índices empiezan en 0
           total: sortedValues.length
         };
-      };
-      
-      // Crear una leyenda para el mapa
-      const createLegend = () => {
-        const legendGroup = svg.append('g')
-          .attr('transform', `translate(60, 480)`);
-        
-        // Obtener los valores necesarios para la leyenda
-        const { min, max } = valueRange;
-        const quartiles = valueRange.quartiles || [min, min + (max-min)*0.25, min + (max-min)*0.5, min + (max-min)*0.75, max];
-        
-        // Crear rectángulos para cada categoría
-        const palette = getSectorPalette(selectedSector);
-        const colors = [palette.MIN, palette.LOW, palette.MID, palette.HIGH, palette.MAX];
-        
-        // Añadir título a la leyenda
-        legendGroup.append('text')
-          .attr('x', 0)
-          .attr('y', -80)
-          .attr('font-size', '16px')
-          .attr('font-weight', 'bold')
-          .text(t.researchers);
-        
-        // Añadir primero la etiqueta "Sin datos" a la leyenda
-        legendGroup.append('rect')
-          .attr('x', 0)
-          .attr('y', -60)
-          .attr('width', 25)
-          .attr('height', 25)
-          .attr('fill', palette.NULL)
-          .attr('stroke', '#666')
-          .attr('stroke-width', 0.5);
-          
-        legendGroup.append('text')
-          .attr('x', 35)
-          .attr('y', -42)
-          .attr('font-size', '14px')
-          .text(language === 'es' ? 'Sin datos' : 'No data');
-          
-        // Añadir etiqueta para valores cero
-        legendGroup.append('rect')
-          .attr('x', 0)
-          .attr('y', -30)
-          .attr('width', 25)
-          .attr('height', 25)
-          .attr('fill', palette.ZERO)
-          .attr('stroke', '#666')
-          .attr('stroke-width', 0.5);
-          
-        legendGroup.append('text')
-          .attr('x', 35)
-          .attr('y', -12)
-          .attr('font-size', '14px')
-          .text('0');
-        
-        // Usar los cuartiles para las etiquetas de la leyenda
-        const rangeValues = quartiles;
-        
-        for (let i = 0; i < 4; i++) {
-          const rangeStart = Math.round(rangeValues[i]);
-          const rangeEnd = Math.round(rangeValues[i + 1]);
-          
-          // Asegurar que no haya rangos duplicados
-          if (i > 0 && rangeStart === Math.round(rangeValues[i-1])) {
-            continue;
-          }
-          
-          legendGroup.append('rect')
-            .attr('x', 0)
-            .attr('y', i * 30)
-            .attr('width', 25)
-            .attr('height', 25)
-            .attr('fill', colors[i])
-            .attr('stroke', '#666')
-            .attr('stroke-width', 0.5);
-          
-          // Formatear los valores con separadores de miles
-          const formattedStart = formatNumberWithThousandSeparator(rangeStart, 0, language);
-          const formattedEnd = formatNumberWithThousandSeparator(rangeEnd, 0, language);
-          
-          legendGroup.append('text')
-            .attr('x', 35)
-            .attr('y', i * 30 + 18)
-            .attr('font-size', '14px')
-            .text(`${formattedStart} - ${formattedEnd}`);
-        }
       };
       
       // Función para obtener el valor de un país
@@ -1887,7 +1789,7 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
       };
       
       // Dibujar países
-      svg.selectAll<SVGPathElement, GeoJsonFeature>('path')
+      mapGroup.selectAll<SVGPathElement, GeoJsonFeature>('path')
         .data(europeanMapData!.features)
         .enter()
         .append('path')
@@ -1911,13 +1813,10 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
           handleClick(event, d);
         })
         .style('cursor', onClick ? 'pointer' : 'default');
-      
-      // Añadir leyenda
-      createLegend();
     };
-    
+
     renderMap();
-  }, [europeanMapData, data, selectedYear, selectedSector, language, valueRange]);
+  }, [europeanMapData, data, selectedYear, selectedSector, language]);
   
   return (
     <div ref={containerRef} className="relative w-full h-full">
@@ -1947,10 +1846,11 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
         </div>
       ) : (
         <>
-          <svg 
-            ref={svgRef} 
-            className="w-full h-full min-h-[450px]" 
-            viewBox="0 0 1000 700"
+          <svg
+            ref={svgRef}
+            width="100%"
+            height="100%"
+            viewBox="0 0 560 420"
             preserveAspectRatio="xMidYMid meet"
           />
                 <div 
