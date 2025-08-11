@@ -640,7 +640,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                   <div className="flex-shrink-0 mr-3">
                     <div className="p-2 sm:p-3 bg-red-50 rounded-lg flex items-center justify-center">
                       <img
-                        src="/es.svg"
+                        src="/logos/spain.svg"
                         alt="Bandera de España"
                         className="w-6 h-4 sm:w-8 sm:h-6 object-cover rounded border border-gray-300 shadow-sm"
                         style={{

@@ -119,7 +119,7 @@ const FlagsCustomComponent = (props: {
       return euFlag?.flag || "https://flagcdn.com/eu.svg";
     } else if (type === 'es') {
       const esFlag = country_flags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-      return esFlag?.flag || "https://flagcdn.com/es.svg";
+      return esFlag?.flag || "/logos/spain.svg";
     } else if (type === 'country' && code) {
       if (code === 'EL') {
         const greeceFlag = country_flags.find(flag => flag.code === 'GR' || flag.iso3 === 'GRC');
@@ -644,7 +644,7 @@ const ResearchersTimelineChart: React.FC<ResearchersTimelineChartProps> = ({
     } else if (type === 'es') {
       // Bandera de España
       const esFlag = country_flags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-      flagUrl = esFlag?.flag || "https://flagcdn.com/es.svg";
+      flagUrl = esFlag?.flag || "/logos/spain.svg";
     } else if (type === 'country' && code) {
       // Manejar el caso especial de Grecia (EL)
       if (code === 'EL') {

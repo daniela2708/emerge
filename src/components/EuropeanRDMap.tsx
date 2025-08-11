@@ -759,7 +759,7 @@ function getCountryFlagUrl(countryName: string, feature?: GeoJsonFeature): strin
   } else if (normalizedName.includes('zona euro') || normalizedName.includes('euro area')) {
     return "https://flagcdn.com/eu.svg"; // Usamos también la bandera de la UE para la zona euro
   } else if (normalizedName.includes('espana') || normalizedName.includes('españa') || normalizedName.includes('spain')) {
-    return "https://flagcdn.com/es.svg";
+    return "/logos/spain.svg";
   } else if (normalizedName.includes('alemania') || normalizedName.includes('germany')) {
     return "https://flagcdn.com/de.svg";
   } else if (normalizedName.includes('francia') || normalizedName.includes('france')) {
