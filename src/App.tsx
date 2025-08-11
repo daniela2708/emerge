@@ -6,6 +6,7 @@ import Researchers from './pages/Researchers'; // Importar el componente de la p
 import Patents from './pages/Patents'; // Importar el componente de la página Patents
 import SourcesSection from './components/SourcesSection';
 import PWAInstallPrompt from './components/PWAInstallPrompt';
+import i18n from './i18n/i18n';
 
 // Definir tipos
 type TabType = 'overview' | 'investment' | 'researchers' | 'patents' | 'sources';
@@ -13,7 +14,7 @@ type Language = 'es' | 'en';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabType>('overview'); // Cambiando a 'overview' para mostrar primero la visión general
-  const [language, setLanguage] = useState<Language>('es');
+  const [language, setLanguage] = useState<Language>((i18n.language as Language) || 'es');
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -67,54 +68,14 @@ const App: React.FC = () => {
     setIsMobileMenuOpen(false);
   }, [activeTab]); // Ejecutar este efecto cuando cambie activeTab
 
-  // Usar useEffect para detectar cambios de idioma y mantener la experiencia fluida
-  React.useEffect(() => {
-    // No hacer nada en el primer renderizado
-    // Este efecto solo restaurará la posición cuando cambie el idioma
-  }, [language]);
-  
   const toggleLanguage = () => {
-    // Capturar dimensiones y posición exacta antes del cambio
-    const contentElement = contentRef.current;
-    let scrollInfo = null;
-    
-    if (contentElement) {
-      // Guardar información de scroll y dimensiones relativas
-      const rect = contentElement.getBoundingClientRect();
-      const visibleRatio = Math.abs(rect.top) / contentElement.scrollHeight;
-      scrollInfo = {
-        element: contentElement,
-        visibleRatio,
-        visibleTop: rect.top,
-        // Capturar posición exacta de elementos visibles para referencia
-        elementAtViewport: document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 2)
-      };
-    }
-    
-    // Preparar la transición visual suave
-    document.body.style.opacity = '0.98';
-    document.body.style.transition = 'opacity 0.15s ease';
-    
-    // Cambiar el idioma
-    setLanguage(prev => prev === 'es' ? 'en' : 'es');
+    setLanguage(prev => (prev === 'es' ? 'en' : 'es'));
     setShowLangDropdown(false);
-    
-    // Restaurar la posición después del renderizado
-    setTimeout(() => {
-      // Primero hacer visible el contenido nuevamente
-      document.body.style.opacity = '1';
-      
-      // Intentar restaurar posición exacta
-      if (scrollInfo && scrollInfo.element) {
-        // Calcular la nueva posición basándose en la relación de visibilidad anterior
-        const targetScrollTop = scrollInfo.element.scrollHeight * scrollInfo.visibleRatio;
-        window.scrollTo({
-          top: targetScrollTop,
-          behavior: 'auto' // Usar 'auto' para evitar animación adicional
-        });
-      }
-    }, 50); // Un pequeño retraso para permitir que React complete el renderizado
   };
+
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 flex flex-col w-full">

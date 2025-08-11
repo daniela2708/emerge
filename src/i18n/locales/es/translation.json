@@ -29,21 +29,26 @@
     "total": "Inversión Total",
     "year": "Año",
     "percentage": "Porcentaje",
-    "overview": "Resumen de Inversión en I+D"
+    "overview": "Resumen de Inversión en I+D",
+    "description": "Análisis del esfuerzo financiero en I+D como porcentaje del PIB, distribución sectorial y evolución temporal comparada."
   },
   "researchers": {
     "title": "Número de Investigadores",
     "public": "Sector Público",
     "private": "Sector Privado",
     "total": "Total Investigadores",
-    "year": "Año"
+    "year": "Año",
+    "description": "Capital humano dedicado a la investigación y desarrollo por sectores de actividad, con análisis territorial y evolución temporal. Datos en equivalencia a tiempo completo (ETC).",
+    "legend": "Investigadores (EJC)",
+    "tooltipTitle": "Investigadores"
   },
   "patents": {
     "title": "Número de Patentes",
     "public": "Sector Público",
     "private": "Sector Privado",
     "total": "Total Patentes",
-    "year": "Año"
+    "year": "Año",
+    "description": "Análisis de las solicitudes de patentes presentadas ante la Oficina Europea de Patentes (EPO) como indicador de la capacidad innovadora del territorio, con datos comparativos regionales y sectoriales."
   },
   "common": {
     "canaryIslands": "Islas Canarias",
@@ -65,4 +70,4 @@
     "basqueCountry": "País Vasco",
     "maxSelectionsReached": "Máximo de {{count}} selecciones"
   }
-} 
+}
