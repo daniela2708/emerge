@@ -333,7 +333,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
               </div>
             </div>
           ) : (
-            <div className="bg-white rounded-lg w-full">
+            <div className="w-full">
               {/* Filtros */}
               <div className="bg-blue-50 p-3 sm:p-4 rounded-md border border-blue-100 mb-6">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
@@ -564,7 +564,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
           <SubsectionTitle title={t.geographicalDistribution} />
           
           {regionalData.length > 0 ? (
-            <div className="bg-white rounded-lg w-full">
+            <div className="w-full">
               {/* Filtros para la sección regional */}
               <div className="bg-blue-50 p-3 rounded-md border border-blue-100 mb-4">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
