@@ -63,19 +63,18 @@ const NavBar: React.FC<NavBarProps> = ({ activeTab, setActiveTab }) => {
           <span>{t('overview')}</span>
         </button>
         
-        <button 
+        <button
           style={tabStyle(activeTab === tabValue('investment'))}
           onClick={() => setActiveTab(tabValue('investment'))}
           className="focus:outline-none"
         >
-          <svg 
+          <span
+            role="img"
+            aria-label={t('investment')}
             style={iconStyle}
-            fill="currentColor" 
-            viewBox="0 0 24 24" 
-            xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z" />
-          </svg>
+            🇪🇸
+          </span>
           <span>{t('investment')}</span>
         </button>
         

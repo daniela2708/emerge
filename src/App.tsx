@@ -193,21 +193,19 @@ const App: React.FC = () => {
                   <span className="text-sm font-semibold">{t('overview')}</span>
                 </div>
               </li>
-              <li 
+              <li
                 className={`cursor-pointer py-2.5 px-4 text-center transition-all duration-200 rounded-t-md flex-none w-[180px] mx-1 ${activeTab === 'investment' ? 'bg-white border-l border-r border-t border-white font-medium' : 'text-white hover:bg-opacity-80'}`}
                 style={{ color: activeTab === 'investment' ? '#006480' : 'white' }}
                 onClick={() => setActiveTab('investment')}
               >
                 <div className="flex items-center justify-center whitespace-nowrap">
-                  <svg 
-                    className={`w-5 h-5 mr-2 flex-shrink-0`}
-                    style={{ color: activeTab === 'investment' ? '#006480' : 'white' }} 
-                    fill="currentColor" 
-                    viewBox="0 0 24 24" 
-                    xmlns="http://www.w3.org/2000/svg"
+                  <span
+                    role="img"
+                    aria-label={language === 'es' ? 'Bandera de España' : 'Flag of Spain'}
+                    className="text-xl mr-2 flex-shrink-0"
                   >
-                    <path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z" />
-                  </svg>
+                    🇪🇸
+                  </span>
                   <span className="text-sm font-semibold">{t('investment')}</span>
                 </div>
               </li>
@@ -316,9 +314,13 @@ const App: React.FC = () => {
         {activeTab === 'investment' && (
           <div className="bg-gradient-to-br from-white via-white to-gray-50 rounded-lg shadow-md p-3 md:p-6 border border-gray-100 min-h-[500px] md:min-h-[700px] w-full flex-grow flex flex-col transition-all duration-300" style={{ width: "100%", minWidth: "100%" }}>
             <div className="flex items-center mb-4 md:mb-6">
-              <svg className="w-5 md:w-6 h-5 md:h-6 text-blue-600 mr-2 md:mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z" />
-              </svg>
+              <span
+                role="img"
+                aria-label={language === 'es' ? 'Bandera de España' : 'Flag of Spain'}
+                className="text-xl md:text-2xl mr-2 md:mr-3"
+              >
+                🇪🇸
+              </span>
               <h2 className="text-lg md:text-xl font-bold text-gray-800">
                 {t('investment')}
               </h2>
