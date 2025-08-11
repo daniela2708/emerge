@@ -639,12 +639,12 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-3">
                     <div className="p-2 sm:p-3 bg-red-50 rounded-lg flex items-center justify-center">
-                      <img 
-                        src="https://flagcdn.com/es.svg" 
-                        alt="Bandera de España" 
+                      <img
+                        src="/es.svg"
+                        alt="Bandera de España"
                         className="w-6 h-4 sm:w-8 sm:h-6 object-cover rounded border border-gray-300 shadow-sm"
-                        style={{ 
-                          boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.1)' 
+                        style={{
+                          boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.1)'
                         }}
                         onError={(e) => {
                           // Fallback al icono SVG si la imagen no carga
