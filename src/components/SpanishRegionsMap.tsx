@@ -987,8 +987,8 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         .center([-15.5, 28.2])
         .scale(canariasScale) // Aumentado para que las islas se vean más grandes
         .translate([
-          containerWidth * 0.14,
-          containerHeight * 0.68,
+          containerWidth * 0.16,
+          containerHeight * 0.66,
         ]); // Centrar las islas dentro del nuevo recuadro
       
       // Crear proyección específica para Ceuta y Melilla (compartirán recuadro)
@@ -1761,8 +1761,8 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         canariasGroup.append('rect')
           .attr('x', containerWidth * 0.02) // Más a la izquierda
           .attr('y', containerHeight * 0.58) // Subir el recuadro para mantenerlo visible
-          .attr('width', containerWidth * 0.24) // Mantener ancho
-          .attr('height', containerHeight * 0.20) // Altura extendida para cerrar el recuadro
+          .attr('width', containerWidth * 0.28) // Recuadro ligeramente más ancho
+          .attr('height', containerHeight * 0.16) // 20% menos de altura
           .attr('rx', 4)
           .attr('ry', 4)
           .attr('fill', 'rgba(255, 255, 255, 0.8)')
