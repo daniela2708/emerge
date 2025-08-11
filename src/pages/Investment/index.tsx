@@ -577,7 +577,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center">
-                      <h3 className="text-xs sm:text-sm font-medium text-gray-500 truncate">
+                      <h3 className="text-[11px] sm:text-xs font-medium text-gray-500 truncate">
                         {language === 'es' ? 'Unión Europea' : 'European Union'}
                       </h3>
                     </div>
@@ -587,7 +587,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                           const { euData } = getFixedKeyMetricsData();
                           return (
                             <>
-                              <span className="text-xl sm:text-2xl font-bold text-blue-700">
+                              <span className="text-lg sm:text-xl font-bold text-blue-700">
                                 {euData ? `${parseFloat(euData['%GDP']).toFixed(2)}%` : '--'}
                       </span>
                       <span className="ml-1 sm:ml-2 text-xs sm:text-sm text-gray-500">
@@ -657,7 +657,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center">
-                      <h3 className="text-xs sm:text-sm font-medium text-gray-500 truncate">
+                      <h3 className="text-[11px] sm:text-xs font-medium text-gray-500 truncate">
                         {language === 'es' ? 'España' : 'Spain'}
                       </h3>
                     </div>
@@ -667,7 +667,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                           const { spainData } = getFixedKeyMetricsData();
                           return (
                             <>
-                              <span className="text-xl sm:text-2xl font-bold text-red-700">
+                              <span className="text-lg sm:text-xl font-bold text-red-700">
                                 {spainData ? `${parseFloat(spainData['%GDP']).toFixed(2)}%` : '--'}
                       </span>
                       <span className="ml-1 sm:ml-2 text-xs sm:text-sm text-gray-500">
@@ -775,7 +775,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-xs sm:text-sm font-medium text-gray-500 mb-1">
-                      {language === 'es' ? 'Mejor C.A.' : 'Top Region'}
+                      {language === 'es' ? 'Top Comunidad Autónoma' : 'Top Autonomous Community'}
                     </h3>
                     {
                       (() => {
@@ -841,7 +841,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                           {language === 'es' ? 'Sin datos' : 'No data'}
                         </div>
                         <div className="flex items-baseline flex-wrap">
-                          <span className="text-xl sm:text-2xl font-bold text-gray-400">--</span>
+                          <span className="text-lg sm:text-xl font-bold text-gray-400">--</span>
                           <span className="ml-1 sm:ml-2 text-xs sm:text-sm text-gray-500">
                             {language === 'es' ? 'del PIB' : 'of GDP'}
                           </span>
@@ -864,7 +864,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center">
-                      <h3 className="text-xs sm:text-sm font-medium text-gray-500 truncate">
+                      <h3 className="text-[11px] sm:text-xs font-medium text-gray-500 truncate">
                         {language === 'es' ? 'Canarias' : 'Canary Islands'}
                       </h3>
                     </div>
@@ -910,7 +910,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                           return (
                             <div>
                               <div className="flex items-baseline mt-1 flex-wrap">
-                                <span className="text-xl sm:text-2xl font-bold text-yellow-700">
+                                <span className="text-lg sm:text-xl font-bold text-yellow-700">
                                   {canariasValue.toFixed(2)}%
                                 </span>
                                 <span className="ml-1 sm:ml-2 text-xs sm:text-sm text-gray-500">
@@ -932,7 +932,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                         return (
                           <div>
                             <div className="flex items-baseline mt-1 flex-wrap">
-                              <span className="text-xl sm:text-2xl font-bold text-gray-400">--</span>
+                              <span className="text-lg sm:text-xl font-bold text-gray-400">--</span>
                               <span className="ml-1 sm:ml-2 text-xs sm:text-sm text-gray-500">
                                 {language === 'es' ? 'del PIB' : 'of GDP'}
                               </span>
