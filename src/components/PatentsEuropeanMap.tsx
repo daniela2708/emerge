@@ -253,31 +253,6 @@ function getLabelDescription(label: string, language: 'es' | 'en'): string {
     : language === 'es' ? 'Desconocido' : 'Unknown';
 }
 
-// Formatear números con separador de miles y abreviaciones (K, M)
-function formatNumberWithThousandSeparator(value: number, decimals: number = 0, lang: 'es' | 'en' = 'es'): string {
-  // Verificar si el valor es muy grande y formatearlo adecuadamente
-  if (value >= 1000000) {
-    // Para valores de millones o más, mostrar en formato abreviado
-    return (value / 1000000).toFixed(1) + 'M';
-  } else if (value >= 1000) {
-    // Para valores de miles, mostrar en formato abreviado
-    return (value / 1000).toFixed(1) + 'K';
-  } else {
-    // Para valores menores a mil, usar formato normal
-    return new Intl.NumberFormat(lang === 'es' ? 'es-ES' : 'en-US', {
-      minimumFractionDigits: decimals,
-      maximumFractionDigits: decimals
-    }).format(value);
-  }
-}
-
-// Formatear números completos con separador de miles
-// function formatNumberComplete(value: number, decimals: number = 0, lang: 'es' | 'en' = 'es'): string {
-//   return new Intl.NumberFormat(lang === 'es' ? 'es-ES' : 'en-US', {
-//     minimumFractionDigits: decimals,
-//     maximumFractionDigits: decimals
-//   }).format(value);
-// }
 
 // Mapeo de códigos de país a nombres en español e inglés
 const countryCodeMapping: Record<string, {es: string, en: string}> = {
@@ -975,129 +950,15 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
       const width = 1000;
       const height = 700;
 
-      // Configurar proyección
-      const projection = d3.geoMercator()
-        .center([10, 54])
-        .scale(800)
-        .translate([width / 2, height / 2]);
+      // Configurar proyección centrando automáticamente el mapa en el contenedor
+      const projection = d3
+        .geoMercator()
+        .fitSize([width, height], geoData as any);
 
       const path = d3.geoPath().projection(projection);
 
       console.log("[Patents Map Render Debug] Proyección configurada");
       console.log("[Patents Map Render Debug] Número de países en GeoJSON:", geoData.features.length);
-
-      // Crear leyenda para el mapa
-      const createLegend = () => {
-        const legendGroup = svg.append('g')
-          .attr('transform', `translate(60, 480)`);
-        
-        // Obtener todos los valores para calcular rangos
-        const allValues: number[] = [];
-        geoData.features.forEach(feature => {
-          const val = getCountryValue(feature);
-          if (val !== null && val > 0) {
-            allValues.push(val);
-          }
-        });
-        
-        if (allValues.length === 0) {
-          console.log("[Patents Map Legend Debug] No hay valores para crear leyenda");
-          return;
-        }
-        
-        // Ordenar valores para calcular cuartiles
-        allValues.sort((a, b) => a - b);
-        
-        // Calcular cuartiles
-        const q1 = allValues[Math.floor(allValues.length * 0.25)];
-        const q2 = allValues[Math.floor(allValues.length * 0.5)];
-        const q3 = allValues[Math.floor(allValues.length * 0.75)];
-        const min = allValues[0];
-        const max = allValues[allValues.length - 1];
-        
-        const quartiles = [min, q1, q2, q3, max];
-        
-        // Obtener color base - Ahora siempre usa el color total
-        const baseColor = PATENTS_SECTOR_COLORS.total;
-        
-        // Crear colores para la leyenda
-        const colors = [
-          d3.color(baseColor)?.brighter(1.5)?.toString() || '#e0e0e0',
-          d3.color(baseColor)?.brighter(0.8)?.toString() || '#d0d0d0',
-          baseColor,
-          d3.color(baseColor)?.darker(0.8)?.toString() || '#606060',
-          d3.color(baseColor)?.darker(1.6)?.toString() || '#404040'
-        ];
-        
-        // Añadir título a la leyenda
-        legendGroup.append('text')
-          .attr('x', 0)
-          .attr('y', -80)
-          .attr('font-size', '16px')
-          .attr('font-weight', 'bold')
-          .text(t.researchers);
-        
-        // Añadir etiqueta "Sin datos"
-        legendGroup.append('rect')
-          .attr('x', 0)
-          .attr('y', -60)
-          .attr('width', 25)
-          .attr('height', 25)
-          .attr('fill', '#f5f5f5')
-          .attr('stroke', '#666')
-          .attr('stroke-width', 0.5);
-          
-        legendGroup.append('text')
-          .attr('x', 35)
-          .attr('y', -42)
-          .attr('font-size', '14px')
-          .text(language === 'es' ? 'Sin datos' : 'No data');
-          
-        // Añadir etiqueta para valores cero
-        legendGroup.append('rect')
-          .attr('x', 0)
-          .attr('y', -30)
-          .attr('width', 25)
-          .attr('height', 25)
-          .attr('fill', '#ff9800')
-          .attr('stroke', '#666')
-          .attr('stroke-width', 0.5);
-          
-        legendGroup.append('text')
-          .attr('x', 35)
-          .attr('y', -12)
-          .attr('font-size', '14px')
-          .text('0');
-        
-        // Crear rangos para la leyenda
-        for (let i = 0; i < 4; i++) {
-          const rangeStart = Math.round(quartiles[i]);
-          const rangeEnd = Math.round(quartiles[i + 1]);
-          
-          if (i > 0 && rangeStart === Math.round(quartiles[i-1])) {
-            continue;
-          }
-          
-          legendGroup.append('rect')
-            .attr('x', 0)
-            .attr('y', i * 30)
-            .attr('width', 25)
-            .attr('height', 25)
-            .attr('fill', colors[i])
-            .attr('stroke', '#666')
-            .attr('stroke-width', 0.5);
-          
-          // Formatear números con separadores de miles
-          const formattedStart = formatNumberWithThousandSeparator(rangeStart, 0, language);
-          const formattedEnd = formatNumberWithThousandSeparator(rangeEnd, 0, language);
-          
-          legendGroup.append('text')
-            .attr('x', 35)
-            .attr('y', i * 30 + 18)
-            .attr('font-size', '14px')
-            .text(`${formattedStart} - ${formattedEnd}`);
-        }
-      };
 
       // Función para posicionar tooltip - Optimizada para móvil
       const positionTooltip = (tooltip: d3.Selection<HTMLDivElement, unknown, null, undefined>, event: MouseEvent, tooltipNode: HTMLElement) => {
@@ -1925,9 +1786,6 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
         });
         
       console.log("[Patents Map Render Debug] Países renderizados:", paths.size());
-      
-      // Añadir leyenda
-      createLegend();
       
       console.log("[Patents Map Render Debug] Renderizado completado");
     };
