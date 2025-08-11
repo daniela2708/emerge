@@ -1807,7 +1807,10 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
         </div>
       </div>
       
-      <div className="relative mx-auto" style={{ height: '720px', border: '1px solid #f0f0f0', borderRadius: '8px', overflow: 'hidden' }}>
+      <div
+        className="relative mx-auto"
+        style={{ height: '450px', border: '1px solid #f0f0f0', borderRadius: '8px', overflow: 'hidden' }}
+      >
         {isLoading ? (
           <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-80">
             <div className="text-center">
