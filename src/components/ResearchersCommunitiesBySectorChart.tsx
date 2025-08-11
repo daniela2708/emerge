@@ -340,7 +340,7 @@ const ResearchersCommunitiesBySectorChart: React.FC<ResearchersCommunitiesBySect
                     className="w-3 h-3 rounded-full mr-3 shadow-sm ring-1 ring-gray-200" 
                     style={{ backgroundColor: entry.color }}
                   ></div>
-                  <span className="text-sm font-medium text-gray-700 truncate">
+                  <span className="text-sm font-medium text-gray-700 whitespace-normal break-words">
                     {sectorName}
                   </span>
                 </div>
