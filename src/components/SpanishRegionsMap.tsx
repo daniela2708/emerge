@@ -982,14 +982,22 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         .scale(peninsulaScale)
         .translate([containerWidth / 2, containerHeight / 2.2]); // Mejor centrado vertical
       
-      // Crear proyección específica para las Islas Canarias
+      // Definir dimensiones del recuadro para las Islas Canarias
+      const canariasRect = {
+        x: containerWidth * 0.05,
+        y: containerHeight * 0.58,
+        width: containerWidth * 0.22, // Recuadro más angosto
+        height: containerHeight * 0.16
+      };
+
+      // Crear proyección específica para las Islas Canarias centrada en su recuadro
       const projectionCanarias = d3.geoMercator()
         .center([-15.5, 28.2])
         .scale(canariasScale) // Aumentado para que las islas se vean más grandes
         .translate([
-          containerWidth * 0.16,
-          containerHeight * 0.66,
-        ]); // Centrar las islas dentro del nuevo recuadro
+          canariasRect.x + canariasRect.width / 2,
+          canariasRect.y + canariasRect.height / 2,
+        ]);
       
       // Crear proyección específica para Ceuta y Melilla (compartirán recuadro)
       const projectionCeuta = d3.geoMercator()
@@ -1759,10 +1767,10 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       if (canariasFeatures.length > 0) {
         // Fondo blanco translúcido para el recuadro - ajustar posición y tamaño
         canariasGroup.append('rect')
-          .attr('x', containerWidth * 0.02) // Más a la izquierda
-          .attr('y', containerHeight * 0.58) // Subir el recuadro para mantenerlo visible
-          .attr('width', containerWidth * 0.28) // Recuadro ligeramente más ancho
-          .attr('height', containerHeight * 0.16) // 20% menos de altura
+          .attr('x', canariasRect.x)
+          .attr('y', canariasRect.y)
+          .attr('width', canariasRect.width)
+          .attr('height', canariasRect.height)
           .attr('rx', 4)
           .attr('ry', 4)
           .attr('fill', 'rgba(255, 255, 255, 0.8)')
@@ -1770,11 +1778,11 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
           .attr('stroke-width', 1)
           .attr('stroke-dasharray', '3,3')
           .lower();
-        
+
         // Etiqueta para Canarias - ajustar posición
         canariasGroup.append('text')
-          .attr('x', containerWidth * 0.04)
-          .attr('y', containerHeight * 0.61) // Ajustar posición acorde al nuevo recuadro
+          .attr('x', canariasRect.x + containerWidth * 0.02)
+          .attr('y', canariasRect.y + containerHeight * 0.03)
           .attr('font-size', '10px')
           .attr('font-weight', 'bold')
           .attr('fill', '#0077b6')
