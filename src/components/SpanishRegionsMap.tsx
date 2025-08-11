@@ -974,7 +974,7 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       
       // MEJORA: Ajustar escala para utilizar más espacio disponible
       const peninsulaScale = containerWidth * 2.8; // Reducido de 3.2 a 2.8 para hacer el mapa más pequeño
-      const canariasScale = containerWidth * 2.5; // Mantener proporción similar al mapa de investigadores
+      const canariasScale = containerWidth * 3.0; // Aumentar escala para mejorar la visibilidad de las islas
       
       // Crear proyección para España peninsular (centrada y escalada para maximizar el espacio)
       const projectionMainland = d3.geoMercator()
@@ -985,21 +985,21 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       // Crear proyección específica para las Islas Canarias
       const projectionCanarias = d3.geoMercator()
         .center([-15.5, 28.2])
-        .scale(canariasScale) // Aumentado para que las islas se vean más grandes
+        .scale(canariasScale) // Escala incrementada para mostrar mejor las islas
         .translate([
-          containerWidth * 0.16,
-          containerHeight * 0.66,
-        ]); // Centrar las islas dentro del nuevo recuadro
+          containerWidth * 0.17,
+          containerHeight * 0.67,
+        ]); // Centrar las islas dentro del recuadro
       
       // Crear proyección específica para Ceuta y Melilla (compartirán recuadro)
       const projectionCeuta = d3.geoMercator()
         .center([-5.3, 35.9])  // Centro en Ceuta
-        .scale(containerWidth * 16)     // Reducido de 22 a 16 para hacer Ceuta más pequeña
+        .scale(containerWidth * 20)     // Escala aumentada para una mejor visibilidad
         .translate([containerWidth * 0.78, containerHeight * 0.15]); // Posición en parte superior derecha
       
       const projectionMelilla = d3.geoMercator()
         .center([-3.0, 35.3])  // Centro en Melilla
-        .scale(containerWidth * 16)     // Reducido de 22 a 16 para hacer Melilla más pequeña
+        .scale(containerWidth * 20)     // Escala aumentada para una mejor visibilidad
         .translate([containerWidth * 0.90, containerHeight * 0.15]); // Posición en parte superior derecha
       
       // Crear generador de path para península
@@ -1761,8 +1761,8 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         canariasGroup.append('rect')
           .attr('x', containerWidth * 0.02) // Más a la izquierda
           .attr('y', containerHeight * 0.58) // Subir el recuadro para mantenerlo visible
-          .attr('width', containerWidth * 0.28) // Recuadro ligeramente más ancho
-          .attr('height', containerHeight * 0.16) // 20% menos de altura
+          .attr('width', containerWidth * 0.30) // Recuadro más ancho para las islas ampliadas
+          .attr('height', containerHeight * 0.18) // Mayor altura para acomodar el nuevo tamaño
           .attr('rx', 4)
           .attr('ry', 4)
           .attr('fill', 'rgba(255, 255, 255, 0.8)')
@@ -1788,8 +1788,8 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         ceutaMelillaGroup.append('rect')
           .attr('x', containerWidth * 0.70)
           .attr('y', containerHeight * 0.05)
-          .attr('width', containerWidth * 0.28)
-          .attr('height', containerHeight * 0.15)
+          .attr('width', containerWidth * 0.30) // Recuadro más ancho para las ciudades aumentadas
+          .attr('height', containerHeight * 0.17) // Mayor altura para acomodar el nuevo tamaño
           .attr('rx', 4)
           .attr('ry', 4)
           .attr('fill', 'rgba(255, 255, 255, 0.8)')
@@ -1811,7 +1811,7 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         
         // Etiqueta para Melilla (parte derecha)
         ceutaMelillaGroup.append('text')
-          .attr('x', containerWidth * 0.90)
+          .attr('x', containerWidth * 0.92)
           .attr('y', containerHeight * 0.10)
           .attr('font-size', '9px')
           .attr('text-anchor', 'middle')
