@@ -46,16 +46,21 @@ export default defineConfig({
         ]
       },
       devOptions: {
-        enabled: true
+        enabled: false
       }
     })
   ],
   publicDir: 'public',
   server: {
     port: 5173,
-    host: true,
+    host: '0.0.0.0',
     cors: true,
-    open: true, // Abre el navegador automáticamente
+    open: true,
+    hmr: {
+      port: 5173,
+      host: 'localhost',
+      clientPort: 5173
+    },
     headers: {
       'X-Content-Type-Options': 'nosniff',
       'Cache-Control': 'public, max-age=3600'
@@ -76,6 +81,7 @@ export default defineConfig({
       '@data': '/src/data',
       '@components': '/src/components',
     },
+    dedupe: ['react', 'react-dom']
   },
   // Modo de desarrollo con más mensajes de depuración
   logLevel: 'info',

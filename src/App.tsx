@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import type { FC } from 'react';
 import './index.css'; // Asegúrate de que este archivo importa correctamente los estilos de Tailwind
 import OverviewPage from './pages/Overview'; // Importar el componente de la página Overview
 import Investment from './pages/Investment';
@@ -12,9 +13,12 @@ import i18n from './i18n/i18n';
 type TabType = 'overview' | 'investment' | 'researchers' | 'patents' | 'sources';
 type Language = 'es' | 'en';
 
-const App: React.FC = () => {
+const App: FC = () => {
   const [activeTab, setActiveTab] = useState<TabType>('overview'); // Cambiando a 'overview' para mostrar primero la visión general
-  const [language, setLanguage] = useState<Language>((i18n.language as Language) || 'es');
+  const [language, setLanguage] = useState<Language>(() => {
+    const lang = i18n.language as Language;
+    return (lang === 'es' || lang === 'en') ? lang : 'es';
+  });
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -51,10 +55,16 @@ const App: React.FC = () => {
     }
   };
 
-  const t = (key: keyof typeof texts.es) => texts[language][key];
+  const t = (key: keyof typeof texts.es) => {
+    const currentTexts = texts[language];
+    if (currentTexts && currentTexts[key]) {
+      return currentTexts[key];
+    }
+    return texts.es[key] || key;
+  };
 
   // Referencia para el contenido principal
-  const contentRef = React.useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
   
   // Efecto para desplazarse al inicio cuando cambie la pestaña activa
   useEffect(() => {
