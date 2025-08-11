@@ -56,6 +56,16 @@ export default defineConfig({
     host: true,
     cors: true,
     open: true, // Abre el navegador automáticamente
+    headers: {
+      'X-Content-Type-Options': 'nosniff',
+      'Cache-Control': 'public, max-age=3600'
+    }
+  },
+  preview: {
+    headers: {
+      'X-Content-Type-Options': 'nosniff',
+      'Cache-Control': 'public, max-age=3600'
+    }
   },
   // Incluye una configuración específica para que Vite sirva correctamente los archivos CSV
   assetsInclude: ['**/*.csv'],

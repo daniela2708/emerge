@@ -659,13 +659,19 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                         onError={(e) => {
                           // Fallback al icono SVG si la imagen no carga
                           e.currentTarget.style.display = 'none';
-                          const fallbackSvg = document.createElement('svg');
-                          fallbackSvg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                          const ns = 'http://www.w3.org/2000/svg';
+                          const fallbackSvg = document.createElementNS(ns, 'svg');
+                          fallbackSvg.setAttribute('xmlns', ns);
                           fallbackSvg.setAttribute('class', 'h-6 w-6 sm:h-8 sm:w-8 text-red-600');
                           fallbackSvg.setAttribute('fill', 'none');
                           fallbackSvg.setAttribute('viewBox', '0 0 24 24');
                           fallbackSvg.setAttribute('stroke', 'currentColor');
-                          fallbackSvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />';
+                          const path = document.createElementNS(ns, 'path');
+                          path.setAttribute('stroke-linecap', 'round');
+                          path.setAttribute('stroke-linejoin', 'round');
+                          path.setAttribute('stroke-width', '2');
+                          path.setAttribute('d', 'M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9');
+                          fallbackSvg.appendChild(path);
                           e.currentTarget.parentNode?.appendChild(fallbackSvg);
                         }}
                       />

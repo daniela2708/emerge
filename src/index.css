@@ -8,6 +8,8 @@
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
@@ -56,10 +58,15 @@
       display: none;
       width: 0;
     }
-    
+
     * {
-      scrollbar-width: none;
       -ms-overflow-style: none;
+    }
+
+    @supports (scrollbar-width: none) {
+      * {
+        scrollbar-width: none;
+      }
     }
   }
 }
