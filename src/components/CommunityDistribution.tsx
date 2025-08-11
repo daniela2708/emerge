@@ -165,12 +165,14 @@ const Flag: React.FC<FlagProps> = ({ code, width = 24, height = 18, className = 
   // Renderizar la imagen de la bandera si se encontró una URL
   if (flagUrl) {
     return (
-      <img 
-        src={flagUrl} 
-        alt={code} 
-        width={width} 
-        height={height} 
+      <img
+        src={flagUrl}
+        alt={code}
+        width={width}
+        height={height}
         className={`rounded border border-gray-300 shadow-sm ${extraStyles} ${className}`}
+        loading="lazy"
+        decoding="async"
       />
     );
   }
