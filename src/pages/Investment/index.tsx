@@ -139,7 +139,10 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
   const [availableYears, setAvailableYears] = useState<number[]>([]);
   const [selectedYear, setSelectedYear] = useState<number>(2023);
   const [selectedKeyYear, setSelectedKeyYear] = useState<number>(2023);
-  const [selectedSector, setSelectedSector] = useState<string>("All Sectors");
+  // Estado del selector de sector para la distribución geográfica
+  const [selectedMapSector, setSelectedMapSector] = useState<string>("All Sectors");
+  // Estado del selector de sector para la evolución temporal
+  const [selectedEvolutionSector, setSelectedEvolutionSector] = useState<string>("All Sectors");
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [autonomousCommunitiesData, setAutonomousCommunitiesData] = useState<AutonomousCommunityData[]>([]);
@@ -274,11 +277,18 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
     loadCSVData();
   }, [t]); // Solo se ejecuta cuando cambia el idioma
   
-  const handleSectorChange = (sectorId: string) => {
+  // Manejador para cambiar el sector del mapa europeo
+  const handleMapSectorChange = (sectorId: string) => {
     const sectorInEnglish = rdSectors.find(s => s.id === sectorId)?.name.en || "All Sectors";
-    setSelectedSector(sectorInEnglish);
+    setSelectedMapSector(sectorInEnglish);
   };
-  
+
+  // Manejador para cambiar el sector de la evolución temporal
+  const handleEvolutionSectorChange = (sectorId: string) => {
+    const sectorInEnglish = rdSectors.find(s => s.id === sectorId)?.name.en || "All Sectors";
+    setSelectedEvolutionSector(sectorInEnglish);
+  };
+
   // Nuevo manejador para cambio de sector en comunidades autónomas
   const handleRegionSectorChange = (sectorId: string) => {
     const sectorInEnglish = rdSectors.find(s => s.id === sectorId)?.name.en || "All Sectors";
@@ -1043,8 +1053,8 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                     <div className="flex items-center">
                       <label className="text-gray-700 font-medium mr-2 text-sm sm:text-base">{t.sector}</label>
                       <select 
-                        value={getSectorId(selectedSector)}
-                        onChange={(e) => handleSectorChange(e.target.value)}
+                        value={getSectorId(selectedMapSector)}
+                        onChange={(e) => handleMapSectorChange(e.target.value)}
                         className="border border-gray-300 rounded px-2 sm:px-3 py-1.5 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 min-w-[200px] sm:min-w-[240px] text-sm sm:text-base"
                       >
                         {rdSectors.map(sector => (
@@ -1076,7 +1086,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                       data={europeData} 
                       selectedYear={selectedYear} 
                       language={language} 
-                      selectedSector={selectedSector}
+                      selectedSector={selectedMapSector}
                       autonomousCommunitiesData={autonomousCommunitiesData}
                       dataDisplayType={dataDisplayType}
                     />
@@ -1092,7 +1102,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                           data={europeData}
                           selectedYear={selectedYear}
                           language={language}
-                          selectedSector={getSectorId(selectedSector)}
+                          selectedSector={getSectorId(selectedMapSector)}
                           autonomousCommunitiesData={autonomousCommunitiesData}
                           dataDisplayType={dataDisplayType}
                         />
@@ -1140,7 +1150,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                 <>
                   <SubsectionTitleWithSector 
                     baseTitle={language === 'es' ? "Evolución temporal de la inversión" : "Historical Investment Evolution"} 
-                    sector={selectedSector} 
+                    sector={selectedEvolutionSector}
                     language={language}
                   />
                   
@@ -1164,8 +1174,8 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                         </svg>
                         <label className="text-gray-700 font-medium mr-2 text-sm sm:text-base">{t.sector}</label>
                         <select 
-                          value={getSectorId(selectedSector)}
-                          onChange={(e) => handleSectorChange(e.target.value)}
+                          value={getSectorId(selectedEvolutionSector)}
+                          onChange={(e) => handleEvolutionSectorChange(e.target.value)}
                           className="border border-gray-300 rounded px-2 sm:px-3 py-1.5 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 min-w-[200px] sm:min-w-[240px] text-sm sm:text-base"
                         >
                           {rdSectors.map(sector => (
@@ -1178,14 +1188,14 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                     </div>
                   </div>
                   
-                  {/* Componente RDComparisonChart con el selectedSector como prop - Mejorado para móvil */}
+                  {/* Componente RDComparisonChart con el sector seleccionado como prop - Mejorado para móvil */}
                   <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100">
                     <RDComparisonChart 
                       language={language}
                       gdpData={mapToGDPConsolidadoData(europeData)}
                       autonomousCommunitiesData={autonomousCommunitiesData}
                       years={availableYears.map(year => year.toString())}
-                      selectedSector={selectedSector === 'All Sectors' ? 'total' : getSectorId(selectedSector).toLowerCase()}
+                      selectedSector={selectedEvolutionSector === 'All Sectors' ? 'total' : getSectorId(selectedEvolutionSector).toLowerCase()}
                     />
                   </div>
                 </>
