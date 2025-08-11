@@ -79,11 +79,11 @@ export default defineConfig({
   },
   // Modo de desarrollo con más mensajes de depuración
   logLevel: 'info',
-  // Salida compatible con navegadores modernos y algunos más antiguos
+  // Salida compatible con un rango más amplio de navegadores
   build: {
-    target: 'es2018'
+    target: 'es2015'
   },
   esbuild: {
-    target: 'es2018'
+    target: 'es2015'
   }
 })
