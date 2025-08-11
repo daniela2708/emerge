@@ -3,6 +3,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import { Calendar, ChevronDown } from 'lucide-react';
 import Papa from 'papaparse';
 import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { SPAIN_FLAG } from '../utils/spainFlag';
 
 // Definición de los sectores de I+D
 const rdSectors = [
@@ -139,7 +140,7 @@ const Flag: React.FC<FlagProps> = ({ code, width = 24, height = 18, className = 
   let extraStyles = '';
   
   // Búsqueda de banderas en el JSON
-  const esFlag = "/logos/spain.svg";
+  const esFlag = SPAIN_FLAG;
   const canaryFlag = autonomous_communities_flags.find(community => community.code === 'CAN');
   const communityFlag = code === 'community' && communityCode ? 
     autonomous_communities_flags.find(community => community.code === communityCode) : null;

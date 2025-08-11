@@ -10,6 +10,7 @@ import {
 } from 'recharts';
 import { ChevronDown } from 'lucide-react';
 import country_flags from '../logos/country_flags.json';
+import { SPAIN_FLAG } from '../utils/spainFlag';
 
 // Interfaz para los datos de investigadores
 interface ResearchersData {
@@ -119,7 +120,7 @@ const FlagsCustomComponent = (props: {
       return euFlag?.flag || "https://flagcdn.com/eu.svg";
     } else if (type === 'es') {
       const esFlag = country_flags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-      return esFlag?.flag || "/logos/spain.svg";
+      return esFlag?.flag || SPAIN_FLAG;
     } else if (type === 'country' && code) {
       if (code === 'EL') {
         const greeceFlag = country_flags.find(flag => flag.code === 'GR' || flag.iso3 === 'GRC');
@@ -644,7 +645,7 @@ const ResearchersTimelineChart: React.FC<ResearchersTimelineChartProps> = ({
     } else if (type === 'es') {
       // Bandera de España
       const esFlag = country_flags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-      flagUrl = esFlag?.flag || "/logos/spain.svg";
+      flagUrl = esFlag?.flag || SPAIN_FLAG;
     } else if (type === 'country' && code) {
       // Manejar el caso especial de Grecia (EL)
       if (code === 'EL') {

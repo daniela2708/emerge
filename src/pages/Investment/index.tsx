@@ -11,6 +11,7 @@ import { DATA_PATHS, rdSectors } from '../../data/rdInvestment';
 import CommunityDistribution from '../../components/CommunityDistribution';
 import CommunityRDComparisonChart from '../../components/CommunityRDComparisonChart';
 import SectorEvolutionChart from '../../components/SectorEvolutionChart';
+import { SPAIN_FLAG } from '../../utils/spainFlag';
 
 // Interfaz para los datos de comunidades autónomas
 interface AutonomousCommunityData {
@@ -640,7 +641,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                   <div className="flex-shrink-0 mr-3">
                     <div className="p-2 sm:p-3 bg-red-50 rounded-lg flex items-center justify-center">
                       <img
-                        src="/logos/spain.svg"
+                        src={SPAIN_FLAG}
                         alt="Bandera de España"
                         className="w-6 h-4 sm:w-8 sm:h-6 object-cover rounded border border-gray-300 shadow-sm"
                         style={{

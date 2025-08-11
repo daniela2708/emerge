@@ -5,6 +5,8 @@
  * y su mapeo a códigos ISO2 e ISO3 para asegurar consistencia en la visualización de mapas.
  */
 
+import { SPAIN_FLAG } from './spainFlag';
+
 // Interfaz para el mapeo de países
 export interface CountryMapping {
   // Nombres del país en diferentes idiomas e identificaciones
@@ -137,7 +139,7 @@ export const countryMappings: Record<string, CountryMapping> = {
     },
     iso2: "ES",
     iso3: "ESP",
-    flag: "/logos/spain.svg"
+    flag: SPAIN_FLAG
   },
   "FR": {
     names: {

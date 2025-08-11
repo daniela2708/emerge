@@ -7,6 +7,7 @@ import countryFlagsData from '../logos/country_flags.json';
 import { DataDisplayType } from './DataTypeSelector';
 // Importar las funciones de mapeo de países
 import { getIso3FromCountryName, isSupranationalEntity as isSupranationalFromMapping } from '../utils/countryMapping';
+import { SPAIN_FLAG } from '../utils/spainFlag';
 // Para usar las banderas SVG, debes importarlas del archivo logos/country-flags.tsx
 // import { FlagSpain, FlagEU, FlagCanaryIslands, FlagSweden, FlagFinland } from '../logos/country-flags';
 
@@ -759,7 +760,7 @@ function getCountryFlagUrl(countryName: string, feature?: GeoJsonFeature): strin
   } else if (normalizedName.includes('zona euro') || normalizedName.includes('euro area')) {
     return "https://flagcdn.com/eu.svg"; // Usamos también la bandera de la UE para la zona euro
   } else if (normalizedName.includes('espana') || normalizedName.includes('españa') || normalizedName.includes('spain')) {
-    return "/logos/spain.svg";
+    return SPAIN_FLAG;
   } else if (normalizedName.includes('alemania') || normalizedName.includes('germany')) {
     return "https://flagcdn.com/de.svg";
   } else if (normalizedName.includes('francia') || normalizedName.includes('france')) {

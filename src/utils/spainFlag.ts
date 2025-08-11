@@ -1,0 +1,1 @@
+export const SPAIN_FLAG = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPgogIDxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjIiIGZpbGw9IiNjNjBiMWUiLz4KICA8cmVjdCB5PSIwLjUiIHdpZHRoPSIzIiBoZWlnaHQ9IjEiIGZpbGw9IiNmZmM0MDAiLz4KPC9zdmc+Cg==";
