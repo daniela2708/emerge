@@ -421,7 +421,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
                 {/* Ranking de países */}
                 <div className="w-full lg:w-1/2 bg-white border border-gray-200 rounded-lg shadow-sm p-4 order-1 lg:order-2">
                   {patentsData.length > 0 ? (
-                    <div className="h-full overflow-hidden">
+                    <div className="overflow-hidden">
                       <PatentsRankingChart
                         data={patentsData}
                         selectedYear={selectedYear}
@@ -431,7 +431,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
                       />
                     </div>
                   ) : (
-                    <div className="flex justify-center items-center h-full">
+                    <div className="flex justify-center items-center">
                       {isLoading ? (
                         <div className="flex flex-col items-center">
                           <div className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-b-2 border-blue-500"></div>
