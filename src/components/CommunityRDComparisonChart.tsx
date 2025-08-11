@@ -789,10 +789,9 @@ const CommunityRDComparisonChart: React.FC<CommunityRDComparisonChartProps> = ({
   return (
     <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-8 shadow-sm hover:shadow-md transition-shadow duration-300">
       {/* Filtros - Selector de comunidad autónoma más visible */}
-      <div className="mb-6 px-4 pt-4">
-        <div className="flex justify-between items-center">
-          {/* Selector de comunidad autónoma */}
-          <div className="flex-shrink-0 relative" ref={dropdownRef}>
+      <div className="mb-6 px-4 pt-4 flex justify-end">
+        {/* Selector de comunidad autónoma */}
+        <div className="relative" ref={dropdownRef}>
             <div 
               className="flex items-center bg-white border border-gray-200 rounded-md shadow-sm cursor-pointer hover:bg-gray-50"
               onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -840,7 +839,6 @@ const CommunityRDComparisonChart: React.FC<CommunityRDComparisonChartProps> = ({
                 ))}
               </div>
             )}
-          </div>
         </div>
       </div>
       
