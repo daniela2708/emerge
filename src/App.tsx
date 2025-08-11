@@ -160,13 +160,15 @@ const App: React.FC = () => {
                 onClick={() => setActiveTab('investment')}
               >
                 <div className="flex items-center justify-center whitespace-nowrap">
-                  <span
-                    role="img"
-                    aria-label={language === 'es' ? 'Bandera de España' : 'Flag of Spain'}
-                    className="text-xl mr-2 flex-shrink-0"
+                  <svg
+                    className={`w-5 h-5 mr-2 flex-shrink-0`}
+                    style={{ color: activeTab === 'investment' ? '#006480' : 'white' }}
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    🇪🇸
-                  </span>
+                    <path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2V3h-2v14zm4 0h2v-9h-2v9zm4 0h2v-5h-2v5z" />
+                  </svg>
                   <span className="text-sm font-semibold">{t('investment')}</span>
                 </div>
               </li>
@@ -275,13 +277,14 @@ const App: React.FC = () => {
         {activeTab === 'investment' && (
           <div className="bg-gradient-to-br from-white via-white to-gray-50 rounded-lg shadow-md p-3 md:p-6 border border-gray-100 min-h-[500px] md:min-h-[700px] w-full flex-grow flex flex-col transition-all duration-300" style={{ width: "100%", minWidth: "100%" }}>
             <div className="flex items-center mb-4 md:mb-6">
-              <span
-                role="img"
-                aria-label={language === 'es' ? 'Bandera de España' : 'Flag of Spain'}
-                className="text-xl md:text-2xl mr-2 md:mr-3"
+              <svg
+                className="w-5 md:w-6 h-5 md:h-6 text-blue-600 mr-2 md:mr-3"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                🇪🇸
-              </span>
+                <path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2V3h-2v14zm4 0h2v-9h-2v9zm4 0h2v-5h-2v5z" />
+              </svg>
               <h2 className="text-lg md:text-xl font-bold text-gray-800">
                 {t('investment')}
               </h2>
