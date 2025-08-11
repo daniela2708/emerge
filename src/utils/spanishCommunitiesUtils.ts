@@ -228,7 +228,7 @@ export function getCommunityValue(
 
 // Función unificada para obtener la bandera de una comunidad
 export function getCommunityFlagUrl(communityName: string, language: 'es' | 'en'): string {
-  if (!communityName) return "https://flagcdn.com/es.svg";
+  if (!communityName) return "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg";
   
   const possibleNames = [communityName];
   
@@ -357,7 +357,7 @@ export function getCommunityFlagUrl(communityName: string, language: 'es' | 'en'
   }
   
   // Fallback: bandera de España
-  return "https://flagcdn.com/es.svg";
+  return "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg";
 }
 
 // Función para obtener el valor de España (total nacional)

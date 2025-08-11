@@ -137,7 +137,7 @@ export const countryMappings: Record<string, CountryMapping> = {
     },
     iso2: "ES",
     iso3: "ESP",
-    flag: "https://flagcdn.com/es.svg"
+    flag: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
   },
   "FR": {
     names: {

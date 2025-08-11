@@ -139,7 +139,7 @@ const Flag: React.FC<FlagProps> = ({ code, width = 24, height = 18, className = 
   let extraStyles = '';
   
   // Búsqueda de banderas en el JSON
-  const esFlag = "https://flagcdn.com/es.svg";
+  const esFlag = "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg";
   const canaryFlag = communityFlags.find(community => community.code === 'CAN');
   const communityFlag = code === 'community' && communityCode ?
     communityFlags.find(community => community.code === communityCode) : null;

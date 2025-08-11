@@ -101,7 +101,7 @@ const FlagsCustomComponent = (props: {
       return 'https://flagcdn.com/eu.svg';
     }
     if (type === 'es') {
-      return 'https://flagcdn.com/es.svg';
+      return 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg';
     }
     if (type === 'country' && code) {
       // Buscar en el archivo de banderas
@@ -575,7 +575,7 @@ const PatentsTimelineChart: React.FC<PatentsTimelineChartProps> = ({
     } else if (type === 'es') {
       // Bandera de España
       const esFlag = countryFlags.find(flag => flag.code === 'ES' || flag.iso3 === 'ESP');
-      flagUrl = esFlag?.flag || "https://flagcdn.com/es.svg";
+      flagUrl = esFlag?.flag || "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg";
     } else if (type === 'country' && code) {
       // Manejar casos especiales
       if (code === 'EL') {
