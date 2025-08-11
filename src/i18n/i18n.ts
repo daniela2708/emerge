@@ -19,10 +19,16 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
+    lng: 'es', // Forzar español como idioma por defecto
     fallbackLng: 'es',
     debug: false,
     interpolation: {
       escapeValue: false,
+    },
+    detection: {
+      // Deshabilitar detección automática del idioma del navegador
+      order: ['localStorage'],
+      caches: ['localStorage']
     }
   });
 
