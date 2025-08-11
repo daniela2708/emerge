@@ -693,8 +693,9 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                             
                             // Cálculo del ranking
                             let ranking = 0;
+                            let totalCountries = 0;
                             if (europeData.length > 0) {
-                              const yearData = europeData.filter(item => 
+                              const yearData = europeData.filter(item =>
                                 item.Year === yearStr && item.Sector === 'All Sectors'
                               );
                               
@@ -723,17 +724,18 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                                  // Comparar primero por valor
                                  const valueDiff = parseFloat(b['%GDP']) - parseFloat(a['%GDP']);
                                  if (valueDiff !== 0) return valueDiff;
-                                 
+
                                  // Si los valores son iguales, ordenar alfabéticamente para mantener un orden estable
                                  return a.Country.localeCompare(b.Country);
                                });
-                               
+
                                // Encontrar la posición de España usando exactamente el mismo nombre que en el CSV
-                               const spainIndex = sortedCountries.findIndex(item => 
+                               const spainIndex = sortedCountries.findIndex(item =>
                                  item.Country === 'Spain'
                                );
-                               
+
                                ranking = spainIndex !== -1 ? spainIndex + 1 : 0;
+                               totalCountries = sortedCountries.length;
                              }
                                
                                                                 return (
@@ -742,7 +744,9 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                                       {diffPercent >= 0 ? '+' : ''}{diffPercent.toFixed(1)}% {language === 'es' ? 'vs UE' : 'vs EU'}
                                     </div>
                                     <div className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 rounded-full font-medium inline-block">
-                                      {language === 'es' ? `#${ranking} UE` : `#${ranking} EU`}
+                                      {language === 'es'
+                                        ? `#${ranking} de ${totalCountries} UE`
+                                        : `#${ranking} of ${totalCountries} EU`}
                                     </div>
                                   </div>
                                 );
@@ -899,6 +903,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                           // Ordenar comunidades por valor
                           const sortedCommunities = Array.from(communityMap.entries())
                             .sort((a, b) => b[1] - a[1]);
+                          const totalCommunities = sortedCommunities.length;
                           
                           // Encontrar la posición de Canarias
                           const canariasIndex = sortedCommunities.findIndex(([name]) => 
@@ -922,7 +927,9 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                                   {diff >= 0 ? '+' : ''}{diff.toFixed(1)}% {language === 'es' ? 'vs España' : 'vs Spain'}
                                 </span>
                                 <div className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 rounded-full font-medium inline-block">
-                                  {language === 'es' ? `#${canariasRank} Nacional` : `#${canariasRank} National`}
+                                  {language === 'es'
+                                    ? `#${canariasRank} de ${totalCommunities} Nacional`
+                                    : `#${canariasRank} of ${totalCommunities} National`}
                                 </div>
                               </div>
                             </div>
