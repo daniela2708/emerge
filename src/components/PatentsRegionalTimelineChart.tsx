@@ -382,7 +382,7 @@ const PatentsRegionalTimelineChart: React.FC<PatentsRegionalTimelineChartProps> 
       patentsCount: 'Número de patentes',
       loading: 'Cargando...',
       spainAverage: 'Media España',
-      canarias: 'Canarias',
+      canarias: 'Islas Canarias',
       selectCommunity: 'Seleccionar comunidad'
     },
     en: {

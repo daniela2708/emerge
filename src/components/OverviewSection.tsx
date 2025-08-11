@@ -8,14 +8,14 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ language }) => {
   // Textos en español e inglés
   const texts = {
     es: {
-      title: "Observatorio de I+D en Canarias",
+      title: "Observatorio de I+D en las Islas Canarias",
       subtitle: "Análisis comparativo e histórico de indicadores de innovación",
       summary: "Resumen Ejecutivo",
       
       // Highlights generales
       highlightTitle: "Aspectos destacados",
-      highlight1: "Canarias invierte el 0.58% de su PIB en I+D, frente al 1.49% de España y el 2.22% de la UE",
-      highlight2: "La inversión en I+D en Canarias ha crecido un 7.4% en el último año",
+      highlight1: "Las Islas Canarias invierten el 0.58% de su PIB en I+D, frente al 1.49% de España y el 2.22% de la UE",
+      highlight2: "La inversión en I+D en las Islas Canarias ha crecido un 7.4% en el último año",
       highlight3: "El sector público lidera el esfuerzo en I+D, con una participación del 71% del total",
       
       // Secciones
@@ -24,12 +24,12 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ language }) => {
       // Inversión
       investmentTitle: "Inversión en I+D",
       investmentDesc: "Análisis de la inversión en I+D como porcentaje del PIB, comparativa con España y Europa, y distribución por sectores.",
-      investmentHighlight: "Canarias destina menos de la mitad del porcentaje que España a I+D respecto al PIB",
+      investmentHighlight: "Las Islas Canarias destinan menos de la mitad del porcentaje que España a I+D respecto al PIB",
       
       // Investigadores
       researchersTitle: "Investigadores",
       researchersDesc: "Distribución y evolución de investigadores por sectores, áreas de conocimiento y comparativa territorial.",
-      researchersHighlight: "El 68% de los investigadores en Canarias pertenecen al sector público",
+      researchersHighlight: "El 68% de los investigadores en las Islas Canarias pertenecen al sector público",
       
       // Patentes
       patentsTitle: "Patentes",
@@ -104,7 +104,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ language }) => {
                       <div className="absolute bottom-0 w-full bg-blue-500 rounded-t-sm" style={{ height: '26%' }}></div>
                       <span className="absolute bottom-1 text-xs font-bold text-white">0.58%</span>
                     </div>
-                    <span className="text-xs font-medium mt-1 text-gray-600">Canarias</span>
+                    <span className="text-xs font-medium mt-1 text-gray-600">Islas Canarias</span>
                   </div>
                   <div className="flex flex-col items-center">
                     <div className="h-16 w-10 bg-red-100 rounded-t-sm relative flex justify-center">

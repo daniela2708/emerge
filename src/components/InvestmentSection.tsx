@@ -154,7 +154,7 @@ const InvestmentSection: React.FC<InvestmentSectionProps> = ({ language }) => {
   const texts = {
     es: {
       title: "Inversión en I+D como % del PIB",
-      subtitle: "Comparativa entre España, la media europea y Canarias",
+      subtitle: "Comparativa entre España, la media europea y las Islas Canarias",
       description: "El siguiente gráfico muestra la evolución del porcentaje del Producto Interior Bruto (PIB) destinado a actividades de Investigación y Desarrollo (I+D) a lo largo de los años.",
       comparison: "España vs. Media UE",
       canaryIslands: "Islas Canarias",

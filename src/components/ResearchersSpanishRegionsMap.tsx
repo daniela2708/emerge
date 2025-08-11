@@ -122,7 +122,7 @@ function getCommunityName(feature: GeoJsonFeature, language: 'es' | 'en'): strin
       'ES-CB': {es: 'Cantabria', en: 'Cantabria'},
       'ES-CL': {es: 'Castilla y León', en: 'Castile and León'},
       'ES-CM': {es: 'Castilla-La Mancha', en: 'Castilla–La Mancha'},
-      'ES-CN': {es: 'Canarias', en: 'Canary Islands'},
+      'ES-CN': {es: 'Islas Canarias', en: 'Canary Islands'},
       'ES-CT': {es: 'Cataluña', en: 'Catalonia'},
       'ES-EX': {es: 'Extremadura', en: 'Extremadura'},
       'ES-GA': {es: 'Galicia', en: 'Galicia'},
@@ -1710,7 +1710,7 @@ const ResearchersSpanishRegionsMap: React.FC<ResearchersSpanishRegionsMapProps> 
             `;
           }
           
-          // Comparativa con Canarias (solo si la comunidad actual no es Canarias)
+          // Comparativa con Islas Canarias (solo si la comunidad actual no es Canarias)
           if (canariasValue !== null && value !== null && !communityName.includes('Canarias') && !communityName.includes('Canary')) {
             const diffCanarias = value - canariasValue;
             const percentDiff = (diffCanarias / canariasValue) * 100;
@@ -1719,7 +1719,7 @@ const ResearchersSpanishRegionsMap: React.FC<ResearchersSpanishRegionsMapProps> 
             comparisonsHtml += `
               <div class="flex justify-between items-center text-xs">
                 <span class="text-gray-600 inline-block w-44">${language === 'es' ? 
-                  `vs Canarias (${formatValue(canariasValue)}):` : 
+                  `vs Islas Canarias (${formatValue(canariasValue)}):` :
                   `vs Canary Islands (${formatValue(canariasValue)}):`}</span>
                 <span class="font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}">${isPositive ? '+' : ''}${!isNaN(percentDiff) ? percentDiff.toFixed(1) + '%' : t.noData}</span>
               </div>

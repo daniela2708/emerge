@@ -94,7 +94,7 @@ const autonomousCommunitiesMapping: Record<string, {es: string, en: string, flag
   'ES61': {es: 'Andalucía', en: 'Andalusia', flag: '🏴󠁥󠁳󠁡󠁮󠁿', provinces: ['Almería', 'Cádiz', 'Córdoba', 'Granada', 'Huelva', 'Jaén', 'Málaga', 'Sevilla']},
   'ES24': {es: 'Aragón', en: 'Aragon', flag: '🏴󠁥󠁳󠁡󠁲󠁿', provinces: ['Huesca', 'Teruel', 'Zaragoza']},
   'ES12': {es: 'Principado de Asturias', en: 'Principality of Asturias', flag: '🏴󠁥󠁳󠁡󠁳󠁿', provinces: ['Asturias']},
-  'ES70': {es: 'Canarias', en: 'Canary Islands', flag: '🏴󠁥󠁳󠁣󠁮󠁿', provinces: ['Las Palmas', 'Santa Cruz de Tenerife']},
+  'ES70': {es: 'Islas Canarias', en: 'Canary Islands', flag: '🏴󠁥󠁳󠁣󠁮󠁿', provinces: ['Las Palmas', 'Santa Cruz de Tenerife']},
   'ES13': {es: 'Cantabria', en: 'Cantabria', flag: '🏴󠁥󠁳󠁣󠁢󠁿', provinces: ['Cantabria']},
   'ES42': {es: 'Castilla-La Mancha', en: 'Castile-La Mancha', flag: '🏴󠁥󠁳󠁣󠁭󠁿', provinces: ['Albacete', 'Ciudad Real', 'Cuenca', 'Guadalajara', 'Toledo']},
   'ES41': {es: 'Castilla y León', en: 'Castile and León', flag: '🏴󠁥󠁳󠁣󠁬󠁿', provinces: ['Ávila', 'Burgos', 'León', 'Palencia', 'Salamanca', 'Segovia', 'Soria', 'Valladolid', 'Zamora']},
@@ -896,7 +896,7 @@ const PatentsRegionalChart: React.FC<PatentsRegionalChartProps> = ({
                 </div>
                 ` : ''}
 
-                <!-- Comparación con Canarias (si no es Canarias y hay datos) -->
+                <!-- Comparación con Islas Canarias (si no es Canarias y hay datos) -->
                 ${canariasValue !== null && !isCanariasRegion && !isConfidential && !isMobile ? `
                 <div class="mb-2">
                   <div class="bg-gray-50 p-2 rounded-md">
@@ -904,10 +904,10 @@ const PatentsRegionalChart: React.FC<PatentsRegionalChartProps> = ({
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
                         <path d="M8 3l4 8 5-5v7H3V6l5 5 4-8z"></path>
                       </svg>
-                      ${language === 'es' ? 'vs Canarias:' : 'vs Canary Islands:'}
+                      ${language === 'es' ? 'vs Islas Canarias:' : 'vs Canary Islands:'}
                     </div>
                     <div class="flex justify-between items-center text-xs">
-                      <span class="text-gray-600">${language === 'es' ? 'Canarias' : 'Canary Islands'} (${formatNumberComplete(Math.round(canariasValue), 0)}):</span>
+                      <span class="text-gray-600">${language === 'es' ? 'Islas Canarias' : 'Canary Islands'} (${formatNumberComplete(Math.round(canariasValue), 0)}):</span>
                       <span class="font-medium ${value > canariasValue ? 'text-green-600' : value < canariasValue ? 'text-red-600' : 'text-gray-600'}">
                         ${(() => {
                           if (value === canariasValue) return '=';

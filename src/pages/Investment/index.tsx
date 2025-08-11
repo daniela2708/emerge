@@ -884,7 +884,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center">
                       <h3 className="text-[11px] sm:text-xs font-medium text-gray-500 truncate">
-                        {language === 'es' ? 'Canarias' : 'Canary Islands'}
+                        {language === 'es' ? 'Islas Canarias' : 'Canary Islands'}
                       </h3>
                     </div>
                     {

@@ -12,7 +12,7 @@ type Translations = {
 // Diccionario de traducciones
 const translations: Translations = {
   es: {
-    title: "Observatorio de I+D en Canarias",
+    title: "Observatorio de I+D en las Islas Canarias",
     subtitle: "Análisis comparativo e histórico de indicadores de innovación",
     developedFor: "Desarrollado para la Asociación Canaria de Startups (EMERGE)",
     overview: "Visión General",

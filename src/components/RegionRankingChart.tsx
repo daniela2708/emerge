@@ -165,7 +165,7 @@ const RegionRankingChart: React.FC<RegionRankingChartProps> = ({
       ofGDP: "del PIB",
       comparative: "Comparativa",
       vsSpain: "vs España",
-      vsCanarias: "vs Canarias"
+      vsCanarias: "vs Islas Canarias"
     },
     en: {
       title: "Autonomous Communities Ranking by R&D Investment",
@@ -1109,14 +1109,14 @@ const RegionRankingChart: React.FC<RegionRankingChartProps> = ({
             }
           }
           
-          // Comparativa con Canarias
+          // Comparativa con Islas Canarias
           if (canariasValue !== null && normalizeText(communityName) !== "canarias") {
             const canariasDiff = communityData.value - canariasValue;
             const canariasPercent = (canariasDiff / canariasValue) * 100;
             const isCanariasPositive = canariasDiff > 0;
             
             tooltipContent += `
-              <!-- vs Canarias -->
+              <!-- vs Islas Canarias -->
               <div class="flex justify-between items-center text-xs">
                 <span class="text-gray-600 inline-block w-48">
                   ${t.vsCanarias} (${dataDisplayType === 'percent_gdp' ? canariasValue.toFixed(2) + '%' : formatNumber(canariasValue, 0) + ' mil €'}):

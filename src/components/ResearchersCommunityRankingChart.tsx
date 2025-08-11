@@ -86,7 +86,7 @@ const ResearchersCommunityRankingChart: React.FC<ResearchersCommunityRankingChar
       thousands: 'miles',
       comparative: "Comparativa",
       vsSpain: "vs España",
-      vsCanarias: "vs Canarias"
+      vsCanarias: "vs Islas Canarias"
     },
     en: {
       title: 'Ranking of Autonomous Communities by number of researchers',
@@ -556,7 +556,7 @@ const ResearchersCommunityRankingChart: React.FC<ResearchersCommunityRankingChar
               `;
             }
             
-            // Comparativa con Canarias (solo si la comunidad actual no es Canarias)
+            // Comparativa con Islas Canarias (solo si la comunidad actual no es Canarias)
             if (canariasValue !== null && value !== null && 
                 !communityName.toLowerCase().includes('canarias') && 
                 !communityName.toLowerCase().includes('canary')) {
@@ -567,7 +567,7 @@ const ResearchersCommunityRankingChart: React.FC<ResearchersCommunityRankingChar
               comparisonsHtml += `
                 <div class="flex justify-between items-center text-xs">
                   <span class="text-gray-600 inline-block w-44">${language === 'es' ? 
-                    `vs Canarias (${formatNumber(canariasValue, language)}):` : 
+                    `vs Islas Canarias (${formatNumber(canariasValue, language)}):` :
                     `vs Canary Islands (${formatNumber(canariasValue, language)}):`}</span>
                   <span class="font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}">${isPositive ? '+' : ''}${!isNaN(percentDiff) ? percentDiff.toFixed(1) + '%' : t.noData}</span>
                 </div>

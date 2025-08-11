@@ -1,7 +1,7 @@
 import { RegionData } from '../types/data';
 
 export const spanishRegions: RegionData[] = [
-  { id: 'canarias', name: 'Canarias' },
+  { id: 'canarias', name: 'Islas Canarias' },
   { id: 'andalucia', name: 'Andalucía' },
   { id: 'aragon', name: 'Aragón' },
   { id: 'asturias', name: 'Asturias' },
