@@ -13,21 +13,12 @@ import {
   Chart
 } from 'chart.js';
 import * as d3 from 'd3';
-// Importando datos de autonomous_communities_flags.json
-import communityFlagsData from '../logos/autonomous_communities_flags.json';
+import { communityFlags, communityNameMapping } from '../utils/spanishCommunitiesUtils';
 import { DataDisplayType } from './DataTypeSelector';
 // Primero, importamos los colores del sector
 import { SECTOR_COLORS } from '../utils/colors';
 
-// Interfaz para los elementos del archivo autonomous_communities_flags.json
-interface CommunityFlag {
-  community: string;
-  code: string;
-  flag: string;
-}
-
-// Aseguramos el tipo correcto para el array de flags
-const communityFlags = communityFlagsData as CommunityFlag[];
+// Las banderas de las comunidades y el mapeo de nombres provienen de utilitarios compartidos
 
 // Registrar componentes necesarios de Chart.js
 ChartJS.register(
@@ -102,27 +93,6 @@ const getSectorPalette = (sectorId: string) => {
 };
 
 // Tabla de mapeo entre nombres de comunidades en el CSV y nombres esperados para la visualización
-const communityNameMapping: { [key: string]: { es: string, en: string } } = {
-  'Andalucía': { es: 'Andalucía', en: 'Andalusia' },
-  'Aragón': { es: 'Aragón', en: 'Aragon' },
-  'Principado de Asturias': { es: 'Asturias', en: 'Asturias' },
-  'Illes Balears / Islas Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Canarias': { es: 'Canarias', en: 'Canary Islands' },
-  'Cantabria': { es: 'Cantabria', en: 'Cantabria' },
-  'Castilla - La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla y León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Cataluña': { es: 'Cataluña', en: 'Catalonia' },
-  'Comunidad Valenciana': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Extremadura': { es: 'Extremadura', en: 'Extremadura' },
-  'Galicia': { es: 'Galicia', en: 'Galicia' },
-  'La Rioja': { es: 'La Rioja', en: 'La Rioja' },
-  'Comunidad de Madrid': { es: 'Madrid', en: 'Madrid' },
-  'Región de Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Comunidad Foral de Navarra': { es: 'Navarra', en: 'Navarre' },
-  'País Vasco': { es: 'País Vasco', en: 'Basque Country' },
-  'Ciudad Autónoma de Ceuta': { es: 'Ceuta', en: 'Ceuta' },
-  'Ciudad Autónoma de Melilla': { es: 'Melilla', en: 'Melilla' }
-};
 
 const RegionRankingChart: React.FC<RegionRankingChartProps> = ({ 
   data, 

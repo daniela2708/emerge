@@ -385,32 +385,16 @@ function getCountryValue(
 ): number | null {
   if (!data || !feature || !feature.properties) return null;
   
-  // Obtener ISO3 del país desde el feature GeoJSON
-  const iso3 = feature.properties.iso_a3;
-  // Obtener nombre del país desde el feature GeoJSON (backup)
+  // Obtener nombre e ISO3 del país usando las utilidades centralizadas
+  const iso3 = getCountryIso3(feature);
   const countryName = getCountryName(feature);
-  
-  // Mapeo especial para países con nombres diferentes en GeoJSON y CSV
-  const countryNameMapping: { [key: string]: string[] } = {
-    'Czech Republic': ['Czechia', 'Czech Republic', 'Chequia', 'República Checa'],
-    'Czechia': ['Czechia', 'Czech Republic', 'Chequia', 'República Checa'],
-    'Bosnia and Herzegovina': ['Bosnia and Herzegovina', 'Bosnia y Herzegovina'],
-    'North Macedonia': ['North Macedonia', 'Republic of North Macedonia', 'Macedonia del Norte'],
-    'United Kingdom': ['United Kingdom', 'Reino Unido'],
-  };
-  
-  // Verificar si es la Unión Europea
-  const isEU = normalizarTexto(countryName).includes('european union');
-  
-  // Verificar si es la Zona Euro
-  const isEuroArea = normalizarTexto(countryName).includes('euro area');
-  const is2023EuroArea = isEuroArea && countryName.includes('2023');
-  const is2015EuroArea = isEuroArea && countryName.includes('2015');
-  
-  // Si es un caso especial (UE, Zona Euro), buscar de manera específica
-  if (isEU) {
+
+  // Manejar casos especiales de la Unión Europea y la Zona Euro
+  if (iso3 === 'EUU') {
     return getEUValue(data, selectedYear, selectedSector, dataDisplayType);
-  } else if (isEuroArea) {
+  } else if (iso3 === 'EMU') {
+    const is2023EuroArea = countryName.includes('2023');
+    const is2015EuroArea = countryName.includes('2015');
     // Buscar los datos de Zona Euro
     const euroAreaData = data.filter(item => {
       // Normalizar nombre del país del item
@@ -464,45 +448,22 @@ function getCountryValue(
     }
   }
 
-  // Para el resto de países, buscar por ISO3 o por nombre
+  // Para el resto de países, buscar por ISO3 utilizando el mapeo centralizado
   const countryData = data.filter(item => {
-    // Si tenemos ISO3 en ambos, comparar por ISO3
-    if (iso3 && item.ISO3) {
-      if (normalizarTexto(item.ISO3) === normalizarTexto(iso3)) {
-        const yearMatch = item.Year === selectedYear;
-        const sectorMatch = item.Sector === selectedSector || 
-                        (item.Sector === 'All Sectors' && selectedSector === 'All Sectors');
-        return yearMatch && sectorMatch;
-      }
-    }
-    
-    // Si no hay coincidencia por ISO3, intentar por nombre
-    const itemCountry = normalizarTexto(item.Country);
-    const countryNameNormalized = normalizarTexto(countryName);
-    
-    // Verificar si es un país que necesita mapeo especial
-    let countryMatches = itemCountry === countryNameNormalized;
-    
-    // Si no hay coincidencia directa, verificar con el mapeo de nombres alternativos
-    if (!countryMatches && countryNameMapping[countryName]) {
-      // Buscar coincidencia con alguno de los nombres alternativos
-      countryMatches = countryNameMapping[countryName].some(name => 
-        normalizarTexto(name) === itemCountry
-      );
-    }
-    
+    const itemIso3 = item.ISO3 || getIso3FromCountryName(item.Country || '') || getIso3FromCountryName(item.País || '');
+    if (!itemIso3 || itemIso3 !== iso3) return false;
+
     const yearMatch = item.Year === selectedYear;
-    
-    // Normalizar el sector seleccionado para manejar diferentes formatos
+
     let normalizedSector = selectedSector.toLowerCase();
     if (normalizedSector === 'all sectors' || normalizedSector === 'all' || normalizedSector === 'total') {
       normalizedSector = 'all sectors';
     }
-    
-    const sectorMatch = item.Sector === selectedSector || 
+
+    const sectorMatch = item.Sector === selectedSector ||
                     (item.Sector === 'All Sectors' && (normalizedSector === 'all sectors' || selectedSector === 'All Sectors'));
-    
-    return countryMatches && yearMatch && sectorMatch;
+
+    return yearMatch && sectorMatch;
   });
   
   if (countryData.length === 0) return null;

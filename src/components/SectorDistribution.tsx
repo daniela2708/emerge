@@ -4,7 +4,7 @@ import { Calendar, ChevronDown } from 'lucide-react';
 import Papa from 'papaparse';
 import { rdSectors } from '../data/rdInvestment';
 import country_flags from '../logos/country_flags.json';
-import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { communityFlags } from '../utils/spanishCommunitiesUtils';
 
 // Interfaces para los datos CSV
 interface GDPConsolidadoData {
@@ -78,7 +78,7 @@ const Flag: React.FC<FlagProps> = ({ code, width = 24, height = 18, className = 
   // Búsqueda de banderas en los JSON
   const euFlag = country_flags.find(flag => flag.iso3 === 'EUU');
   const esFlag = country_flags.find(flag => flag.iso3 === 'ESP');
-  const canaryFlag = autonomous_communities_flags.find(community => community.code === 'CAN');
+  const canaryFlag = communityFlags.find(community => community.code === 'CAN');
   const countryFlag = code === 'country' && iso3 ? country_flags.find(flag => flag.iso3 === iso3) : null;
   
   switch(code) {
@@ -91,7 +91,7 @@ const Flag: React.FC<FlagProps> = ({ code, width = 24, height = 18, className = 
       flagUrl = esFlag?.flag || '';
       break;
     case 'canary_islands':
-      // Usar bandera de Canarias desde autonomous_communities_flags.json
+      // Usar bandera de Canarias desde el utilitario compartido
       flagUrl = canaryFlag?.flag || '';
       // Agregar estilos especiales para la bandera de Canarias
       extraStyles = 'border border-gray-200 shadow-sm bg-gray-50';

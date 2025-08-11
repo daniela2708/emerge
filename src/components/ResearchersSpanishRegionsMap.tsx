@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-import autonomous_communities_flags from '../logos/autonomous_communities_flags.json';
+import { communityFlags, communityNameMapping, normalizarTexto } from '../utils/spanishCommunitiesUtils';
 
 // Definir colores específicos para los componentes de investigadores
 // Estos son los mismos que se usan en ResearchersEuropeanMap.tsx
@@ -19,14 +19,6 @@ const NO_DATA_COLOR = '#f5f5f5';
 const SPAIN_GEOJSON_URL = '/data/geo/spain-communities.geojson';
 
 // Interfaces y tipos
-interface CommunityFlag {
-  community: string;
-  code: string;
-  flag: string;
-}
-
-// Aseguramos el tipo correcto para el array de flags
-const communityFlags = autonomous_communities_flags as CommunityFlag[];
 
 // Tipo para mostrar datos
 type DataDisplayType = 'researchers_count' | 'researchers_per_thousand';
@@ -114,72 +106,6 @@ const mapTexts = {
 
 // Tabla de mapeo entre nombres de comunidades en el CSV y nombres en GeoJSON
 // Esto ayuda a estandarizar los nombres entre diferentes formatos
-const communityNameMapping: { [key: string]: { es: string, en: string } } = {
-  'Andalucía': { es: 'Andalucía', en: 'Andalusia' },
-  'Andalucia': { es: 'Andalucía', en: 'Andalusia' },
-  'Aragón': { es: 'Aragón', en: 'Aragon' },
-  'Aragon': { es: 'Aragón', en: 'Aragon' },
-  'Principado de Asturias': { es: 'Asturias', en: 'Asturias' },
-  'Asturias': { es: 'Asturias', en: 'Asturias' },
-  'Illes Balears / Islas Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Islas Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Illes Balears': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Baleares': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Balearic Islands': { es: 'Islas Baleares', en: 'Balearic Islands' },
-  'Canarias': { es: 'Canarias', en: 'Canary Islands' },
-  'Islas Canarias': { es: 'Canarias', en: 'Canary Islands' },
-  'Canary Islands': { es: 'Canarias', en: 'Canary Islands' },
-  'Cantabria': { es: 'Cantabria', en: 'Cantabria' },
-  'Castilla - La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla-La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla La Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla-la Mancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castillalamancha': { es: 'Castilla-La Mancha', en: 'Castilla–La Mancha' },
-  'Castilla y León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla y Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla-León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castilla-Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castile and León': { es: 'Castilla y León', en: 'Castile and León' },
-  'Castile and Leon': { es: 'Castilla y León', en: 'Castile and León' },
-  'Cataluña': { es: 'Cataluña', en: 'Catalonia' },
-  'Cataluna': { es: 'Cataluña', en: 'Catalonia' },
-  'Catalunya': { es: 'Cataluña', en: 'Catalonia' },
-  'Catalonia': { es: 'Cataluña', en: 'Catalonia' },
-  'Comunidad Valenciana': { es: 'Com. Valenciana', en: 'Valencia' },
-  'C. Valenciana': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Valencia': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Valencian Community': { es: 'Com. Valenciana', en: 'Valencia' },
-  'Extremadura': { es: 'Extremadura', en: 'Extremadura' },
-  'Galicia': { es: 'Galicia', en: 'Galicia' },
-  'La Rioja': { es: 'La Rioja', en: 'La Rioja' },
-  'Rioja': { es: 'La Rioja', en: 'La Rioja' },
-  'Comunidad de Madrid': { es: 'Madrid', en: 'Madrid' },
-  'Madrid': { es: 'Madrid', en: 'Madrid' },
-  'Región de Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Region de Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Murcia': { es: 'Murcia', en: 'Murcia' },
-  'Comunidad Foral de Navarra': { es: 'Navarra', en: 'Navarre' },
-  'Navarra': { es: 'Navarra', en: 'Navarre' },
-  'Navarre': { es: 'Navarra', en: 'Navarre' },
-  'País Vasco': { es: 'País Vasco', en: 'Basque Country' },
-  'Pais Vasco': { es: 'País Vasco', en: 'Basque Country' },
-  'Euskadi': { es: 'País Vasco', en: 'Basque Country' },
-  'Basque Country': { es: 'País Vasco', en: 'Basque Country' },
-  'Ciudad Autónoma de Ceuta': { es: 'Ceuta', en: 'Ceuta' },
-  'Ceuta': { es: 'Ceuta', en: 'Ceuta' },
-  'Ciudad Autónoma de Melilla': { es: 'Melilla', en: 'Melilla' },
-  'Melilla': { es: 'Melilla', en: 'Melilla' }
-};
-
-// Función para normalizar texto (remover acentos y caracteres especiales)
-function normalizarTexto(texto: string | undefined): string {
-  if (!texto) return '';
-  return texto
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase();
-}
 
 // Función para obtener el nombre de la comunidad de las propiedades GeoJSON
 function getCommunityName(feature: GeoJsonFeature, language: 'es' | 'en'): string {
