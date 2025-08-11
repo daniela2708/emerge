@@ -138,6 +138,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
   const [europeData, setEuropeData] = useState<ExtendedEuropeCSVData[]>([]);
   const [availableYears, setAvailableYears] = useState<number[]>([]);
   const [selectedYear, setSelectedYear] = useState<number>(2023);
+  const [selectedKeyYear, setSelectedKeyYear] = useState<number>(2023);
   const [selectedSector, setSelectedSector] = useState<string>("All Sectors");
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -148,9 +149,15 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
   const [availableRegionYears, setAvailableRegionYears] = useState<number[]>([]);
   const [selectedRegionYear, setSelectedRegionYear] = useState<number>(2023);
   const [selectedRegionSector, setSelectedRegionSector] = useState<string>("All Sectors");
-  
+
   // Función auxiliar para acceder a los textos según el idioma actual
   const t = texts[language];
+
+  useEffect(() => {
+    if (availableYears.length > 0 && !availableYears.includes(selectedKeyYear)) {
+      setSelectedKeyYear(availableYears[0]);
+    }
+  }, [availableYears, selectedKeyYear]);
 
   // Función para obtener el nombre del sector seleccionado
   /* Esta función se mantiene por compatibilidad con posibles usos futuros */
@@ -227,6 +234,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
         setAvailableYears(uniqueYears);
         if (uniqueYears.length > 0) {
           setSelectedYear(uniqueYears[0]); // Establecer el año más reciente por defecto
+          setSelectedKeyYear(uniqueYears[0]);
         }
         
         // Cargar datos de comunidades autónomas de España
@@ -447,54 +455,56 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
     }
   };
 
-  // Función para obtener datos fijos para los indicadores clave, siempre del año más reciente y sector 'All Sectors'
+  // Función para obtener datos para los indicadores clave basados en el año seleccionado
   const getFixedKeyMetricsData = () => {
     if (europeData.length === 0 || availableYears.length === 0) {
       return {
-        mostRecentYear: 0,
+        year: 0,
         euData: null,
         spainData: null,
+        previousEuData: null,
+        previousSpainData: null,
         topRegionData: null,
         canariasData: null
       };
     }
 
-    const mostRecentYear = availableYears[0]; // El año más reciente
-    const yearStr = mostRecentYear.toString();
+    const yearToUse = selectedKeyYear;
+    const yearStr = yearToUse.toString();
     const allSectorData = europeData.filter(item => item.Year === yearStr && item.Sector === 'All Sectors');
 
     // Datos de la Unión Europea
-    const euData = allSectorData.find(item => 
+    const euData = allSectorData.find(item =>
       item.Country === 'European Union - 27 countries (from 2020)' ||
       item.Country === 'European Union (27)'
     );
 
     // Datos de España
-    const spainData = allSectorData.find(item => 
+    const spainData = allSectorData.find(item =>
       item.Country === 'Spain'
     );
 
     // El año anterior para comparativas
-    const previousYearStr = (mostRecentYear - 1).toString();
-    const previousYearData = europeData.filter(item => 
+    const previousYearStr = (yearToUse - 1).toString();
+    const previousYearData = europeData.filter(item =>
       item.Year === previousYearStr && item.Sector === 'All Sectors'
     );
 
     // Datos del año anterior para la UE
-    const previousEuData = previousYearData.find(item => 
+    const previousEuData = previousYearData.find(item =>
       item.Country === 'European Union - 27 countries (from 2020)' ||
       item.Country === 'European Union (27)'
     );
 
     // Datos del año anterior para España
-    const previousSpainData = previousYearData.find(item => 
+    const previousSpainData = previousYearData.find(item =>
       item.Country === 'Spain'
     );
 
-    // Datos de comunidades autónomas del año más reciente
-    const regionYearStr = mostRecentYear.toString();
-    
-    const regionData = autonomousCommunitiesData.filter(item => 
+    // Datos de comunidades autónomas del año seleccionado
+    const regionYearStr = yearToUse.toString();
+
+    const regionData = autonomousCommunitiesData.filter(item =>
       item["Año"] === regionYearStr && item["Sector Id"] === "(_T)"
     );
 
@@ -510,12 +520,12 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
     });
 
     // Datos de Canarias
-    const canariasData = regionData.find(item => 
+    const canariasData = regionData.find(item =>
       item["Comunidad Limpio"].toLowerCase() === "canarias"
     );
 
     return {
-      mostRecentYear,
+      year: yearToUse,
       euData,
       spainData,
       previousEuData,
@@ -543,29 +553,25 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
           {/* Sección 1: Key Metrics */}
           <div className="mb-12 mt-[-15px] w-full">
             <SectionTitle title={t.keyMetricsTitle} />
-            <div className="mb-4 flex items-center">
-              {
-                (() => {
-                  const { mostRecentYear } = getFixedKeyMetricsData();
-                  return (
-                    <div className="flex items-center">
-                      <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                      </svg>
-                      <h2 className="text-gray-700 font-medium text-sm">
-                        {language === 'es' ? `Información para el año ${mostRecentYear}` : `Information for year ${mostRecentYear}`}
-                      </h2>
-                      <div className="ml-2 bg-blue-50 border border-blue-100 text-blue-600 text-xs px-2 py-0.5 rounded-full flex items-center">
-                        <svg className="w-3 h-3 mr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                {language === 'es' ? 'Datos más recientes' : 'Latest data'}
+              <div className="mb-4 flex items-center">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <h2 className="text-gray-700 font-medium text-sm">
+                    {language === 'es' ? 'Información para el año' : 'Information for year'}
+                  </h2>
+                  <select
+                    value={selectedKeyYear}
+                    onChange={(e) => setSelectedKeyYear(parseInt(e.target.value))}
+                    className="ml-2 border border-gray-300 rounded px-2 py-0.5 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  >
+                    {availableYears.map(year => (
+                      <option key={year} value={year}>{year}</option>
+                    ))}
+                  </select>
+                </div>
               </div>
-                    </div>
-                  );
-                })()
-              }
-            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               {/* Métrica 1: Media UE */}
               <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-200 transition-all hover:shadow-md">
@@ -681,9 +687,8 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                     <div className="flex flex-col mt-1.5 space-y-1">
                       {
                            (() => {
-                          const { euData, spainData } = getFixedKeyMetricsData();
-                          const { mostRecentYear } = getFixedKeyMetricsData();
-                          const yearStr = mostRecentYear.toString();
+                          const { euData, spainData, year } = getFixedKeyMetricsData();
+                          const yearStr = year.toString();
                           
                           // Cálculo de comparativa con la UE
                           if (euData && spainData) {
@@ -779,8 +784,8 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                     </h3>
                     {
                       (() => {
-                        const { mostRecentYear } = getFixedKeyMetricsData();
-                        const regionYearStr = mostRecentYear.toString();
+                        const { year } = getFixedKeyMetricsData();
+                        const regionYearStr = year.toString();
                         
                         // Obtener datos filtrados por año más reciente y sector total
                         const allRegionData = autonomousCommunitiesData.filter(item => 
@@ -870,19 +875,18 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                     </div>
                     {
                       (() => {
-                        const { canariasData, spainData } = getFixedKeyMetricsData();
-                        
+                        const { canariasData, spainData, year } = getFixedKeyMetricsData();
+
                         if (canariasData && spainData) {
                           const canariasValue = parseFloat(canariasData["% PIB I+D"].replace(',', '.'));
                           const spainValue = parseFloat(spainData['%GDP']);
-                          
+
                           // Calcular diferencia porcentual contra España
                           const diff = ((canariasValue - spainValue) / spainValue) * 100;
-                          
+
                           // Calcular ranking de Canarias entre comunidades autónomas
-                          const { mostRecentYear } = getFixedKeyMetricsData();
-                          const regionYearStr = mostRecentYear.toString();
-                          const allRegionData = autonomousCommunitiesData.filter(item => 
+                          const regionYearStr = year.toString();
+                          const allRegionData = autonomousCommunitiesData.filter(item =>
                             item["Año"] === regionYearStr && item["Sector Id"] === "(_T)"
                           );
                           
