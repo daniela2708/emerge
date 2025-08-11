@@ -491,7 +491,7 @@ const CommunityRDComparisonChart: React.FC<CommunityRDComparisonChartProps> = ({
               } 
               // Convertir "Canary Islands" o "Canarias" al nombre localizado
               else if (normalizeText(displayName).includes('canary') || normalizeText(displayName).includes('canarias')) {
-                displayName = language === 'es' ? 'Canarias' : 'Canary Islands';
+                displayName = language === 'es' ? 'Islas Canarias' : 'Canary Islands';
               }
               // Caso especial para Madrid
               else if (normalizeText(displayName).includes('madrid')) {

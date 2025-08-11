@@ -1111,7 +1111,7 @@ const CommunityDistribution: React.FC<CommunityDistributionProps> = ({ language 
       const sortedCanarySectors = canarySectors.sort((a, b) => b.value - a.value);
       
       regionsProcessed.push({
-        name: language === 'es' ? 'Canarias' : 'Canary Islands',
+        name: language === 'es' ? 'Islas Canarias' : 'Canary Islands',
         flagCode: 'canary_islands',
         code: 'CAN',
         totalPercentage: totalValue.toFixed(2),

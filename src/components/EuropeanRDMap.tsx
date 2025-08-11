@@ -1429,7 +1429,7 @@ const EuropeanRDMap: React.FC<EuropeanRDMapProps> = ({
                 // Variables intermedias para evitar problemas de tipado
                 const isEs = language === 'es';
                 const labelText = isEs
-                  ? `vs Canarias (${canariasValue.toFixed(2)}%):`
+                  ? `vs Islas Canarias (${canariasValue.toFixed(2)}%):`
                   : `vs Canary Islands (${canariasValue.toFixed(2)}%):`;
                 
                 canariasComparisonHtml = `
@@ -1447,7 +1447,7 @@ const EuropeanRDMap: React.FC<EuropeanRDMapProps> = ({
                 // Variables intermedias para evitar problemas de tipado
                 const isEs = language === 'es';
                 const labelText = isEs
-                  ? `vs Canarias (${formatNumberWithThousandSeparator(canariasValue, 0)} M€):`
+                  ? `vs Islas Canarias (${formatNumberWithThousandSeparator(canariasValue, 0)} M€):`
                   : `vs Canary Islands (${formatNumberWithThousandSeparator(canariasValue, 0)} M€):`;
                 
                 canariasComparisonHtml = `
@@ -1460,7 +1460,7 @@ const EuropeanRDMap: React.FC<EuropeanRDMapProps> = ({
             } else if (!isCanarias) {
               canariasComparisonHtml = `
                 <div class="flex justify-between items-center text-xs">
-                  <span class="text-gray-600 inline-block w-44">${language === 'es' ? 'vs Canarias:' : 'vs Canary Islands:'}</span>
+                  <span class="text-gray-600 inline-block w-44">${language === 'es' ? 'vs Islas Canarias:' : 'vs Canary Islands:'}</span>
                   <span class="font-medium text-gray-400">--</span>
                 </div>
               `;

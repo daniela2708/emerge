@@ -312,7 +312,7 @@ const ResearchersCommunitiesTimelineChart: React.FC<ResearchersCommunitiesTimeli
       researchersCount: 'Número de investigadores',
       loading: 'Cargando...',
       spainAverage: 'Media España',
-      canarias: 'Canarias',
+      canarias: 'Islas Canarias',
       selectCommunity: 'Seleccionar comunidad'
     },
     en: {

@@ -19,14 +19,14 @@ const App: React.FC = () => {
 
   const texts = {
     es: {
-      title: "Observatorio de I+D de Canarias",
+      title: "Observatorio de I+D de las Islas Canarias",
       subtitle: "Análisis comparativo e histórico de indicadores de investigación, desarrollo e innovación",
       overview: "Visión General",
       investment: "Inversión en I+D",
       researchers: "Investigadores",
       patents: "Patentes",
       patentsDescription: "Análisis de las solicitudes de patentes presentadas ante la Oficina Europea de Patentes (EPO) como indicador de la capacidad innovadora del territorio, con datos comparativos regionales y sectoriales.",
-      overviewDescription: "Panorama general del ecosistema de I+D+i en Canarias con indicadores clave, contexto institucional y comparativas con el entorno español y europeo.",
+      overviewDescription: "Panorama general del ecosistema de I+D+i en las Islas Canarias con indicadores clave, contexto institucional y comparativas con el entorno español y europeo.",
       investmentDescription: "Análisis del esfuerzo financiero en I+D como porcentaje del PIB, distribución sectorial y evolución temporal comparada.",
       researchersDescription: "Capital humano dedicado a la investigación y desarrollo por sectores de actividad, con análisis territorial y evolución temporal. Datos en equivalencia a tiempo completo (ETC).",
       sources: "Fuentes de datos",

@@ -38,7 +38,7 @@ const SourcesSection: React.FC<SourcesSectionProps> = ({ language }) => {
   const texts = {
     es: {
       title: "Fuentes de Datos",
-      description: "El Observatorio de I+D en Canarias utiliza datos oficiales de diversas fuentes para garantizar la fiabilidad y verificabilidad de la información presentada.",
+      description: "El Observatorio de I+D en las Islas Canarias utiliza datos oficiales de diversas fuentes para garantizar la fiabilidad y verificabilidad de la información presentada.",
       
       // Sub-tabs
       allTab: "Todos los Datasets",

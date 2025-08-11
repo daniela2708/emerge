@@ -681,7 +681,7 @@ const CountryRankingChart: React.FC<CountryRankingChartProps> = ({
                 
                 // Usar variables intermedias para evitar problemas de tipado
                 const labelText = language === 'es' 
-                  ? `vs Canarias (${canariasValue.toFixed(2)}%):` 
+                  ? `vs Islas Canarias (${canariasValue.toFixed(2)}%):`
                   : `vs Canary Islands (${canariasValue.toFixed(2)}%):`;
                 
                 canariasComparisonHtml = `
@@ -700,7 +700,7 @@ const CountryRankingChart: React.FC<CountryRankingChartProps> = ({
                 const isEs = language === 'es';
                 const canariasLocale = isEs ? 'es-ES' : 'en-US';
                 const labelText = isEs
-                  ? `vs Canarias (${canariasValue.toLocaleString(canariasLocale, {maximumFractionDigits: 0})} M€):`
+                  ? `vs Islas Canarias (${canariasValue.toLocaleString(canariasLocale, {maximumFractionDigits: 0})} M€):`
                   : `vs Canary Islands (${canariasValue.toLocaleString(canariasLocale, {maximumFractionDigits: 0})} M€):`;
                 
                 canariasComparisonHtml = `
@@ -711,7 +711,7 @@ const CountryRankingChart: React.FC<CountryRankingChartProps> = ({
                 `;
               }
             } else if (canariasValue !== null && canariasValue === 0) {
-              const noDataText = language === 'es' ? 'vs Canarias:' : 'vs Canary Islands:';
+              const noDataText = language === 'es' ? 'vs Islas Canarias:' : 'vs Canary Islands:';
               canariasComparisonHtml = `
                 <div class="flex justify-between items-center text-xs">
                   <span class="text-gray-600 inline-block w-44">${noDataText}</span>

@@ -147,7 +147,7 @@ function getCommunityName(feature: GeoJsonFeature, language: 'es' | 'en'): strin
       'ES-CB': {es: 'Cantabria', en: 'Cantabria'},
       'ES-CL': {es: 'Castilla y León', en: 'Castile and León'},
       'ES-CM': {es: 'Castilla-La Mancha', en: 'Castilla–La Mancha'},
-      'ES-CN': {es: 'Canarias', en: 'Canary Islands'},
+      'ES-CN': {es: 'Islas Canarias', en: 'Canary Islands'},
       'ES-CT': {es: 'Cataluña', en: 'Catalonia'},
       'ES-EX': {es: 'Extremadura', en: 'Extremadura'},
       'ES-GA': {es: 'Galicia', en: 'Galicia'},
@@ -178,6 +178,7 @@ function getCommunityName(feature: GeoJsonFeature, language: 'es' | 'en'): strin
       'Islas Baleares': 'Balearic Islands',
       'Baleares': 'Balearic Islands',
       'Canarias': 'Canary Islands',
+      'Islas Canarias': 'Canary Islands',
       'Cantabria': 'Cantabria',
       'Castilla-La Mancha': 'Castilla-La Mancha',
       'Castilla y León': 'Castile and León',
@@ -1274,7 +1275,7 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
             'ES-CB': {es: 'Cantabria', en: 'Cantabria'},
             'ES-CL': {es: 'Castilla y León', en: 'Castile and León'},
             'ES-CM': {es: 'Castilla-La Mancha', en: 'Castilla–La Mancha'},
-            'ES-CN': {es: 'Canarias', en: 'Canary Islands'},
+            'ES-CN': {es: 'Islas Canarias', en: 'Canary Islands'},
             'ES-CT': {es: 'Cataluña', en: 'Catalonia'},
             'ES-EX': {es: 'Extremadura', en: 'Extremadura'},
             'ES-GA': {es: 'Galicia', en: 'Galicia'},
@@ -1479,17 +1480,17 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
             }
           }
           
-          // Comparativa con Canarias
+          // Comparativa con Islas Canarias
           if (canariasValue !== null && value !== null && normalizarTexto(communityName) !== "canarias") {
             const canariasDiff = value - canariasValue;
             const canariasPercent = (canariasDiff / canariasValue) * 100;
             const isCanariasPositive = canariasDiff > 0;
             
             tooltipContent += `
-              <!-- vs Canarias -->
+              <!-- vs Islas Canarias -->
               <div class="flex justify-between items-center text-xs">
                 <span class="text-gray-600 inline-block w-48">
-                  vs ${language === 'es' ? 'Canarias' : 'Canary Islands'} (${dataDisplayType === 'percent_gdp' ? canariasValue.toFixed(2) + '%' : formatNumberWithThousandSeparator(canariasValue, 0) + ' mil €'}):
+                  vs ${language === 'es' ? 'Islas Canarias' : 'Canary Islands'} (${dataDisplayType === 'percent_gdp' ? canariasValue.toFixed(2) + '%' : formatNumberWithThousandSeparator(canariasValue, 0) + ' mil €'}):
                 </span>
                 <span class="font-medium ${isCanariasPositive ? 'text-green-600' : 'text-red-600'}">
                   ${isCanariasPositive ? '+' : ''}${canariasPercent.toFixed(1)}%
