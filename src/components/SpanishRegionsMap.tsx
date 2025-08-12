@@ -972,9 +972,10 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         .attr('width', containerWidth)
         .attr('height', containerHeight);
       
-      // MEJORA: Ajustar escala para utilizar más espacio disponible
-      const peninsulaScale = containerWidth * 2.8; // Reducido de 3.2 a 2.8 para hacer el mapa más pequeño
-      const canariasScale = containerWidth * 2.5; // Usar la misma escala que ResearchersSpanishRegionsMap
+      // MEJORA: Ajustar escala para utilizar más espacio disponible, con escala responsive
+      const isMobile = containerWidth < 500; // Mobile detection based on container size
+      const peninsulaScale = containerWidth * (isMobile ? 2.2 : 2.8); // Smaller scale on mobile
+      const canariasScale = containerWidth * (isMobile ? 2.0 : 2.5); // Smaller scale on mobile
       
       // Crear proyección para España peninsular (centrada y escalada para maximizar el espacio)
       const projectionMainland = d3.geoMercator()
@@ -2017,7 +2018,7 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
           <div 
             className="border border-gray-200 rounded-lg bg-white overflow-hidden"
             style={{ 
-              height: '400px', // Reducido de 500px a 400px para coincidir con RegionRankingChart
+              height: window.innerWidth < 768 ? '300px' : '400px', // Responsive height: smaller on mobile
               width: '100%',
               boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
             }}

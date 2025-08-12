@@ -702,16 +702,16 @@ const PatentsRegionalTimelineChart: React.FC<PatentsRegionalTimelineChartProps> 
         </div>
       </div>
 
-      {/* Gráfica de líneas con márgenes adaptativos */}
-      <div ref={chartContainerRef} className="h-80 bg-white rounded-lg border border-gray-100 p-2 shadow-sm">
+      {/* Gráfica de líneas con márgenes adaptativos y altura responsive */}
+      <div ref={chartContainerRef} className={`${window.innerWidth < 768 ? 'h-64' : 'h-80'} bg-white rounded-lg border border-gray-100 p-2 shadow-sm`}>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={timeSeriesData}
             margin={{ 
-              top: 20, 
-              right: window.innerWidth < 768 ? 30 : 60, 
-              left: window.innerWidth < 768 ? 15 : 20, 
-              bottom: 10 
+              top: window.innerWidth < 768 ? 15 : 20, 
+              right: window.innerWidth < 768 ? 25 : 60, 
+              left: window.innerWidth < 768 ? 10 : 20, 
+              bottom: window.innerWidth < 768 ? 5 : 10 
             }}
           >
             <XAxis 

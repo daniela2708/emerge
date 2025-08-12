@@ -969,8 +969,8 @@ const PatentsRegionalChart: React.FC<PatentsRegionalChartProps> = ({
   
   // Altura adaptable según el tamaño de pantalla
   const isMobile = window.innerWidth < 768;
-  const chartHeight = isMobile ? 400 : 520;
-  const containerHeight = isMobile ? 480 : 620;
+  const chartHeight = isMobile ? 300 : 520; // Reduced mobile height from 400 to 300
+  const containerHeight = isMobile ? 380 : 620; // Reduced mobile container height accordingly
 
   // Determinar si hay datos para mostrar
   const hasData = data.length > 0 && data.some(item => {
