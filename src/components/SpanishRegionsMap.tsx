@@ -1071,11 +1071,17 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         
         if (filteredData.length === 0) return null;
         
-        // Ordenar comunidades por valor
+        // Ordenar comunidades por valor según el tipo de datos seleccionado
         const sortedCommunities = [...filteredData]
           .sort((a, b) => {
-            const valueA = parseFloat(a['% PIB I+D'].replace(',', '.'));
-            const valueB = parseFloat(b['% PIB I+D'].replace(',', '.'));
+            let valueA, valueB;
+            if (dataDisplayType === 'percent_gdp') {
+              valueA = parseFloat(a['% PIB I+D'].replace(',', '.'));
+              valueB = parseFloat(b['% PIB I+D'].replace(',', '.'));
+            } else {
+              valueA = parseFloat(a['Gasto en I+D (Miles €)'].replace(',', '.'));
+              valueB = parseFloat(b['Gasto en I+D (Miles €)'].replace(',', '.'));
+            }
             return valueB - valueA; // Ordenar descendente
           });
         
@@ -1086,14 +1092,91 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
           const itemCommunityName = item["Comunidad Limpio"];
           const itemNormalizedName = normalizarTexto(itemCommunityName);
           
-          // Verificar coincidencia directa o por mapeo
-          return itemNormalizedName === normalizedCommunityName ||
-                Object.keys(communityNameMapping).some(key => 
-                  normalizarTexto(key) === normalizedCommunityName && 
-                  normalizarTexto(communityNameMapping[key].es) === itemNormalizedName);
+          // Verificar coincidencia directa
+          if (itemNormalizedName === normalizedCommunityName) {
+            return true;
+          }
+          
+          // Verificar por mapeo de nombres
+          const mappingMatch = Object.keys(communityNameMapping).some(key => 
+            normalizarTexto(key) === normalizedCommunityName && 
+            normalizarTexto(communityNameMapping[key].es) === itemNormalizedName
+          );
+          
+          if (mappingMatch) {
+            return true;
+          }
+          
+          // Verificación especial para casos problemáticos como Castilla-La Mancha
+          if ((normalizedCommunityName.includes('castilla') && normalizedCommunityName.includes('mancha')) &&
+              (itemNormalizedName.includes('castilla') && itemNormalizedName.includes('mancha'))) {
+            return true;
+          }
+          
+          // Verificación especial para Comunidad Valenciana
+          if ((normalizedCommunityName.includes('valencia') || normalizedCommunityName.includes('valenciana')) &&
+              (itemNormalizedName.includes('valencia') || itemNormalizedName.includes('valenciana'))) {
+            return true;
+          }
+          
+          // Verificación especial para País Vasco
+          if ((normalizedCommunityName.includes('pais') && normalizedCommunityName.includes('vasco')) &&
+              (itemNormalizedName.includes('pais') && itemNormalizedName.includes('vasco'))) {
+            return true;
+          }
+          
+          // Verificación especial para Navarra (puede aparecer como "Comunidad Foral de Navarra")
+          if (normalizedCommunityName.includes('navarra') && itemNormalizedName.includes('navarra')) {
+            return true;
+          }
+          
+          // Verificación especial para La Rioja
+          if (normalizedCommunityName.includes('rioja') && itemNormalizedName.includes('rioja')) {
+            return true;
+          }
+          
+          // Verificación especial para Principado de Asturias
+          if ((normalizedCommunityName.includes('asturias') || normalizedCommunityName.includes('principado')) &&
+              (itemNormalizedName.includes('asturias') || itemNormalizedName.includes('principado'))) {
+            return true;
+          }
+          
+          // Verificación especial para Región de Murcia
+          if ((normalizedCommunityName.includes('murcia') || normalizedCommunityName.includes('region')) &&
+              (itemNormalizedName.includes('murcia'))) {
+            return true;
+          }
+          
+          // Verificación especial para Islas Baleares
+          if ((normalizedCommunityName.includes('baleares') || normalizedCommunityName.includes('islas')) &&
+              (itemNormalizedName.includes('baleares'))) {
+            return true;
+          }
+          
+          // Verificación especial para Islas Canarias
+          if ((normalizedCommunityName.includes('canarias') || normalizedCommunityName.includes('islas')) &&
+              (itemNormalizedName.includes('canarias'))) {
+            return true;
+          }
+          
+          // Verificación especial para Ceuta (puede aparecer como "Ciudad Autónoma de Ceuta")
+          if (normalizedCommunityName.includes('ceuta') && itemNormalizedName.includes('ceuta')) {
+            return true;
+          }
+          
+          // Verificación especial para Melilla (puede aparecer como "Ciudad Autónoma de Melilla")
+          if (normalizedCommunityName.includes('melilla') && itemNormalizedName.includes('melilla')) {
+            return true;
+          }
+          
+          return false;
         });
         
-        if (communityIndex === -1) return null;
+        if (communityIndex === -1) {
+          console.warn(`[SpanishRegionsMap] No se encontró ranking para: "${communityName}" (normalizado: "${normalizedCommunityName}")`);
+          console.warn(`[SpanishRegionsMap] Comunidades disponibles:`, sortedCommunities.map(item => `"${item["Comunidad Limpio"]}"`));
+          return null;
+        }
         
         // Devolver ranking y total
         return {
