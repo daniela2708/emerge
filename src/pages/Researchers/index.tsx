@@ -546,21 +546,23 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
             </div>
           ) : (
             <div className="bg-white rounded-lg w-full">
-              {/* Filtros para la timeline */}
-              <div className="mb-4 flex flex-wrap gap-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
-                <div className="flex items-center">
-                  <label className="mr-2 text-sm font-medium text-gray-700">{t.sectorLabel}</label>
-                  <select 
-                    value={timelineSector}
-                    onChange={handleTimelineSectorChange}
-                    className="rounded-md border border-gray-300 shadow-sm py-1 px-3 bg-white text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    <option value="total">{t.totalSector}</option>
-                    <option value="business">{t.businessSector}</option>
-                    <option value="government">{t.governmentSector}</option>
-                    <option value="education">{t.educationSector}</option>
-                    <option value="nonprofit">{t.nonprofitSector}</option>
-                  </select>
+              {/* Filtros para la timeline - Mejorados para móvil */}
+              <div className="mb-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center w-full sm:w-auto">
+                    <label className="mb-1 sm:mb-0 sm:mr-2 text-sm font-medium text-gray-700">{t.sectorLabel}</label>
+                    <select 
+                      value={timelineSector}
+                      onChange={handleTimelineSectorChange}
+                      className="rounded-md border border-gray-300 shadow-sm py-2 px-3 bg-white text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 w-full sm:w-auto min-w-[180px]"
+                    >
+                      <option value="total">{t.totalSector}</option>
+                      <option value="business">{t.businessSector}</option>
+                      <option value="government">{t.governmentSector}</option>
+                      <option value="education">{t.educationSector}</option>
+                      <option value="nonprofit">{t.nonprofitSector}</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               

@@ -1370,29 +1370,31 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                     language={language}
                   />
                   
-                  {/* Selector de sector estilo light-blue encima de la gráfica */}
+                  {/* Selector de sector estilo light-blue encima de la gráfica - Mejorado para móvil */}
                   <div className="bg-blue-50 p-3 rounded-md border border-blue-100 mb-4">
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
-                      <div className="flex items-center">
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg" 
-                          width="16" 
-                          height="16" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
-                          className="text-blue-500 mr-2 flex-shrink-0"
-                        >
-                          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
-                        <label className="text-gray-700 font-medium mr-2 text-sm sm:text-base">{t.sector}</label>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                      <div className="flex flex-col sm:flex-row sm:items-center w-full sm:w-auto">
+                        <div className="flex items-center mb-1 sm:mb-0">
+                          <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="16" 
+                            height="16" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            strokeWidth="2" 
+                            strokeLinecap="round" 
+                            strokeLinejoin="round" 
+                            className="text-blue-500 mr-2 flex-shrink-0"
+                          >
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                          </svg>
+                          <label className="text-gray-700 font-medium sm:mr-2 text-sm sm:text-base">{t.sector}</label>
+                        </div>
                         <select 
                           value={getSectorId(selectedRegionSector)}
                           onChange={(e) => handleRegionSectorChange(e.target.value)}
-                          className="border border-gray-300 rounded px-2 sm:px-3 py-1.5 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 min-w-[200px] sm:min-w-[240px] text-sm sm:text-base"
+                          className="border border-gray-300 rounded px-3 py-2 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full sm:w-auto min-w-[180px] text-sm sm:text-base"
                         >
                           {rdSectors.map(sector => (
                             <option key={sector.id} value={sector.id}>
