@@ -1341,6 +1341,7 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                           selectedYear={selectedRegionYear}
                           language={language}
                           selectedSector={selectedRegionSector === 'All Sectors' ? 'total' : getSectorId(selectedRegionSector)}
+                          dataDisplayType={dataDisplayType}
                         />
                       </div>
                     ) : (
