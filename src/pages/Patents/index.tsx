@@ -267,9 +267,9 @@ const Patents: React.FC<PatentsProps> = (props) => {
   );
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 pt-3 pb-6 w-full min-h-[700px]">
+    <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 pt-3 pb-8 sm:pb-6 w-full min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]">
       {/* Sección 1: Key Metrics */}
-      <div className="mb-12 mt-[-15px]">
+      <div className="mb-8 sm:mb-12 mt-[-15px]">
         <SectionTitle title={t.keyMetricsTitle} />
         <div className="mb-8">
           <SubsectionTitle title={language === 'es' ? "Estadísticas de patentes" : "Patents Statistics"} />
@@ -284,15 +284,15 @@ const Patents: React.FC<PatentsProps> = (props) => {
       </div>
       
       {/* Sección 2: Comparación entre la UE y países */}
-      <div className="mb-12">
+      <div className="mb-8 sm:mb-12">
         <SectionTitle title={t.euComparisonTitle} />
         
         {/* Subsección 2.1: Patentes por país */}
-        <div className="mb-10">
+        <div className="mb-8 sm:mb-10">
           <SubsectionTitle title={t.geographicalDistribution} />
           
           {/* Descripción del dataset */}
-          <div className="mb-4 text-sm text-gray-600 bg-blue-50 p-4 rounded-lg border border-blue-100">
+          <div className="mb-4 sm:mb-6 text-sm text-gray-600 bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-100">
             <p className="font-medium mb-2">
               {language === 'es' 
                 ? "Indicador de Patentes de la Oficina Europea de Patentes (EPO)"
@@ -314,7 +314,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
           </div>
 
           {isLoading ? (
-            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 min-h-[500px] flex items-center justify-center w-full">
+            <div className="bg-gray-50 p-4 sm:p-8 rounded-lg border border-gray-200 min-h-[300px] sm:min-h-[500px] flex items-center justify-center w-full">
               <div className="text-center text-gray-400">
                 <svg className="animate-spin h-8 w-8 text-blue-500 mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -324,7 +324,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
               </div>
             </div>
           ) : error ? (
-            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 min-h-[500px] flex items-center justify-center w-full">
+            <div className="bg-gray-50 p-4 sm:p-8 rounded-lg border border-gray-200 min-h-[300px] sm:min-h-[500px] flex items-center justify-center w-full">
               <div className="text-center text-red-500">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto mb-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -459,7 +459,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
         </div>
         
         {/* Subsección 2.2: Evolución temporal */}
-        <div className="mb-10">
+        <div className="mb-8 sm:mb-10">
           <SubsectionTitle title={t.chartTitle} />
           
           {/* Filtros independientes para el gráfico temporal */}
@@ -526,7 +526,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
             </div>
           ) : (
             <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100">
-              <div className="h-[350px] sm:h-[450px] lg:h-[500px]">
+              <div className="h-[350px] sm:h-[450px] lg:h-[500px] overflow-hidden">
                 <PatentsEuropeanTimelineChart
                   data={patentsData}
                   language={language}
@@ -540,13 +540,13 @@ const Patents: React.FC<PatentsProps> = (props) => {
       </div>
 
       {/* Sección 3: Comparación por comunidades autónomas de España */}
-      <div className="mb-6 mt-8 sm:mt-6">
+      <div className="mb-6 mt-12 sm:mt-8">
         <SectionTitle title={t.spanishRegionsTitle} />
         
         {/* Subsección 3.1: Distribución regional */}
         <div className="mb-8">
           {/* Descripción del dataset */}
-          <div className="mb-4 text-sm text-gray-600 bg-blue-50 p-4 rounded-lg border border-blue-100">
+          <div className="mb-4 sm:mb-6 text-sm text-gray-600 bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-100">
             <p>
               {language === 'es' 
                 ? "Distribución de patentes por comunidades autónomas de España. Los datos muestran el número de patentes registradas por provincia, agregadas a nivel de comunidad autónoma. Las patentes representan un indicador directo de la actividad innovadora y la capacidad de protección de la propiedad intelectual en cada territorio."
@@ -566,7 +566,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
           {regionalData.length > 0 ? (
             <div className="w-full">
               {/* Filtros para la sección regional */}
-              <div className="bg-blue-50 p-3 rounded-md border border-blue-100 mb-4">
+              <div className="bg-blue-50 p-3 sm:p-4 rounded-md border border-blue-100 mb-4 sm:mb-6">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
                   <div className="flex items-center flex-wrap gap-2">
                     <div className="flex items-center flex-shrink-0">
@@ -601,7 +601,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
               
               {/* Gráfico regional */}
               <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100">
-                <div className="h-[360px] sm:h-[420px] lg:h-[520px]">
+                <div className="h-[360px] sm:h-[420px] lg:h-[520px] overflow-hidden">
                   <PatentsRegionalChart
                     data={regionalData}
                     selectedYear={regionalYear}
@@ -611,11 +611,11 @@ const Patents: React.FC<PatentsProps> = (props) => {
               </div>
 
               {/* Timeline de evolución regional */}
-              <div className="mt-6 sm:mt-8">
+              <div className="mt-8 sm:mt-10">
                 <SubsectionTitle title={language === 'es' ? "Evolución temporal por comunidades autónomas" : "Timeline Evolution by Autonomous Communities"} />
                 
                 <div className="bg-white rounded-lg shadow-sm p-3 sm:p-4 border border-gray-100">
-                  <div className="h-[320px] sm:h-[400px] lg:h-[450px]">
+                  <div className="h-[320px] sm:h-[400px] lg:h-[450px] overflow-hidden">
                     <PatentsRegionalTimelineChart
                       data={regionalData}
                       language={language}
@@ -625,7 +625,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
               </div>
             </div>
           ) : (
-          <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 min-h-[300px] flex items-center justify-center w-full">
+          <div className="bg-gray-50 p-4 sm:p-8 rounded-lg border border-gray-200 min-h-[250px] sm:min-h-[300px] flex items-center justify-center w-full">
               <div className="text-center text-gray-400">
                 <svg className="animate-spin h-8 w-8 text-blue-500 mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
