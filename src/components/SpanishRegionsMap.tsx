@@ -974,7 +974,7 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
       
       // MEJORA: Ajustar escala para utilizar más espacio disponible
       const peninsulaScale = containerWidth * 2.8; // Reducido de 3.2 a 2.8 para hacer el mapa más pequeño
-      const canariasScale = containerWidth * 3; // Aumentar tamaño de las islas
+      const canariasScale = containerWidth * 2.5; // Usar la misma escala que ResearchersSpanishRegionsMap
       
       // Crear proyección para España peninsular (centrada y escalada para maximizar el espacio)
       const projectionMainland = d3.geoMercator()
@@ -982,46 +982,40 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         .scale(peninsulaScale)
         .translate([containerWidth / 2, containerHeight / 2.2]); // Mejor centrado vertical
       
-      // Definir dimensiones del recuadro para las Islas Canarias
+      // Definir dimensiones del recuadro para Canarias (20% menos largo y más a la derecha)
       const canariasRect = {
-        x: containerWidth * 0.05,
+        x: containerWidth * 0.06,
         y: containerHeight * 0.58,
         width: containerWidth * 0.24,
-        height: containerHeight * 0.18
+        height: containerHeight * 0.16
       };
 
       const ceutaMelillaRect = {
         x: containerWidth * 0.70,
         y: containerHeight * 0.05,
-        width: containerWidth * 0.30,
-        height: containerHeight * 0.18
+        width: containerWidth * 0.28,
+        height: containerHeight * 0.15
       };
 
-      // Crear proyección específica para las Islas Canarias centrada en su recuadro
+      // Crear proyección específica para las Islas Canarias (centrado en el recuadro)
       const projectionCanarias = d3.geoMercator()
         .center([-15.5, 28.2])
-        .scale(canariasScale) // Aumentado para que las islas se vean más grandes
+        .scale(canariasScale)
         .translate([
           canariasRect.x + canariasRect.width / 2,
-          canariasRect.y + canariasRect.height / 2,
+          canariasRect.y + canariasRect.height / 2
         ]);
       
-      // Crear proyección específica para Ceuta y Melilla (compartirán recuadro)
+      // Crear proyección específica para Ceuta y Melilla usando posiciones del ResearchersSpanishRegionsMap
       const projectionCeuta = d3.geoMercator()
         .center([-5.3, 35.9])
-        .scale(containerWidth * 20)
-        .translate([
-          ceutaMelillaRect.x + ceutaMelillaRect.width * 0.25,
-          ceutaMelillaRect.y + ceutaMelillaRect.height / 2,
-        ]);
+        .scale(containerWidth * 22)
+        .translate([containerWidth * 0.78, containerHeight * 0.15]);
 
       const projectionMelilla = d3.geoMercator()
         .center([-3.0, 35.3])
-        .scale(containerWidth * 20)
-        .translate([
-          ceutaMelillaRect.x + ceutaMelillaRect.width * 0.75,
-          ceutaMelillaRect.y + ceutaMelillaRect.height / 2,
-        ]);
+        .scale(containerWidth * 22)
+        .translate([containerWidth * 0.90, containerHeight * 0.15]);
       
       // Crear generador de path para península
       const pathGeneratorMainland = d3.geoPath().projection(projectionMainland);

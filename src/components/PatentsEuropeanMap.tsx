@@ -947,13 +947,14 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
       const svg = d3.select(svgRef.current);
       svg.selectAll("*").remove();
 
-      const width = 1000;
-      const height = 700;
+      const width = 560;
+      const height = 420;
 
-      // Configurar proyección centrando automáticamente el mapa en el contenedor
-      const projection = d3
-        .geoMercator()
-        .fitSize([width, height], geoData as any);
+      // Configurar proyección
+      const projection = d3.geoMercator()
+        .center([10, 52])
+        .scale(420)
+        .translate([width / 2, height / 2]);
 
       const path = d3.geoPath().projection(projection);
 
@@ -1796,7 +1797,7 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
 
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto">
+    <div className="relative w-full h-full">
       <div className="mb-2 text-center">
         <h3 className="text-sm font-semibold text-gray-800">
           {getMapTitle()} · {selectedYear}
@@ -1807,10 +1808,7 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
         </div>
       </div>
       
-      <div
-        className="relative mx-auto"
-        style={{ border: '1px solid #f0f0f0', borderRadius: '8px', overflow: 'hidden', aspectRatio: '1000 / 700' }}
-      >
+      <div className="relative w-full h-full">
         {isLoading ? (
           <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-80">
             <div className="text-center">
@@ -1827,10 +1825,11 @@ const PatentsEuropeanMap: React.FC<PatentsEuropeanMapProps> = ({
           </div>
         ) : (
           <>
-            <svg 
-              ref={svgRef} 
-              className="w-full h-full" 
-              viewBox="0 0 1000 700"
+            <svg
+              ref={svgRef}
+              width="100%"
+              height="100%"
+              viewBox="0 0 560 420"
               preserveAspectRatio="xMidYMid meet"
             />
             <div 

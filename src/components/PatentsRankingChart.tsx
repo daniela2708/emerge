@@ -1026,8 +1026,8 @@ function getCountryFlagUrl(countryCode: string): string {
   // Preparar datos para el gráfico
   const chartData: ChartDataResult = prepareChartData();
   
-  // Altura dinámica para el gráfico en función del número de países
-  const chartHeight = Math.max(50, chartData.labels.length * 35);
+  // Altura dinámica para el gráfico en función del número de países (igual que el mapa de investigadores)
+  const chartHeight = Math.max(420, chartData.labels.length * 35);
 
   // Determinar si hay datos para mostrar (con filtro de coop_ptn = 'APPL')
   const hasData = data.filter(item => 
@@ -1035,9 +1035,9 @@ function getCountryFlagUrl(countryCode: string): string {
     item.coop_ptn === (cooperationPartner || 'APPL')
   ).length > 0;
   
-  // Estilos para el contenedor con scroll
+  // Estilos para el contenedor con scroll (altura igual al mapa de investigadores)
   const scrollContainerStyle: React.CSSProperties = {
-    maxHeight: '360px',
+    maxHeight: '420px',
     overflowY: 'auto',
     border: '1px solid #f0f0f0',
     borderRadius: '8px',
