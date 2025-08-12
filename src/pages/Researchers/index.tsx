@@ -456,51 +456,55 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
             </div>
           ) : (
             <div className="bg-white rounded-lg w-full">
-              {/* Filtros */}
-              <div className="mb-4 flex flex-wrap gap-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
-                <div className="flex items-center">
-                  <label className="mr-2 text-sm font-medium text-gray-700">{t.yearLabel}</label>
-                  <select 
-                    value={selectedYear}
-                    onChange={handleYearChange}
-                    className="rounded-md border border-gray-300 shadow-sm py-1 px-3 bg-white text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    {availableYears.map(year => (
-                      <option key={year} value={year}>{year}</option>
-                    ))}
-                  </select>
-                </div>
-                
-                <div className="flex items-center">
-                  <label className="mr-2 text-sm font-medium text-gray-700">{t.sectorLabel}</label>
-                  <select 
-                    value={mapSector}
-                    onChange={handleMapSectorChange}
-                    className="rounded-md border border-gray-300 shadow-sm py-1 px-3 bg-white text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    <option value="total">{t.totalSector}</option>
-                    <option value="business">{t.businessSector}</option>
-                    <option value="government">{t.governmentSector}</option>
-                    <option value="education">{t.educationSector}</option>
-                    <option value="nonprofit">{t.nonprofitSector}</option>
-                  </select>
+              {/* Filtros - Mejorados para móvil */}
+              <div className="mb-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center w-full sm:w-auto">
+                    <label className="mb-1 sm:mb-0 sm:mr-2 text-sm font-medium text-gray-700">{t.yearLabel}</label>
+                    <select 
+                      value={selectedYear}
+                      onChange={handleYearChange}
+                      className="rounded-md border border-gray-300 shadow-sm py-2 px-3 bg-white text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 w-full sm:w-auto min-w-[120px]"
+                    >
+                      {availableYears.map(year => (
+                        <option key={year} value={year}>{year}</option>
+                      ))}
+                    </select>
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row sm:items-center w-full sm:w-auto">
+                    <label className="mb-1 sm:mb-0 sm:mr-2 text-sm font-medium text-gray-700">{t.sectorLabel}</label>
+                    <select 
+                      value={mapSector}
+                      onChange={handleMapSectorChange}
+                      className="rounded-md border border-gray-300 shadow-sm py-2 px-3 bg-white text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 w-full sm:w-auto min-w-[180px]"
+                    >
+                      <option value="total">{t.totalSector}</option>
+                      <option value="business">{t.businessSector}</option>
+                      <option value="government">{t.governmentSector}</option>
+                      <option value="education">{t.educationSector}</option>
+                      <option value="nonprofit">{t.nonprofitSector}</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               
-              {/* Contenedor flexible para el mapa y el gráfico */}
-              <div className="flex flex-col lg:flex-row gap-6">
+              {/* Contenedor flexible para el mapa y el gráfico - Mejorado para móvil */}
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
                 {/* Mapa de Europa */}
-                <div className="w-full lg:w-1/2 min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-4">
-                  <ResearchersEuropeanMap
-                    data={researchersData}
-                    selectedYear={selectedYear}
-                    selectedSector={mapSectorToCode(mapSector)}
-                    language={language}
-                  />
+                <div className="w-full lg:w-1/2 min-h-[350px] sm:min-h-[400px] lg:min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-3 sm:p-4">
+                  <div className="w-full h-full">
+                    <ResearchersEuropeanMap
+                      data={researchersData}
+                      selectedYear={selectedYear}
+                      selectedSector={mapSectorToCode(mapSector)}
+                      language={language}
+                    />
+                  </div>
                 </div>
                 
                 {/* Gráfico de ranking */}
-                <div className="w-full lg:w-1/2 min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <div className="w-full lg:w-1/2 min-h-[350px] sm:min-h-[400px] lg:min-h-[450px] bg-white border border-gray-200 rounded-lg shadow-sm p-3 sm:p-4">
                   <ResearcherRankingChart
                     data={researchersData}
                     selectedYear={selectedYear}

@@ -540,7 +540,7 @@ const Patents: React.FC<PatentsProps> = (props) => {
       </div>
 
       {/* Sección 3: Comparación por comunidades autónomas de España */}
-      <div className="mb-6">
+      <div className="mb-6 mt-8 sm:mt-6">
         <SectionTitle title={t.spanishRegionsTitle} />
         
         {/* Subsección 3.1: Distribución regional */}

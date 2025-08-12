@@ -1819,12 +1819,12 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
   }, [europeanMapData, data, selectedYear, selectedSector, language]);
   
   return (
-    <div ref={containerRef} className="relative w-full h-full">
-      <div className="mb-2 text-center">
-        <h3 className="text-sm font-semibold text-gray-800">
+    <div ref={containerRef} className="relative w-full h-full overflow-hidden">
+      <div className="mb-2 text-center px-2">
+        <h3 className="text-xs sm:text-sm font-semibold text-gray-800 leading-tight">
           {getMapTitle()} · {selectedYear}
         </h3>
-        <div className="inline-block mt-1 px-2 py-0.5 rounded-full text-xs font-bold text-gray-800" 
+        <div className="inline-block mt-1 px-2 py-0.5 rounded-full text-xs font-bold text-gray-800 break-words max-w-full" 
              style={{ backgroundColor: `${d3.color(getSectorColor())?.copy({ opacity: 0.15 })}` }}>
           {getSectorText()}
         </div>
@@ -1846,13 +1846,16 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
         </div>
       ) : (
         <>
-          <svg
-            ref={svgRef}
-            width="100%"
-            height="100%"
-            viewBox="0 0 560 420"
-            preserveAspectRatio="xMidYMid meet"
-          />
+          <div className="w-full h-full min-h-[280px] sm:min-h-[320px] md:min-h-[380px]">
+            <svg
+              ref={svgRef}
+              width="100%"
+              height="100%"
+              viewBox="0 0 560 420"
+              preserveAspectRatio="xMidYMid meet"
+              className="max-w-full"
+            />
+          </div>
                 <div 
         ref={tooltipRef}
         className="country-tooltip"
