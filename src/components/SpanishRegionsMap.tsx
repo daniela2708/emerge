@@ -982,28 +982,28 @@ const SpanishRegionsMap: React.FC<SpanishRegionsMapProps> = ({
         .scale(peninsulaScale)
         .translate([containerWidth / 2, containerHeight / 2.2]); // Mejor centrado vertical
       
-      // Definir dimensiones del recuadro para Canarias (20% menos largo y más a la derecha)
+      // Definir dimensiones del recuadro para Canarias (altura aumentada 15% para mejor estética)
       const canariasRect = {
         x: containerWidth * 0.06,
-        y: containerHeight * 0.58,
+        y: containerHeight * 0.56,
         width: containerWidth * 0.24,
-        height: containerHeight * 0.16
+        height: containerHeight * 0.18
       };
 
       const ceutaMelillaRect = {
         x: containerWidth * 0.70,
         y: containerHeight * 0.05,
         width: containerWidth * 0.28,
-        height: containerHeight * 0.15
+        height: containerHeight * 0.17
       };
 
-      // Crear proyección específica para las Islas Canarias (centrado en el recuadro)
+      // Crear proyección específica para las Islas Canarias (centrado después del título)
       const projectionCanarias = d3.geoMercator()
         .center([-15.5, 28.2])
         .scale(canariasScale)
         .translate([
           canariasRect.x + canariasRect.width / 2,
-          canariasRect.y + canariasRect.height / 2
+          canariasRect.y + canariasRect.height * 0.65  // Posicionado en el 65% de la altura (después del título)
         ]);
       
       // Crear proyección específica para Ceuta y Melilla usando posiciones del ResearchersSpanishRegionsMap
