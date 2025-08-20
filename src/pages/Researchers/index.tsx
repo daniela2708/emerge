@@ -499,7 +499,6 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
                       selectedYear={selectedYear}
                       selectedSector={mapSectorToCode(mapSector)}
                       language={language}
-                      autonomousCommunitiesData={researchersCommunityData}
                     />
                   </div>
                 </div>
@@ -511,7 +510,6 @@ const Researchers: React.FC<ResearchersProps> = (props) => {
                     selectedYear={selectedYear}
                     language={language}
                     selectedSector={mapSectorToCode(mapSector)}
-                    autonomousCommunitiesData={researchersCommunityData}
                   />
                 </div>
               </div>
