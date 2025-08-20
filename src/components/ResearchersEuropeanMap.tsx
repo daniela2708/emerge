@@ -38,6 +38,19 @@ interface ResearchersData {
   [key: string]: string | undefined;
 }
 
+// Interfaz para los datos de comunidades autónomas
+interface ResearchersCommunityData {
+  TERRITORIO: string;
+  TERRITORIO_CODE: string;
+  TIME_PERIOD: string;
+  SECTOR_EJECUCION: string;
+  SECTOR_EJECUCION_CODE: string;
+  SEXO: string;
+  SEXO_CODE: string;
+  OBS_VALUE: string;
+  [key: string]: string;
+}
+
 // Definición de tipos más estrictos para propiedades
 type GeoJsonProperties = {
   NAME?: string;
@@ -63,6 +76,7 @@ interface ResearchersEuropeanMapProps {
   selectedSector: string;
   language: 'es' | 'en';
   onClick?: (country: string) => void;
+  autonomousCommunitiesData?: ResearchersCommunityData[];
 }
 
 // URL del archivo GeoJSON de Europa
@@ -323,7 +337,40 @@ function getSpainValue(data: ResearchersData[], year: number, sector: string): n
   if (spainData.length > 0 && spainData[0].OBS_VALUE) {
     return parseFloat(spainData[0].OBS_VALUE);
   }
-  
+
+  return null;
+}
+
+// Función para obtener el valor de Canarias
+function getCanariasValue(
+  communityData: ResearchersCommunityData[],
+  year: number,
+  sector: string
+): number | null {
+  if (!communityData || communityData.length === 0) return null;
+
+  const sectorMapping: Record<string, string> = {
+    total: '_T',
+    business: 'EMPRESAS',
+    government: 'ADMINISTRACION_PUBLICA',
+    education: 'ENSENIANZA_SUPERIOR',
+    nonprofit: 'IPSFL'
+  };
+
+  const sectorCode = sectorMapping[sector.toLowerCase()] || '_T';
+
+  const record = communityData.find(item =>
+    item.TERRITORIO_CODE === 'ES70' &&
+    parseInt(item.TIME_PERIOD) === year &&
+    item.SECTOR_EJECUCION_CODE === sectorCode &&
+    item.SEXO_CODE === 'T'
+  );
+
+  if (record && record.OBS_VALUE) {
+    const value = parseFloat(record.OBS_VALUE.replace(',', '.'));
+    return isNaN(value) ? null : value;
+  }
+
   return null;
 }
 
@@ -861,12 +908,13 @@ function getPreviousYearValue(
   return null;
 }
 
-const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({ 
-  data, 
-  selectedYear, 
-  selectedSector, 
-  language, 
-  onClick 
+const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
+  data,
+  selectedYear,
+  selectedSector,
+  language,
+  onClick,
+  autonomousCommunitiesData = []
 }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [europeanMapData, setEuropeanMapData] = useState<GeoJsonData | null>(null);
@@ -1540,15 +1588,17 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
         
         // Obtener la bandera del país
         const flagUrl = getCountryFlagUrl(countryName, feature);
-        
+
         // Verificar si es España o la UE para la visualización del tooltip
         const isSpain = countryIso2 === 'ES' || countryIso3 === 'ESP';
         const isEU = countryIso2 === 'EU' || countryData?.geo === 'EU27_2020';
-        
+        const isCanarias = normalizarTexto(countryName).includes('canarias') || normalizarTexto(countryName).includes('canary islands');
+
         // Obtener valores para comparativas
         const euValue = !isEU ? getEUValue(data, selectedYear, selectedSector) : null;
         const euAverageValue = euValue !== null ? Math.round(euValue / 27) : null;
         const spainValue = !isSpain ? getSpainValue(data, selectedYear, selectedSector) : null;
+        const canariasValue = !isCanarias ? getCanariasValue(autonomousCommunitiesData, selectedYear, selectedSector) : null;
         
         // Obtener el valor del año anterior para la comparación YoY - mejorar búsqueda
         let previousYearValue = null;
@@ -1641,15 +1691,41 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
             const percentDiff = (difference / spainValue) * 100;
             const formattedDiff = percentDiff.toFixed(1);
             const isPositive = difference > 0;
-            
+
             comparisonsHtml += `
               <div class="flex justify-between items-center text-xs">
-                <span class="text-gray-600 inline-block w-44">${language === 'es' ? 
-                  `vs España (${formatNumberComplete(Math.round(spainValue), 0, language)}):` : 
+                <span class="text-gray-600 inline-block w-44">${language === 'es' ?
+                  `vs España (${formatNumberComplete(Math.round(spainValue), 0, language)}):` :
                   `vs Spain (${formatNumberComplete(Math.round(spainValue), 0, language)}):`}</span>
                 <span class="font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}">${isPositive ? '+' : ''}${formattedDiff}%</span>
               </div>
             `;
+          }
+
+          // Comparación con Canarias
+          if (!isCanarias) {
+            if (canariasValue !== null) {
+              const difference = value - canariasValue;
+              const percentDiff = (difference / canariasValue) * 100;
+              const formattedDiff = percentDiff.toFixed(1);
+              const isPositive = difference > 0;
+
+              comparisonsHtml += `
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-gray-600 inline-block w-44">${language === 'es' ?
+                    `vs Islas Canarias (${formatNumberComplete(Math.round(canariasValue), 0, language)}):` :
+                    `vs Canary Islands (${formatNumberComplete(Math.round(canariasValue), 0, language)}):`}</span>
+                  <span class="font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}">${isPositive ? '+' : ''}${formattedDiff}%</span>
+                </div>
+              `;
+            } else {
+              comparisonsHtml += `
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-gray-600 inline-block w-44">${language === 'es' ? 'vs Islas Canarias:' : 'vs Canary Islands:'}</span>
+                  <span class="font-medium text-gray-400">--</span>
+                </div>
+              `;
+            }
           }
         }
 
@@ -1816,7 +1892,7 @@ const ResearchersEuropeanMap: React.FC<ResearchersEuropeanMapProps> = ({
     };
 
     renderMap();
-  }, [europeanMapData, data, selectedYear, selectedSector, language]);
+  }, [europeanMapData, data, selectedYear, selectedSector, language, autonomousCommunitiesData]);
   
   return (
     <div ref={containerRef} className="relative w-full h-full overflow-hidden">
