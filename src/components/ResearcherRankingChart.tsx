@@ -86,26 +86,12 @@ interface ResearchersData {
   [key: string]: string | undefined;
 }
 
-// Datos de comunidades autónomas
-interface ResearchersCommunityData {
-  TERRITORIO: string;
-  TERRITORIO_CODE: string;
-  TIME_PERIOD: string;
-  SECTOR_EJECUCION: string;
-  SECTOR_EJECUCION_CODE: string;
-  SEXO: string;
-  SEXO_CODE: string;
-  OBS_VALUE: string;
-  [key: string]: string;
-}
-
 // Interfaz para las propiedades del componente
 interface ResearcherRankingChartProps {
   data: ResearchersData[];
   selectedYear: number;
   language: 'es' | 'en';
   selectedSector?: string;
-  autonomousCommunitiesData?: ResearchersCommunityData[];
 }
 
 // Colores para la gráfica
@@ -236,8 +222,7 @@ const ResearcherRankingChart: React.FC<ResearcherRankingChartProps> = ({
   data,
   selectedYear,
   language,
-  selectedSector = 'total',
-  autonomousCommunitiesData = []
+  selectedSector = 'total'
 }) => {
   const chartRef = useRef(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -829,10 +814,9 @@ const ResearcherRankingChart: React.FC<ResearcherRankingChartProps> = ({
             `;
           }
           
-          // Preparar comparaciones con UE, España y Canarias
+          // Preparar comparaciones con UE y España
           const euItem = chartData.sortedItems.find(item => item.code === 'EU27_2020');
           const spainItem = chartData.sortedItems.find(item => item.code === 'ES');
-          const canariasValue = getCanariasValue(autonomousCommunitiesData, selectedYear, selectedSector);
           let comparisonsHtml = '';
           
                       // Comparativa con la UE (media) - usar el mismo cálculo que en el mapa
@@ -860,41 +844,15 @@ const ResearcherRankingChart: React.FC<ResearcherRankingChartProps> = ({
             const percentDiff = (difference / spainItem.value) * 100;
             const formattedDiff = percentDiff.toFixed(1);
             const isPositive = difference > 0;
-            
+
             comparisonsHtml += `
               <div class="flex justify-between items-center text-xs">
-                <span class="text-gray-600 inline-block w-44">${language === 'es' ? 
-                  `vs España (${formatValue(Math.round(spainItem.value))}):` : 
+                <span class="text-gray-600 inline-block w-44">${language === 'es' ?
+                  `vs España (${formatValue(Math.round(spainItem.value))}):` :
                   `vs Spain (${formatValue(Math.round(spainItem.value))}):`}</span>
                 <span class="font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}">${isPositive ? '+' : ''}${formattedDiff}%</span>
               </div>
             `;
-          }
-
-          // Comparativa con Canarias
-          if (!chartItem.isSupranational) {
-            if (canariasValue !== null) {
-              const difference = value - canariasValue;
-              const percentDiff = (difference / canariasValue) * 100;
-              const formattedDiff = percentDiff.toFixed(1);
-              const isPositive = difference > 0;
-
-              comparisonsHtml += `
-                <div class="flex justify-between items-center text-xs">
-                  <span class="text-gray-600 inline-block w-44">${language === 'es' ?
-                    `vs Islas Canarias (${formatValue(Math.round(canariasValue))}):` :
-                    `vs Canary Islands (${formatValue(Math.round(canariasValue))}):`}</span>
-                  <span class="font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}">${isPositive ? '+' : ''}${formattedDiff}%</span>
-                </div>
-              `;
-            } else {
-              comparisonsHtml += `
-                <div class="flex justify-between items-center text-xs">
-                  <span class="text-gray-600 inline-block w-44">${language === 'es' ? 'vs Islas Canarias:' : 'vs Canary Islands:'}</span>
-                  <span class="font-medium text-gray-400">--</span>
-                </div>
-              `;
-            }
           }
           
           // Descripción de flag si existe
@@ -980,39 +938,6 @@ const ResearcherRankingChart: React.FC<ResearcherRankingChartProps> = ({
       maximumFractionDigits: 0,
       minimumFractionDigits: 0
     }).format(value);
-  };
-
-  // Obtener valor de Canarias para el año y sector seleccionados
-  const getCanariasValue = (
-    communityData: ResearchersCommunityData[],
-    year: number,
-    sector: string
-  ): number | null => {
-    if (!communityData || communityData.length === 0) return null;
-
-    const sectorMapping: Record<string, string> = {
-      total: '_T',
-      business: 'EMPRESAS',
-      government: 'ADMINISTRACION_PUBLICA',
-      education: 'ENSENIANZA_SUPERIOR',
-      nonprofit: 'IPSFL'
-    };
-
-    const sectorCode = sectorMapping[sector.toLowerCase()] || '_T';
-
-    const record = communityData.find(item =>
-      item.TERRITORIO_CODE === 'ES70' &&
-      parseInt(item.TIME_PERIOD) === year &&
-      item.SECTOR_EJECUCION_CODE === sectorCode &&
-      item.SEXO_CODE === 'T'
-    );
-
-    if (record && record.OBS_VALUE) {
-      const value = parseFloat(record.OBS_VALUE.replace(',', '.'));
-      return isNaN(value) ? null : value;
-    }
-
-    return null;
   };
 
   // Obtener el nombre del país a partir del código
