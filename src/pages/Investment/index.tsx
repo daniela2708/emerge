@@ -649,20 +649,32 @@ const Investment: React.FC<InvestmentProps> = ({ language }) => {
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-3">
                     <div className="p-2 sm:p-3 bg-red-50 rounded-lg flex items-center justify-center">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        className="h-6 w-6 sm:h-8 sm:w-8 text-red-600" 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        stroke="currentColor"
-                      >
-                        <path 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
-                          strokeWidth={2} 
-                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" 
-                        />
-                      </svg>
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+                        alt="Bandera de España"
+                        className="w-6 h-4 sm:w-8 sm:h-6 object-cover rounded border border-gray-300 shadow-sm"
+                        style={{
+                          boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.1)'
+                        }}
+                        onError={(e) => {
+                          // Fallback al icono SVG si la imagen no carga
+                          e.currentTarget.style.display = 'none';
+                          const ns = 'http://www.w3.org/2000/svg';
+                          const fallbackSvg = document.createElementNS(ns, 'svg');
+                          fallbackSvg.setAttribute('xmlns', ns);
+                          fallbackSvg.setAttribute('class', 'h-6 w-6 sm:h-8 sm:w-8 text-red-600');
+                          fallbackSvg.setAttribute('fill', 'none');
+                          fallbackSvg.setAttribute('viewBox', '0 0 24 24');
+                          fallbackSvg.setAttribute('stroke', 'currentColor');
+                          const path = document.createElementNS(ns, 'path');
+                          path.setAttribute('stroke-linecap', 'round');
+                          path.setAttribute('stroke-linejoin', 'round');
+                          path.setAttribute('stroke-width', '2');
+                          path.setAttribute('d', 'M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9');
+                          fallbackSvg.appendChild(path);
+                          e.currentTarget.parentNode?.appendChild(fallbackSvg);
+                        }}
+                      />
                     </div>
                   </div>
                   <div className="flex-1 min-w-0">
